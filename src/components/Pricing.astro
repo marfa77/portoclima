@@ -44,7 +44,7 @@ const fmt = (n: number) =>
           </ul>
           <a
             href={`${prefix}/#waitlist`}
-            class="mt-6 inline-flex justify-center rounded-full bg-terracotta px-5 py-2.5 text-sm font-semibold text-white hover:bg-terracotta-dark"
+            class="tap-target mt-6 inline-flex min-h-12 justify-center rounded-full bg-terracotta px-5 py-3 text-base font-semibold text-white active:bg-terracotta-dark"
           >
             {p.cta}
           </a>
@@ -52,7 +52,8 @@ const fmt = (n: number) =>
       ))}
     </div>
 
-    <div class="mt-10 overflow-x-auto rounded-2xl border border-stone-200/80 bg-white">
+    <div class="table-scroll-wrap mt-10 hidden md:block">
+      <div class="overflow-x-auto rounded-2xl border border-stone-200/80 bg-white">
       <table class="w-full min-w-[720px] text-left text-sm">
         <thead>
           <tr class="border-b border-stone-200 bg-cream/60 text-xs uppercase tracking-wide text-ink-muted">
@@ -84,6 +85,7 @@ const fmt = (n: number) =>
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <ul class="mt-8 grid gap-2 sm:grid-cols-2">

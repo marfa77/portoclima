@@ -31,7 +31,8 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
 <html lang={locale === "pt" ? "pt-PT" : "en"}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f2ea" />
     <title>{d.seo_title}</title>
     <meta name="description" content={d.seo_description} />
     <meta name="robots" content="index, follow" />
@@ -72,14 +73,14 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
 
     <GuideJsonLd locale={locale} entry={entry} slug={slug} />
   </head>
-  <body class="antialiased pb-20 md:pb-0">
+  <body class="antialiased body-mobile-pad">
     <p class="sr-only" data-ai="description">{aiDescription}</p>
     <slot name="header" />
     <main>
       <article>
         <header class="relative overflow-hidden border-b border-stone-200/80 bg-cream-dark">
           <div class="mx-auto grid max-w-5xl lg:grid-cols-2 lg:gap-8">
-            <div class="px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+            <div class="order-2 px-4 py-8 sm:px-6 sm:py-16 lg:order-none lg:py-20">
               <nav class="text-xs text-ink-muted" aria-label="Breadcrumb">
                 <a href={localePath(locale)} class="hover:text-azulejo">Porto Clima</a>
                 <span aria-hidden="true"> · </span>
@@ -88,15 +89,15 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
               <p class="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">
                 {locale === "pt" ? "Porto & AMP" : "Porto & metro area"}
               </p>
-              <h1 class="font-display mt-3 text-3xl font-semibold text-ink sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
+              <h1 class="font-display mt-3 text-2xl font-semibold leading-snug text-ink sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
                 {d.title}
               </h1>
-              <p class="guide-quick-answer mt-5 text-lg leading-relaxed text-ink-muted">{d.quick_answer}</p>
+              <p class="guide-quick-answer mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">{d.quick_answer}</p>
               <p class="mt-4 text-sm text-ink-muted">
                 {d.estimated_minutes} min · {d.date_modified.toLocaleDateString(locale === "pt" ? "pt-PT" : "en-GB")}
               </p>
             </div>
-            <figure class="relative min-h-[220px] lg:min-h-full">
+            <figure class="relative order-1 min-h-[200px] sm:min-h-[240px] lg:order-none lg:min-h-full">
               <img
                 src={d.hero_image}
                 alt=""

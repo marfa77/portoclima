@@ -32,29 +32,61 @@ const formAction = `https://formspree.io/f/${siteConfig.formspreeId}`;
 
       <div>
         <label for="name" class="mb-1 block text-sm font-medium text-ink">{w.name}</label>
-        <input required id="name" name="name" class="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm outline-none focus:border-azulejo" />
+        <input
+          required
+          id="name"
+          name="name"
+          autocomplete="name"
+          class="touch-input w-full rounded-xl border border-stone-200 px-4 py-3.5 outline-none focus:border-azulejo"
+        />
       </div>
       <div>
         <label for="email" class="mb-1 block text-sm font-medium text-ink">{w.email}</label>
-        <input required type="email" id="email" name="email" class="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm outline-none focus:border-azulejo" />
+        <input
+          required
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="email"
+          inputmode="email"
+          class="touch-input w-full rounded-xl border border-stone-200 px-4 py-3.5 outline-none focus:border-azulejo"
+        />
       </div>
       <div>
         <label for="phone" class="mb-1 block text-sm font-medium text-ink">{w.phone}</label>
-        <input required type="tel" id="phone" name="phone" class="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm outline-none focus:border-azulejo" />
+        <input
+          required
+          type="tel"
+          id="phone"
+          name="phone"
+          autocomplete="tel"
+          inputmode="tel"
+          class="touch-input w-full rounded-xl border border-stone-200 px-4 py-3.5 outline-none focus:border-azulejo"
+        />
       </div>
       <div>
         <label for="district" class="mb-1 block text-sm font-medium text-ink">{w.district}</label>
-        <input id="district" name="district" placeholder={locale === "pt" ? "Ex.: Porto (Bonfim), Gaia, Matosinhos…" : "E.g. Porto (Bonfim), Gaia, Matosinhos…"} class="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm outline-none focus:border-azulejo" />
+        <input
+          id="district"
+          name="district"
+          placeholder={locale === "pt" ? "Ex.: Porto (Bonfim), Gaia, Matosinhos…" : "E.g. Porto (Bonfim), Gaia, Matosinhos…"}
+          class="touch-input w-full rounded-xl border border-stone-200 px-4 py-3.5 outline-none focus:border-azulejo"
+        />
       </div>
       <div>
         <label for="message" class="mb-1 block text-sm font-medium text-ink">{w.message}</label>
-        <textarea id="message" name="message" rows={3} class="w-full rounded-xl border border-stone-200 px-4 py-2.5 text-sm outline-none focus:border-azulejo"></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows={3}
+          class="touch-input w-full rounded-xl border border-stone-200 px-4 py-3.5 outline-none focus:border-azulejo"
+        ></textarea>
       </div>
 
       <button
         type="submit"
         id="waitlist-submit"
-        class="w-full rounded-full bg-terracotta py-3.5 text-sm font-semibold text-white hover:bg-terracotta-dark disabled:cursor-not-allowed disabled:opacity-60"
+        class="tap-target w-full rounded-full bg-terracotta py-4 text-base font-semibold text-white active:bg-terracotta-dark disabled:cursor-not-allowed disabled:opacity-60"
       >
         {w.submit}
       </button>

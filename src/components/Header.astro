@@ -1,6 +1,7 @@
 ---
 import type { Locale } from "../lib/i18n";
 import { t, localePath } from "../lib/i18n";
+import MobileNav from "./MobileNav.astro";
 
 interface Props {
   locale: Locale;
@@ -11,15 +12,16 @@ const dict = t(locale);
 const prefix = locale === "en" ? "/en" : "";
 ---
 
-<header class="sticky top-0 z-40 border-b border-stone-200/80 bg-cream/90 backdrop-blur-md">
-  <div class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-    <a href={localePath(locale)} class="flex shrink-0 flex-col gap-0.5">
+<header class="sticky top-0 z-40 border-b border-stone-200/80 bg-cream/95 backdrop-blur-md">
+  <div class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
+    <a href={localePath(locale)} class="flex min-w-0 shrink-0 flex-col gap-0.5">
       <img src="/logo.svg" alt="Porto Clima" width="168" height="32" class="h-8 w-auto sm:h-9" />
       <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-azulejo sm:text-[11px]">
         {dict.nav.tagline}
       </span>
     </a>
-    <nav class="hidden items-center gap-5 text-sm text-ink-muted lg:flex">
+
+    <nav class="hidden flex-1 items-center justify-center gap-5 text-sm text-ink-muted lg:flex" aria-label="Main">
       <a href={`${prefix}/#precos`} class="hover:text-azulejo">{dict.nav.pricing}</a>
       <a href={`${prefix}/#modelos`} class="hover:text-azulejo">{dict.nav.models}</a>
       <a href={`${prefix}/#porque`} class="hover:text-azulejo">{dict.nav.why}</a>
@@ -29,11 +31,15 @@ const prefix = locale === "en" ? "/en" : "";
       <a href={locale === "pt" ? "/guias/" : "/en/guides/"} class="hover:text-azulejo">{dict.nav.guides}</a>
       <a href={`${prefix}/#waitlist`} class="font-medium text-terracotta hover:text-terracotta-dark">{dict.nav.waitlist}</a>
     </nav>
-    <a
-      href={locale === "pt" ? "/en/" : "/"}
-      class="text-sm font-medium text-azulejo hover:underline"
-    >
-      {dict.nav.langSwitch}
-    </a>
+
+    <div class="flex shrink-0 items-center gap-2">
+      <a
+        href={locale === "pt" ? "/en/" : "/"}
+        class="tap-target inline-flex items-center rounded-lg px-2 text-sm font-medium text-azulejo hover:underline"
+      >
+        {dict.nav.langSwitch}
+      </a>
+      <MobileNav locale={locale} />
+    </div>
   </div>
 </header>

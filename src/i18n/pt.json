@@ -14,7 +14,9 @@
     "why": "Porquê nós",
     "guides": "Guias",
     "langSwitch": "English",
-    "tagline": "Ar condicionado móvel"
+    "tagline": "Ar condicionado móvel",
+    "menuLabel": "Menu",
+    "menuClose": "Fechar menu"
   },
   "hero": {
     "eyebrow": "Ar condicionado móvel · instalação incluída · Porto e AMP",
@@ -235,7 +237,8 @@
       ["Mudança de casa", "Leva consigo", "Fica no imóvel"]
     ],
     "ctaPricing": "Ver preços chave-na-mão",
-    "ctaRequest": "Pedir instalação"
+    "ctaRequest": "Pedir instalação",
+    "scrollHint": "Deslize a tabela para a direita →"
   },
   "faq": {
     "title": "Perguntas frequentes",
@@ -313,6 +316,8 @@
   },
   "sticky": {
     "text": "Ar condicionado móvel · desde 899€",
-    "cta": "Pedir instalação"
+    "priceCta": "Preços",
+    "cta": "Pedir instalação",
+    "ariaLabel": "Ações rápidas"
   }
 }

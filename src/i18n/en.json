@@ -14,7 +14,9 @@
     "why": "Why us",
     "guides": "Guides",
     "langSwitch": "Português",
-    "tagline": "Portable AC"
+    "tagline": "Portable AC",
+    "menuLabel": "Menu",
+    "menuClose": "Close menu"
   },
   "hero": {
     "eyebrow": "Portable AC · install included · Porto & Metro Area",
@@ -235,7 +237,8 @@
       ["When you move", "Take it with you", "Stays in the flat"]
     ],
     "ctaPricing": "See turnkey prices",
-    "ctaRequest": "Request install"
+    "ctaRequest": "Request install",
+    "scrollHint": "Swipe the table sideways →"
   },
   "faq": {
     "title": "FAQ",
@@ -313,6 +316,8 @@
   },
   "sticky": {
     "text": "Portable AC · from €899",
-    "cta": "Request install"
+    "priceCta": "Pricing",
+    "cta": "Request install",
+    "ariaLabel": "Quick actions"
   }
 }

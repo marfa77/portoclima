@@ -11,12 +11,22 @@ const dict = t(locale);
 const prefix = locale === "en" ? "/en" : "";
 ---
 
-<div class="fixed bottom-0 left-0 right-0 z-50 border-t border-stone-200 bg-white/95 px-4 py-3 backdrop-blur md:hidden">
-  <div class="mx-auto flex max-w-lg items-center justify-between gap-3">
-    <span class="text-sm font-medium text-ink">{dict.sticky.text}</span>
+<div
+  class="fixed bottom-0 left-0 right-0 z-50 border-t border-stone-200 bg-white/95 px-4 py-3 backdrop-blur md:hidden pb-safe"
+  role="region"
+  aria-label={dict.sticky.ariaLabel}
+>
+  <div class="mx-auto flex max-w-lg items-center gap-2">
+    <a
+      href={`${prefix}/#precos`}
+      class="tap-target flex min-w-0 flex-1 flex-col items-center justify-center rounded-full border border-azulejo/25 bg-cream/80 px-3 py-2.5 text-center"
+    >
+      <span class="text-[10px] font-semibold uppercase tracking-wide text-azulejo">{dict.sticky.priceCta}</span>
+      <span class="text-sm font-bold text-ink">899€+</span>
+    </a>
     <a
       href={`${prefix}/#waitlist`}
-      class="shrink-0 rounded-full bg-terracotta px-5 py-2 text-sm font-semibold text-white"
+      class="tap-target flex flex-[1.4] items-center justify-center rounded-full bg-terracotta px-5 py-3.5 text-base font-semibold text-white shadow-lg shadow-terracotta/20"
     >
       {dict.sticky.cta}
     </a>

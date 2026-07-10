@@ -1,0 +1,142 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t, localePath } from "../lib/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const prefix = locale === "en" ? "/en" : "";
+
+const links = [
+  { href: `${prefix}/#precos`, label: dict.nav.pricing, primary: false },
+  { href: `${prefix}/#modelos`, label: dict.nav.models, primary: false },
+  { href: `${prefix}/#porque`, label: dict.nav.why, primary: false },
+  { href: `${prefix}/#install`, label: dict.nav.install, primary: false },
+  { href: `${prefix}/#compare`, label: dict.nav.compare, primary: false },
+  { href: `${prefix}/#faq`, label: dict.nav.faq, primary: false },
+  { href: locale === "pt" ? "/guias/" : "/en/guides/", label: dict.nav.guides, primary: false },
+  { href: `${prefix}/#waitlist`, label: dict.nav.waitlist, primary: true },
+];
+---
+
+<div class="lg:hidden">
+  <button
+    type="button"
+    id="mobile-menu-btn"
+    class="tap-target inline-flex items-center justify-center rounded-xl border border-stone-200/80 bg-white/80 px-3 text-ink"
+    aria-expanded="false"
+    aria-controls="mobile-menu-panel"
+    aria-label={dict.nav.menuLabel}
+  >
+    <svg id="mobile-menu-icon-open" class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"></path>
+    </svg>
+    <svg id="mobile-menu-icon-close" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"></path>
+    </svg>
+  </button>
+
+  <div
+    id="mobile-menu-backdrop"
+    class="fixed inset-0 z-50 hidden bg-ink/40 backdrop-blur-[2px]"
+    aria-hidden="true"
+  ></div>
+
+  <nav
+    id="mobile-menu-panel"
+    class="fixed inset-x-0 top-0 z-[60] hidden max-h-[100dvh] overflow-y-auto border-b border-stone-200 bg-cream pb-safe shadow-xl"
+    aria-label={dict.nav.menuLabel}
+    hidden
+  >
+    <div class="flex items-center justify-between gap-3 px-4 py-3">
+      <a href={localePath(locale)} class="flex flex-col gap-0.5">
+        <img src="/logo.svg" alt="Porto Clima" width="168" height="32" class="h-8 w-auto" />
+        <span class="text-[10px] font-semibold uppercase tracking-[0.14em] text-azulejo">
+          {dict.nav.tagline}
+        </span>
+      </a>
+      <button
+        type="button"
+        id="mobile-menu-close"
+        class="tap-target inline-flex items-center justify-center rounded-xl border border-stone-200/80 bg-white px-3 text-ink"
+        aria-label={dict.nav.menuClose}
+      >
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="px-4 pb-4">
+      {
+        links.map((link) => (
+          <li class="border-b border-stone-200/70 last:border-0">
+            <a
+              href={link.href}
+              class:list={[
+                "mobile-nav-link block py-4 text-base font-medium",
+                link.primary ? "text-terracotta" : "text-ink",
+              ]}
+              data-mobile-nav-link
+            >
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <div class="border-t border-stone-200/80 px-4 py-4">
+      <a
+        href={`${prefix}/#precos`}
+        class="tap-target mb-3 flex w-full items-center justify-center rounded-full border border-azulejo/25 bg-white py-3.5 text-base font-semibold text-azulejo"
+        data-mobile-nav-link
+      >
+        {dict.sticky.priceCta}
+      </a>
+      <a
+        href={`${prefix}/#waitlist`}
+        class="tap-target flex w-full items-center justify-center rounded-full bg-terracotta py-3.5 text-base font-semibold text-white shadow-lg shadow-terracotta/20"
+        data-mobile-nav-link
+      >
+        {dict.sticky.cta}
+      </a>
+    </div>
+  </nav>
+</div>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const closeBtn = document.getElementById("mobile-menu-close");
+  const panel = document.getElementById("mobile-menu-panel");
+  const backdrop = document.getElementById("mobile-menu-backdrop");
+  const iconOpen = document.getElementById("mobile-menu-icon-open");
+  const iconClose = document.getElementById("mobile-menu-icon-close");
+
+  function setOpen(open) {
+    if (!btn || !panel || !backdrop) return;
+    btn.setAttribute("aria-expanded", String(open));
+    panel.hidden = !open;
+    panel.classList.toggle("hidden", !open);
+    backdrop.classList.toggle("hidden", !open);
+    iconOpen?.classList.toggle("hidden", open);
+    iconClose?.classList.toggle("hidden", !open);
+    document.body.classList.toggle("overflow-hidden", open);
+  }
+
+  btn?.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") !== "true";
+    setOpen(open);
+  });
+  closeBtn?.addEventListener("click", () => setOpen(false));
+  backdrop?.addEventListener("click", () => setOpen(false));
+  document.querySelectorAll("[data-mobile-nav-link]").forEach((el) => {
+    el.addEventListener("click", () => setOpen(false));
+  });
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") setOpen(false);
+  });
+</script>

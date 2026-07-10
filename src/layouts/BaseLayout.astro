@@ -23,7 +23,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 <html lang={locale === "pt" ? "pt-PT" : "en"}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f2ea" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDesc} />
     <meta name="robots" content="index, follow" />
@@ -75,7 +76,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 
     <JsonLd locale={locale} />
   </head>
-  <body class="antialiased pb-20 md:pb-0">
+  <body class="antialiased body-mobile-pad">
     <slot name="header" />
     <main>
       <slot />

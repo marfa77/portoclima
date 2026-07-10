@@ -78,7 +78,7 @@ const fmt = (n: number) =>
               </p>
               <a
                 href={`${prefix}/#waitlist`}
-                class="mt-4 inline-flex justify-center rounded-full border border-azulejo/30 px-4 py-2 text-sm font-semibold text-azulejo hover:bg-azulejo/5"
+                class="tap-target mt-4 inline-flex min-h-11 justify-center rounded-full border border-azulejo/30 px-4 py-3 text-sm font-semibold text-azulejo active:bg-azulejo/5"
               >
                 {a.cardCta}
               </a>
@@ -87,7 +87,8 @@ const fmt = (n: number) =>
         ))}
       </div>
 
-      <div class="mt-8 overflow-x-auto rounded-2xl border border-stone-200/80">
+      <div class="table-scroll-wrap mt-8 hidden md:block">
+        <div class="overflow-x-auto rounded-2xl border border-stone-200/80">
         <table class="w-full min-w-[640px] text-left text-sm">
           <thead>
             <tr class="border-b border-stone-200 bg-cream/60 text-xs uppercase tracking-wide text-ink-muted">
@@ -116,6 +117,7 @@ const fmt = (n: number) =>
             ))}
           </tbody>
         </table>
+        </div>
       </div>
 
       <p class="mt-4 text-xs leading-relaxed text-ink-muted">{a.honestCoverage}</p>

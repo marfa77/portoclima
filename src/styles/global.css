@@ -16,12 +16,62 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
   color: var(--color-ink);
+}
+
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.body-mobile-pad {
+  padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 768px) {
+  .body-mobile-pad {
+    padding-bottom: 0;
+  }
+}
+
+.tap-target {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
+
+.touch-input {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.table-scroll-wrap {
+  position: relative;
+}
+
+.table-scroll-wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2.5rem;
+  pointer-events: none;
+  background: linear-gradient(to left, var(--color-cream) 0%, transparent 100%);
+}
+
+.table-scroll-wrap.is-dark::after {
+  background: linear-gradient(to left, #1c1917 0%, transparent 100%);
+}
+
+@media (min-width: 768px) {
+  .table-scroll-wrap::after {
+    display: none;
+  }
 }
 
 .font-display {
@@ -74,10 +124,13 @@ body {
 }
 
 .guide-prose table {
+  display: block;
   width: 100%;
   margin-top: 1.5rem;
   border-collapse: collapse;
   font-size: 0.875rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .guide-prose th,
