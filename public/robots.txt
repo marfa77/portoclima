@@ -10,4 +10,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://porto-clima.pt/sitemap-index.xml
+Sitemap: https://climaporto.pt/sitemap-index.xml

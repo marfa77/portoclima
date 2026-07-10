@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://porto-clima.pt",
+  site: "https://climaporto.pt",
   trailingSlash: "always",
   integrations: [
     sitemap({

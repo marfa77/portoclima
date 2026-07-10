@@ -1,6 +1,6 @@
 /** Site-wide config — update before launch */
 export const siteConfig = {
-  domain: "porto-clima.pt",
+  domain: "climaporto.pt",
   brand: "Porto Clima",
   serviceAreaLabelPt: "Porto e Área Metropolitana do Porto",
   serviceAreaLabelEn: "Porto & Porto Metropolitan Area",
@@ -12,7 +12,7 @@ export const siteConfig = {
   /** Set to true when whatsapp is a real E.164 number (not placeholder) */
   whatsappEnabled: false,
   /** Plausible — leave empty to disable until domain is live */
-  plausibleDomain: "porto-clima.pt",
+  plausibleDomain: "climaporto.pt",
   /** GA4 — optional fallback; leave empty to use Plausible only */
   ga4Id: "",
 } as const;
