@@ -1,7 +1,8 @@
 ---
 import type { Locale } from "../lib/i18n";
-import { t } from "../lib/i18n";
+import { t, localePath } from "../lib/i18n";
 import { siteConfig } from "../data/site";
+import { guidesIndexPath } from "../lib/guides";
 
 interface Props {
   locale: Locale;
@@ -9,7 +10,9 @@ interface Props {
 
 const { locale } = Astro.props;
 const dict = t(locale);
+const prefix = locale === "en" ? "/en" : "";
 const wa = `https://wa.me/${siteConfig.whatsapp}`;
+const showWhatsApp = "whatsappEnabled" in siteConfig && siteConfig.whatsappEnabled;
 ---
 
 <footer class="border-t border-stone-200 bg-white px-4 py-12 sm:px-6">
@@ -21,7 +24,30 @@ const wa = `https://wa.me/${siteConfig.whatsapp}`;
     </div>
     <div class="text-sm">
       <p class="font-medium text-ink">{dict.footer.contact}</p>
-      <a href={wa} class="mt-2 block text-azulejo hover:underline" target="_blank" rel="noopener">WhatsApp</a>
+      <ul class="mt-2 space-y-2">
+        <li>
+          <a href={`${localePath(locale)}#waitlist`} class="text-azulejo hover:underline">
+            {dict.footer.request}
+          </a>
+        </li>
+        <li>
+          <a href={`${prefix}/#precos`} class="text-azulejo hover:underline">
+            {dict.footer.pricing}
+          </a>
+        </li>
+        <li>
+          <a href={guidesIndexPath(locale)} class="text-azulejo hover:underline">
+            {dict.footer.guides}
+          </a>
+        </li>
+        {showWhatsApp && (
+          <li>
+            <a href={wa} class="text-azulejo hover:underline" target="_blank" rel="noopener">
+              WhatsApp
+            </a>
+          </li>
+        )}
+      </ul>
       <p class="mt-4 text-xs text-ink-muted">
         <a href="https://www.webmorp.art/" class="hover:underline">{dict.footer.credit}</a>
       </p>

@@ -9,6 +9,8 @@ export const siteConfig = {
   formspreeId: "xnjkedeo",
   /** E.164 without + for wa.me — separate channel, opens WhatsApp app, not Formspree */
   whatsapp: "351900000000",
+  /** Set to true when whatsapp is a real E.164 number (not placeholder) */
+  whatsappEnabled: false,
   /** Plausible — leave empty to disable until domain is live */
   plausibleDomain: "porto-clima.pt",
   /** GA4 — optional fallback; leave empty to use Plausible only */
