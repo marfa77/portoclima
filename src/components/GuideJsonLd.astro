@@ -1,0 +1,75 @@
+---
+import type { GuideEntry } from "../lib/guides";
+import { guidePath } from "../lib/guides";
+import { siteConfig } from "../data/site";
+import type { Locale } from "../lib/i18n";
+
+interface Props {
+  locale: Locale;
+  entry: GuideEntry;
+  slug: string;
+}
+
+const { locale, entry, slug } = Astro.props;
+const d = entry.data;
+const pageUrl = new URL(guidePath(locale, slug), Astro.site).href;
+const imageUrl = new URL(d.hero_image, Astro.site).href;
+const indexLabel = locale === "pt" ? "Guias" : "Guides";
+const indexPath = locale === "pt" ? "/guias/" : "/en/guides/";
+
+const graph = [
+  {
+    "@type": "Article",
+    "@id": `${pageUrl}#article`,
+    headline: d.title,
+    description: d.seo_description,
+    image: imageUrl,
+    datePublished: d.date_published.toISOString(),
+    dateModified: d.date_modified.toISOString(),
+    author: { "@type": "Organization", name: siteConfig.brand },
+    publisher: {
+      "@type": "Organization",
+      name: siteConfig.brand,
+      logo: { "@type": "ImageObject", url: new URL("/logo.svg", Astro.site).href },
+    },
+    mainEntityOfPage: pageUrl,
+    inLanguage: locale === "pt" ? "pt-PT" : "en-GB",
+    about: {
+      "@type": "Thing",
+      name: locale === "pt" ? "Ar condicionado móvel no Porto" : "Portable air conditioning in Porto",
+    },
+    contentLocation: {
+      "@type": "City",
+      name: "Porto",
+      containedInPlace: {
+        "@type": "AdministrativeArea",
+        name: locale === "pt" ? "Área Metropolitana do Porto" : "Porto Metropolitan Area",
+        containedInPlace: { "@type": "Country", name: "Portugal" },
+      },
+      geo: { "@type": "GeoCoordinates", latitude: 41.1579, longitude: -8.6291 },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".guide-quick-answer", "h1"],
+    },
+  },
+  {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Porto Clima", item: new URL(locale === "en" ? "/en/" : "/", Astro.site).href },
+      { "@type": "ListItem", position: 2, name: indexLabel, item: new URL(indexPath, Astro.site).href },
+      { "@type": "ListItem", position: 3, name: d.title, item: pageUrl },
+    ],
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: d.faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  },
+];
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />

@@ -10,6 +10,7 @@
     "faq": "FAQ",
     "waitlist": "Request",
     "pricing": "Pricing",
+    "guides": "Guides",
     "langSwitch": "Português"
   },
   "hero": {
@@ -195,6 +196,13 @@
     "submit": "Submit request",
     "success": "Thank you — we'll be in touch soon.",
     "privacy": "No spam. Data goes to our inbox — we'll contact you about your install."
+  },
+  "guides": {
+    "eyebrow": "Local guides",
+    "indexTitle": "Guides for Porto",
+    "indexDescription": "Straight answers on portable AC, humid summers and rental rules in Porto and the metro area — fixed turnkey prices and official sources.",
+    "readMore": "Read guide",
+    "cta": "Request turnkey install"
   },
   "footer": {
     "tagline": "Curated portable AC · Porto & Metropolitan Area",

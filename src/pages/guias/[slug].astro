@@ -1,0 +1,30 @@
+---
+import { getGuides, guidePath } from "../../lib/guides";
+import GuideLayout from "../../layouts/GuideLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { render } from "astro:content";
+import { getGuideAlternate } from "../../lib/guides";
+
+export async function getStaticPaths() {
+  const guides = await getGuides("pt");
+  return Promise.all(
+    guides.map(async (entry) => {
+      const alt = await getGuideAlternate(entry, "pt");
+      return {
+        params: { slug: entry.id },
+        props: { entry, alternatePath: alt ? guidePath("en", alt.id) : undefined },
+      };
+    }),
+  );
+}
+
+const { entry, alternatePath } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<GuideLayout locale="pt" entry={entry} slug={entry.id} alternatePath={alternatePath}>
+  <Header slot="header" locale="pt" />
+  <Content />
+  <Footer slot="footer" locale="pt" />
+</GuideLayout>

@@ -1,0 +1,52 @@
+---
+import { getGuides } from "../../lib/guides";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { t } from "../../lib/i18n";
+import { guidePath } from "../../lib/guides";
+
+const locale = "pt";
+const dict = t(locale);
+const guides = await getGuides(locale);
+const title = `${dict.guides.indexTitle} — Porto Clima`;
+const description = dict.guides.indexDescription;
+---
+
+<BaseLayout locale={locale} title={title} description={description}>
+  <Header slot="header" locale={locale} />
+  <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">{dict.guides.eyebrow}</p>
+    <h1 class="font-display mt-3 text-3xl font-semibold text-ink sm:text-4xl">{dict.guides.indexTitle}</h1>
+    <p class="mt-4 max-w-2xl text-lg text-ink-muted">{dict.guides.indexDescription}</p>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2">
+      {guides.map((guide) => (
+        <a
+          href={guidePath(locale, guide.id)}
+          class="card-shadow group flex flex-col overflow-hidden rounded-2xl border border-stone-200/80 bg-white transition hover:border-terracotta/30"
+        >
+          <img
+            src={guide.data.hero_image}
+            alt=""
+            width="600"
+            height="315"
+            class="h-40 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="flex flex-1 flex-col p-5">
+            <p class="text-xs font-semibold uppercase tracking-wide text-terracotta">
+              {guide.data.estimated_minutes} min
+            </p>
+            <h2 class="font-display mt-2 text-xl font-semibold text-ink group-hover:text-terracotta">
+              {guide.data.title}
+            </h2>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{guide.data.excerpt}</p>
+            <span class="mt-4 text-sm font-medium text-azulejo">{dict.guides.readMore} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+  <Footer slot="footer" locale={locale} />
+</BaseLayout>

@@ -10,6 +10,7 @@
     "faq": "FAQ",
     "waitlist": "Pedido",
     "pricing": "Preços",
+    "guides": "Guias",
     "langSwitch": "English"
   },
   "hero": {
@@ -195,6 +196,13 @@
     "submit": "Enviar pedido",
     "success": "Obrigado — entraremos em contacto em breve.",
     "privacy": "Sem spam. Os dados vão para o nosso email — contactamos sobre a sua instalação."
+  },
+  "guides": {
+    "eyebrow": "Guias locais",
+    "indexTitle": "Guias para o Porto",
+    "indexDescription": "Respostas diretas sobre ar condicionado móvel, verão húmido e regras de arrendamento no Porto e na AMP — com preços fixos e fontes oficiais.",
+    "readMore": "Ler guia",
+    "cta": "Pedir instalação chave-na-mão"
   },
   "footer": {
     "tagline": "Ar condicionado móvel curado · Porto e Área Metropolitana",
