@@ -1,0 +1,30 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+import { siteConfig } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const wa = `https://wa.me/${siteConfig.whatsapp}`;
+---
+
+<footer class="border-t border-stone-200 bg-white px-4 py-12 sm:px-6">
+  <div class="mx-auto flex max-w-5xl flex-col gap-6 sm:flex-row sm:justify-between">
+    <div>
+      <p class="font-display text-lg font-semibold text-ink">Porto Clima</p>
+      <p class="mt-1 text-sm text-ink-muted">{dict.footer.tagline}</p>
+      <p class="mt-4 max-w-sm text-xs text-ink-muted">{dict.footer.legal}</p>
+    </div>
+    <div class="text-sm">
+      <p class="font-medium text-ink">{dict.footer.contact}</p>
+      <a href={wa} class="mt-2 block text-azulejo hover:underline" target="_blank" rel="noopener">WhatsApp</a>
+      <p class="mt-4 text-xs text-ink-muted">
+        <a href="https://www.webmorp.art/" class="hover:underline">{dict.footer.credit}</a>
+      </p>
+    </div>
+  </div>
+</footer>

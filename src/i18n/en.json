@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Porto Clima — Portable AC in Porto & Metropolitan Area",
+    "description": "Curated installs in Porto and the AMP (Gaia, Matosinhos, Maia, Gondomar…). 3 Cecotec field-tested models, no facade changes. Request a quote online."
+  },
+  "nav": {
+    "niche": "Our niche",
+    "install": "Installation",
+    "compare": "Compare",
+    "faq": "FAQ",
+    "waitlist": "Request",
+    "langSwitch": "Português"
+  },
+  "hero": {
+    "eyebrow": "Porto & Metro Area · historic buildings · no facade work",
+    "serviceArea": "We serve Porto and the Porto Metropolitan Area (AMP) only",
+    "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
+    "title": "Curated portable AC — 3 models, one manufacturer",
+    "subtitle": "Heat-pump portables only. Three Cecotec ForceClima Soundless SKUs — cooling, dehumidification and heating — sold in PT with real cecotec.pt prices. One brand = simpler service, warranty and sourcing.",
+    "ctaModels": "See the 3 models",
+    "ctaWaitlist": "Leave a request",
+    "note": "Installs in Porto & AMP · No online payment · We contact you after your request"
+  },
+  "manifest": {
+    "title": "Our niche — few SKUs, but the right ones",
+    "p1": "Monobloc portable AC only — no splits, no forty-brand catalogue. Three Cecotec ForceClima Soundless Heating Connected sizes, all with heat pump, dehumidification and WiFi.",
+    "p2": "We chose one manufacturer with a full line on cecotec.pt: transparent PT pricing, same warranty, same support. Simpler than mixing Ballu, Electrolux and Olimpia from different wholesalers.",
+    "p3": "Each model covers a real room size — up to 20, 30 or 35–40 m² — with honest limits on what a portable can do. We measure noise on site; we don't repeat brochure dB.",
+    "disclaimer": "3 models because we tested the line — we don't resell everything on the marketplace."
+  },
+  "advantages": {
+    "eyebrow": "Why we're different",
+    "title": "Portable · few SKUs · top tier",
+    "intro": "We don't compete with FNAC or Worten on variety. We compete on curation: what works in Porto's historic homes and AMP, with discreet installs and honest numbers.",
+    "bullets": [
+      "Portable AC only — no split, no facade work",
+      "3 Cecotec models — heat pump + dehumidify + WiFi on all",
+      "Single manufacturer — unified stock, warranty and after-sales",
+      "Reference cecotec.pt retail prices — transparent in the table below",
+      "Soundless series — bedroom and night-noise priority",
+      "Install in Porto & Metropolitan Area — we know local condo rules"
+    ],
+    "lineupTitle": "Three sizes, one line",
+    "lineupSubtitle": "Reference RRP at",
+    "table": {
+      "segment": "Segment",
+      "model": "Model",
+      "features": "Equipment",
+      "featureList": "Heat pump · Dehumidify · WiFi",
+      "from": "From"
+    },
+    "honestCoverage": "Honest note — ForceClima 14800: Cecotec lists 28 m²; we recommend up to 35–40 m² in one enclosed room. For larger open spaces: split or a 2-unit package — we never promise 50 m² from one monobloc.",
+    "stockNote": "Some SKUs may show «Esgotado» on cecotec.pt — normal for the line. We confirm supplier stock before each install."
+  },
+  "installation": {
+    "title": "How we install — without damaging the facade",
+    "subtitle": "In listed buildings or strict condominiums, outdoor split units are often impossible. Portable solves with duct and interior finish.",
+    "steps": [
+      {
+        "title": "Site survey",
+        "text": "We measure noise, window, airflow and humidity — no phone sales."
+      },
+      {
+        "title": "Discreet penetration (if allowed)",
+        "text": "Indoor grille + insulated duct — no block on azulejo or granite facade."
+      },
+      {
+        "title": "Finish",
+        "text": "Decorative flange aligned with frame — before/after photo for condo board."
+      },
+      {
+        "title": "Handover & measurement",
+        "text": "Short decibel-meter video in night mode — real proof, not brochure."
+      }
+    ],
+    "videoTitle": "ForceClima 9500 Soundless Heating Connected — official Cecotec video",
+    "videoCaption": "Manufacturer video (window kit included). Porto Clima install adds insulated duct, discreet finish and on-site noise measurement."
+  },
+  "districts": {
+    "title": "Built for Porto & the metro area",
+    "subtitle": "We know condo rules, azulejo facades and rental flats across the city and AMP municipalities — we don't install outside this area.",
+    "items": [
+      {
+        "name": "Porto — Ribeira & Baixa",
+        "text": "Narrow windows, stone walls — we install without touching the riverfront facade."
+      },
+      {
+        "name": "Porto — Cedofeita & Bonfim",
+        "text": "Rental flats: mobile setup + landlord letter template."
+      },
+      {
+        "name": "Porto — Foz & Nevogilde",
+        "text": "Atlantic humidity — we prioritise dehumidification and heat pump."
+      },
+      {
+        "name": "Gaia & Matosinhos",
+        "text": "River and sea front — same approach: portable, no outdoor unit on the facade."
+      },
+      {
+        "name": "Maia, Gondomar & Valongo",
+        "text": "Houses and newer flats — technical install with discreet finish."
+      }
+    ],
+    "landlord": {
+      "title": "Renting? We help with your landlord",
+      "text": "We provide an authorization request template for discreet drilling — a real barrier we remove for you."
+    }
+  },
+  "comparison": {
+    "title": "Portable (us) vs split — honest",
+    "subtitle": "We won't hide it: split is quieter. But in Greater Porto, condo permits and historic facades matter.",
+    "headers": ["", "Portable (Porto Clima)", "Split"],
+    "rows": [
+      ["Condo permission", "Usually not required", "Often required — rejections happen"],
+      ["Facade change", "No", "Yes (outdoor unit)"],
+      ["Install timeline", "1 day", "3–7 days + approvals"],
+      ["Real noise", "48–50 dB (measured)", "20–25 dB"],
+      ["When you move", "Take it with you", "Stays in the flat"]
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "Why only three Cecotec models?",
+        "a": "Cecotec's ForceClima Soundless line covers bedroom, living room and large room — all with heat pump and dehumidification. One manufacturer simplifies warranty, parts and PT pricing on cecotec.pt."
+      },
+      {
+        "q": "Isn't 48 dB loud?",
+        "a": "Honestly: portable won't beat split in a bedroom. The Soundless series is our bet for sleeping with the unit on — we measure with a decibel meter on site, not a brochure."
+      },
+      {
+        "q": "When can you install?",
+        "a": "We contact you by email after your request to schedule a survey and install date. First 20 requests: priority and fixed price before update."
+      },
+      {
+        "q": "Do I need a company NIF now?",
+        "a": "Not yet — we're validating demand. Contact and room size only. No payment."
+      },
+      {
+        "q": "Does it heat in winter?",
+        "a": "Yes — all short-list models have heat pumps. Essential in Porto's shoulder season without central heating."
+      },
+      {
+        "q": "Do you serve outside Porto?",
+        "a": "We operate in Porto and the Porto Metropolitan Area (AMP): Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde and Póvoa de Varzim. Outside the AMP — leave a request and we'll review case by case."
+      },
+      {
+        "q": "What if landlord says no?",
+        "a": "For rentals we offer fully mobile window mode plus template letter to request discreet drill approval."
+      }
+    ]
+  },
+  "waitlist": {
+    "title": "Request installation",
+    "subtitle": "Leave your details — we'll reply with price, recommended model and timing. First 20 requests: priority and fixed price.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Mobile (WhatsApp)",
+    "district": "Municipality / area (Porto or AMP)",
+    "message": "Notes (optional)",
+    "submit": "Submit request",
+    "success": "Thank you — we'll be in touch soon.",
+    "privacy": "No spam. Data goes to our inbox — we'll contact you about your install."
+  },
+  "footer": {
+    "tagline": "Curated portable AC · Porto & Metropolitan Area",
+    "contact": "Contact",
+    "legal": "Company being registered — no ENI/NIF published yet.",
+    "credit": "Site by webmorp.art"
+  },
+  "sticky": {
+    "text": "Request installation",
+    "cta": "Submit"
+  }
+}

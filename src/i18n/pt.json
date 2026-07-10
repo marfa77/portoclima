@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Porto Clima — Ar condicionado móvel no Porto e Área Metropolitana",
+    "description": "Instalação curada no Porto e AMP (Gaia, Matosinhos, Maia, Gondomar…). 3 modelos Cecotec testados in loco, sem alterar fachada. Peça orçamento online."
+  },
+  "nav": {
+    "niche": "A nossa nicha",
+    "install": "Instalação",
+    "compare": "Comparar",
+    "faq": "FAQ",
+    "waitlist": "Pedido",
+    "langSwitch": "English"
+  },
+  "hero": {
+    "eyebrow": "Porto e Área Metropolitana · edifícios históricos · sem obras na fachada",
+    "serviceArea": "Trabalhamos apenas no Porto e na Área Metropolitana do Porto (AMP)",
+    "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
+    "title": "Ar condicionado móvel curado — 3 modelos, um fabricante",
+    "subtitle": "Só móveis com bomba de calor. Três SKU Cecotec ForceClima Soundless — arrefecimento, desumidificação e aquecimento — vendidos em PT com preços reais em cecotec.pt. Um marca = serviço, garantia e stock mais simples.",
+    "ctaModels": "Ver os 3 modelos",
+    "ctaWaitlist": "Deixar pedido",
+    "note": "Instalações no Porto e AMP · Sem pagamento online · Contactamos após o pedido"
+  },
+  "manifest": {
+    "title": "A nossa nicha — poucos SKU, mas os certos",
+    "p1": "Só ar condicionado móvel monobloco — nada de split, nada de catálogo de quarenta marcas. Três potências Cecotec ForceClima Soundless Heating Connected, todas com bomba de calor, desumidificação e WiFi.",
+    "p2": "Escolhemos um único fabricante com linha completa em cecotec.pt: preços PT transparentes, mesma garantia, mesma assistência. Mais simples do que juntar Ballu, Electrolux e Olimpia de grossistas diferentes.",
+    "p3": "Cada modelo cobre um tamanho real de divisão — até 20, 30 ou 35–40 m² — com honestidade sobre limites físicos dos portáteis. Medimos ruído no local; não repetimos dB de folheto.",
+    "disclaimer": "3 modelos porque testámos a linha — não revendemos tudo o que aparece no marketplace."
+  },
+  "advantages": {
+    "eyebrow": "Porque somos diferentes",
+    "title": "Móvel · poucos SKU · topo de gama",
+    "intro": "Não competimos com FNAC ou Worten em variedade. Competimos em curadoria: só o que funciona em casas históricas do Porto e AMP, com instalação discreta e números honestos.",
+    "bullets": [
+      "Só ar condicionado móvel — sem split, sem obras na fachada",
+      "3 modelos Cecotec — bomba de calor + desumidificação + WiFi em todos",
+      "Um fabricante — stock, garantia e pós-venda unificados",
+      "Preços de referência cecotec.pt — transparentes na tabela abaixo",
+      "Série Soundless — prioridade a quartos e ruído nocturno",
+      "Instalação no Porto e Área Metropolitana — conhecemos condomínios locais"
+    ],
+    "lineupTitle": "Três tamanhos, uma linha",
+    "lineupSubtitle": "Referência de preço PVP em",
+    "table": {
+      "segment": "Segmento",
+      "model": "Modelo",
+      "features": "Equipamento",
+      "featureList": "Bomba de calor · Desumidificação · WiFi",
+      "from": "Desde"
+    },
+    "honestCoverage": "Nota honesta — ForceClima 14800: a Cecotec indica 28 m²; recomendamos até 35–40 m² numa divisão fechada. Para salas abertas acima disso: split ou pacote de 2 unidades — nunca prometemos 50 m² com um monobloco.",
+    "stockNote": "Alguns SKU podem aparecer «Esgotado» em cecotec.pt — normal na linha. Confirmamos disponibilidade com fornecedor antes de cada instalação."
+  },
+  "installation": {
+    "title": "Como instalamos — sem danificar a fachada",
+    "subtitle": "Em edifícios classificados ou condomínios sensíveis, o bloco exterior do split é muitas vezes impossível. O móvel resolve com conduta e acabamento interior.",
+    "steps": [
+      {
+        "title": "Avaliação no local",
+        "text": "Medimos ruído, janela, fluxo de ar e humidade — não vendemos por telefone."
+      },
+      {
+        "title": "Furo discreto (se permitido)",
+        "text": "Grelha interior + conduta isolada — sem bloco na fachada de azulejo ou granito."
+      },
+      {
+        "title": "Acabamento",
+        "text": "Flange decorativo alinhado com caixilharia — foto antes/depois para condomínio."
+      },
+      {
+        "title": "Entrega e medição",
+        "text": "Video curto com decibelímetro em modo nocturno — prova real, não folheto."
+      }
+    ],
+    "videoTitle": "ForceClima 9500 Soundless Heating Connected — vídeo oficial Cecotec",
+    "videoCaption": "Vídeo do fabricante (kit de janela incluído). Na instalação Porto Clima: conduta isolada, acabamento discreto e medição de ruído no local."
+  },
+  "districts": {
+    "title": "Feito para o Porto e a aglomeração",
+    "subtitle": "Conhecemos condomínios, fachadas de azulejo e apartamentos de aluguer na cidade e nos concelhos da AMP — não instalamos fora desta zona.",
+    "items": [
+      {
+        "name": "Porto — Ribeira & Baixa",
+        "text": "Janelas estreitas, paredes de pedra — instalamos sem tocar na fachada riverfront."
+      },
+      {
+        "name": "Porto — Cedofeita & Bonfim",
+        "text": "Apartamentos de aluguer: solução móvel + carta modelo para senhorio."
+      },
+      {
+        "name": "Porto — Foz & Nevogilde",
+        "text": "Humidade atlântica — priorizamos desumidificação e bomba de calor."
+      },
+      {
+        "name": "Gaia & Matosinhos",
+        "text": "Frente de rio e mar — mesma lógica: móvel, sem bloco exterior na fachada."
+      },
+      {
+        "name": "Maia, Gondomar & Valongo",
+        "text": "Moradias e apartamentos recentes — instalação técnica com acabamento discreto."
+      }
+    ],
+    "landlord": {
+      "title": "Arrendamento? Ajudamos com o senhorio",
+      "text": "Fornecemos modelo de pedido de autorização para furo discreto — barreira real que removemos por si."
+    }
+  },
+  "comparison": {
+    "title": "Móvel (nós) vs split — honesto",
+    "subtitle": "Não escondemos: split é mais silencioso. Mas no Grande Porto, permissões de condomínio e fachada histórica contam.",
+    "headers": ["", "Móvel (Porto Clima)", "Split"],
+    "rows": [
+      ["Permissão condomínio", "Geralmente não necessária", "Frequente — recusas acontecem"],
+      ["Alteração fachada", "Não", "Sim (unidade exterior)"],
+      ["Prazo instalação", "1 dia", "3–7 dias + trâmites"],
+      ["Ruído real", "48–50 dB (medido)", "20–25 dB"],
+      ["Mudança de casa", "Leva consigo", "Fica no imóvel"]
+    ]
+  },
+  "faq": {
+    "title": "Perguntas frequentes",
+    "items": [
+      {
+        "q": "Porque só três modelos Cecotec?",
+        "a": "Linha completa ForceClima Soundless da Cecotec cobre quarto, sala e divisão grande — todos com bomba de calor e desumidificação. Um fabricante simplifica garantia, peças e preços PT em cecotec.pt."
+      },
+      {
+        "q": "48 dB não é silencioso?",
+        "a": "Honestamente: portátil não compete com split no quarto. A série Soundless é a nossa aposta para dormir com o aparelho — medimos decibelímetro no local, não folheto."
+      },
+      {
+        "q": "Quando posso instalar?",
+        "a": "Entramos em contacto por email após o pedido para marcar avaliação e data. Primeiros 20 pedidos: prioridade e preço fixo antes de atualização."
+      },
+      {
+        "q": "Preciso de ENI ou fatura com NIF agora?",
+        "a": "Ainda não — estamos a validar procura. Só pedimos contacto e área da divisão. Sem pagamento."
+      },
+      {
+        "q": "Funciona para aquecer no inverno?",
+        "a": "Sim — todos os modelos da short-list têm bomba de calor. Essencial na meia-estação portuense sem aquecimento central."
+      },
+      {
+        "q": "Atendem fora do Porto?",
+        "a": "A nossa área de operação é o Porto e a Área Metropolitana do Porto (AMP): Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde e Póvoa de Varzim. Fora da AMP — deixe pedido; avaliamos caso a caso."
+      },
+      {
+        "q": "E se o senhorio disser não?",
+        "a": "Para arrendamento oferecemos modo totalmente móvel (conduta na janela) e carta modelo para pedir autorização de furo discreto."
+      }
+    ]
+  },
+  "waitlist": {
+    "title": "Pedido de instalação",
+    "subtitle": "Deixe contacto — respondemos com preço, modelo recomendado e data. Primeiros 20 pedidos: prioridade e preço fixo.",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telemóvel (WhatsApp)",
+    "district": "Concelho / zona (Porto ou AMP)",
+    "message": "Notas (opcional)",
+    "submit": "Enviar pedido",
+    "success": "Obrigado — entraremos em contacto em breve.",
+    "privacy": "Sem spam. Os dados vão para o nosso email — contactamos sobre a sua instalação."
+  },
+  "footer": {
+    "tagline": "Ar condicionado móvel curado · Porto e Área Metropolitana",
+    "contact": "Contacto",
+    "legal": "Empresa em constituição — sem NIF publicado até registo ENI.",
+    "credit": "Site by webmorp.art"
+  },
+  "sticky": {
+    "text": "Pedido de instalação",
+    "cta": "Enviar pedido"
+  }
+}

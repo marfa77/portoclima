@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --color-cream: #f7f2ea;
+  --color-cream-dark: #ebe3d6;
+  --color-ink: #1c1917;
+  --color-ink-muted: #57534e;
+  --color-terracotta: #c45c3e;
+  --color-terracotta-dark: #a34a32;
+  --color-azulejo: #2a5f7a;
+  --color-azulejo-light: #3d7a9e;
+  --color-granite: #44403c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.hero-grain {
+  background-image:
+    radial-gradient(ellipse 70% 50% at 20% 0%, color-mix(in srgb, var(--color-azulejo) 14%, transparent), transparent),
+    linear-gradient(180deg, var(--color-cream) 0%, color-mix(in srgb, var(--color-cream-dark) 80%, white) 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 1px 2px rgb(28 25 23 / 4%), 0 12px 40px rgb(28 25 23 / 6%);
+}

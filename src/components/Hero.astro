@@ -1,0 +1,80 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+import attribution from "../../public/images/attribution.json";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const prefix = locale === "en" ? "/en" : "";
+const photoCredit = attribution.photographer;
+const photoUrl = attribution.pexelsUrl;
+---
+
+<section class="hero-grain relative overflow-hidden px-4 pb-16 pt-12 sm:px-6 sm:pb-24 sm:pt-16">
+  <div class="mx-auto grid max-w-5xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+    <div class="relative z-10">
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-azulejo sm:text-sm">
+        {dict.hero.eyebrow}
+      </p>
+      <div class="mb-6 inline-flex max-w-3xl flex-col gap-1 rounded-2xl border border-azulejo/25 bg-white/70 px-4 py-3 backdrop-blur sm:px-5">
+        <p class="text-sm font-semibold text-azulejo">{dict.hero.serviceArea}</p>
+        <p class="text-xs leading-relaxed text-ink-muted">{dict.hero.serviceAreaDetail}</p>
+      </div>
+      <h1 class="font-display max-w-3xl text-4xl font-semibold leading-tight text-ink sm:text-5xl lg:text-[3.25rem]">
+        {dict.hero.title}
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-ink-muted sm:text-xl">
+        {dict.hero.subtitle}
+      </p>
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a
+          href={`${prefix}/#modelos`}
+          class="inline-flex items-center justify-center rounded-full bg-terracotta px-8 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-terracotta/20 transition hover:bg-terracotta-dark"
+        >
+          {dict.hero.ctaModels}
+        </a>
+        <a
+          href={`${prefix}/#waitlist`}
+          class="inline-flex items-center justify-center rounded-full border border-ink/15 bg-white/60 px-8 py-3.5 text-sm font-semibold text-ink backdrop-blur transition hover:border-azulejo hover:text-azulejo"
+        >
+          {dict.hero.ctaWaitlist}
+        </a>
+      </div>
+      <p class="mt-6 text-sm text-ink-muted">{dict.hero.note}</p>
+    </div>
+
+    <div class="relative z-10">
+      <div class="card-shadow overflow-hidden rounded-3xl border border-stone-200/80 bg-white/40 p-2 backdrop-blur-sm">
+        <img
+          src="/images/hero.webp"
+          alt={locale === "pt" ? "Interior luminoso no Porto — instalação de ar condicionado móvel" : "Bright Porto interior — portable AC installation"}
+          width="1600"
+          height="1000"
+          class="aspect-[16/10] w-full rounded-2xl object-cover"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </div>
+      <p class="mt-2 px-1 text-[10px] leading-relaxed text-ink-muted/80 sm:text-xs">
+        {locale === "pt" ? "Foto" : "Photo"}:{" "}
+        <a href={photoUrl} class="underline hover:text-azulejo" target="_blank" rel="noopener noreferrer">
+          {photoCredit}
+        </a>
+        {" · "}
+        <a href="https://www.pexels.com" class="underline hover:text-azulejo" target="_blank" rel="noopener noreferrer">
+          Pexels
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="pointer-events-none absolute -right-20 top-10 h-72 w-72 rounded-full bg-azulejo/10 blur-3xl"
+    aria-hidden="true"
+  ></div>
+</section>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 40" fill="none" role="img" aria-label="Porto Clima">
+  <rect x="0" y="4" width="32" height="32" rx="8" fill="#2a5f7a"/>
+  <path
+    d="M16 11c-2.8 0-5 2.2-5 5v1.2c0 .9.7 1.6 1.6 1.6h.4c.5 0 .9-.4.9-.9v-.7c0-1.5 1.2-2.7 2.7-2.7h.8c1.5 0 2.7 1.2 2.7 2.7v.7c0 .5.4.9.9.9h.4c.9 0 1.6-.7 1.6-1.6V16c0-2.8-2.2-5-5-5h-2Z"
+    fill="#f7f2ea"
+  />
+  <path
+    d="M11 22.5c1.2 1.8 3.2 3 5.5 3s4.3-1.2 5.5-3"
+    stroke="#c45c3e"
+    stroke-width="1.6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M13 24.5c.8 1 2 1.6 3.3 1.6M19 26.1c1.3 0 2.5-.6 3.3-1.6"
+    stroke="#f7f2ea"
+    stroke-width="1.2"
+    stroke-linecap="round"
+    opacity="0.85"
+  />
+  <text
+    x="42"
+    y="27"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="600"
+    fill="#1c1917"
+  >
+    Porto Clima
+  </text>
+</svg>

@@ -1,0 +1,70 @@
+{
+  "manufacturer": {
+    "name": "Cecotec",
+    "url": "https://www.cecotec.pt",
+    "series": "ForceClima Soundless Heating Connected",
+    "promoVideoYoutubeId": "zFUtYc4XuEk",
+    "promoVideoUrl": "https://youtu.be/zFUtYc4XuEk"
+  },
+  "models": [
+    {
+      "id": "cecotec-9500",
+      "name": "ForceClima 9500 Soundless Heating Connected",
+      "segment": "bedroom",
+      "segmentLabelPt": "Quarto, até 20 m²",
+      "segmentLabelEn": "Bedroom, up to 20 m²",
+      "btu": 9000,
+      "maxAreaM2": 20,
+      "manufacturerAreaM2": 20,
+      "priceRetailEur": 369,
+      "priceRoundedEur": 400,
+      "image": "/products/cecotec-9500.png",
+      "productUrl": "https://cecotec.pt/pt/ares-condicionados-portateis/forceclima-9500-soundless-heating-connected",
+      "heatPump": true,
+      "dehumidify": true,
+      "wifi": true,
+      "noiseSeries": "Soundless",
+      "idealFor": ["bedroom", "quiet", "rent"]
+    },
+    {
+      "id": "cecotec-12800",
+      "name": "ForceClima 12800 Soundless Heating Connected",
+      "segment": "living",
+      "segmentLabelPt": "Sala, até 30 m²",
+      "segmentLabelEn": "Living room, up to 30 m²",
+      "btu": 12000,
+      "maxAreaM2": 30,
+      "manufacturerAreaM2": 30,
+      "priceRetailEur": 459,
+      "priceRoundedEur": 500,
+      "image": "/products/cecotec-12800.png",
+      "productUrl": "https://cecotec.pt/pt/ares-condicionados-portateis/forceclima-12800-soundless-heating-connected",
+      "heatPump": true,
+      "dehumidify": true,
+      "wifi": true,
+      "noiseSeries": "Soundless",
+      "idealFor": ["living", "heating", "office"]
+    },
+    {
+      "id": "cecotec-14800",
+      "name": "ForceClima 14800 Soundless Heating Connected",
+      "segment": "large",
+      "segmentLabelPt": "Divisão grande, até 35–40 m²",
+      "segmentLabelEn": "Large room, up to 35–40 m²",
+      "btu": 14000,
+      "maxAreaM2": 38,
+      "manufacturerAreaM2": 28,
+      "priceRetailEur": 529,
+      "priceRoundedEur": 600,
+      "image": "/products/cecotec-14800.png",
+      "productUrl": "https://cecotec.pt/pt/ares-condicionados-portateis/forceclima-14800-soundless-heating-connected",
+      "heatPump": true,
+      "dehumidify": true,
+      "wifi": true,
+      "noiseSeries": "Soundless",
+      "idealFor": ["living", "humidity", "large"],
+      "honestNotePt": "Cecotec indica 28 m² — nós recomendamos até 35–40 m² numa divisão fechada; acima disso: split ou 2 unidades.",
+      "honestNoteEn": "Cecotec lists 28 m² — we recommend up to 35–40 m² in one enclosed room; beyond that: split or 2 units."
+    }
+  ]
+}

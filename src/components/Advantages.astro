@@ -1,0 +1,106 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+import modelsData from "../data/models.json";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const a = dict.advantages;
+const m = modelsData.manufacturer;
+---
+
+<section id="modelos" class="border-t border-stone-200/80 bg-white px-4 py-16 sm:px-6 sm:py-20">
+  <div class="mx-auto max-w-5xl">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">{a.eyebrow}</p>
+    <h2 class="font-display mt-3 text-3xl font-semibold text-ink sm:text-4xl">{a.title}</h2>
+    <p class="mt-4 max-w-3xl text-lg leading-relaxed text-ink-muted">{a.intro}</p>
+
+    <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+      {a.bullets.map((item) => (
+        <li class="flex gap-3 rounded-xl border border-stone-200/80 bg-cream/40 px-4 py-3 text-sm text-ink-muted">
+          <span class="mt-0.5 text-terracotta" aria-hidden="true">✓</span>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+
+    <div class="mt-12">
+      <h3 class="font-display text-xl font-semibold text-ink">{a.lineupTitle}</h3>
+      <p class="mt-2 text-sm text-ink-muted">
+        {a.lineupSubtitle}{" "}
+        <a href={m.url} class="text-azulejo underline" target="_blank" rel="noopener noreferrer">
+          {m.name}
+        </a>
+        · {m.series}
+      </p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-3">
+        {modelsData.models.map((model) => (
+          <article class="card-shadow flex flex-col overflow-hidden rounded-2xl border border-stone-200/80 bg-white">
+            <div class="flex h-44 items-center justify-center bg-cream/50 p-4">
+              <img
+                src={model.image}
+                alt={model.name}
+                width="280"
+                height="176"
+                class="max-h-full max-w-full object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="flex flex-1 flex-col p-5">
+              <p class="text-xs font-semibold uppercase tracking-wide text-terracotta">
+                {locale === "pt" ? model.segmentLabelPt : model.segmentLabelEn}
+              </p>
+              <h4 class="font-display mt-1 text-base font-semibold leading-snug text-ink">
+                {model.name.replace(" Soundless Heating Connected", "")}
+              </h4>
+              <p class="mt-2 text-xs text-ink-muted">{a.table.featureList}</p>
+              <ul class="mt-3 flex flex-wrap gap-1.5 text-xs text-ink-muted">
+                <li class="rounded-full bg-cream px-2 py-0.5">
+                  {model.btu.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")} BTU
+                </li>
+                <li class="rounded-full bg-cream px-2 py-0.5">≤{model.maxAreaM2} m²</li>
+              </ul>
+              <p class="mt-auto pt-4 font-semibold text-terracotta">~{model.priceRoundedEur}€</p>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      <div class="mt-8 overflow-x-auto rounded-2xl border border-stone-200/80">
+        <table class="w-full min-w-[640px] text-left text-sm">
+          <thead>
+            <tr class="border-b border-stone-200 bg-cream/60 text-xs uppercase tracking-wide text-ink-muted">
+              <th class="px-4 py-3 font-semibold">{a.table.segment}</th>
+              <th class="px-4 py-3 font-semibold">{a.table.model}</th>
+              <th class="px-4 py-3 font-semibold">BTU</th>
+              <th class="px-4 py-3 font-semibold">{a.table.features}</th>
+              <th class="px-4 py-3 font-semibold">{a.table.from}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {modelsData.models.map((model) => (
+              <tr class="border-b border-stone-100 last:border-0">
+                <td class="px-4 py-4 font-medium text-ink">
+                  {locale === "pt" ? model.segmentLabelPt : model.segmentLabelEn}
+                </td>
+                <td class="px-4 py-4 text-ink-muted">{model.name}</td>
+                <td class="px-4 py-4 text-ink-muted">{model.btu.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}</td>
+                <td class="px-4 py-4 text-xs text-ink-muted">{a.table.featureList}</td>
+                <td class="px-4 py-4 font-semibold text-terracotta">~{model.priceRoundedEur}€</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4 text-xs leading-relaxed text-ink-muted">{a.honestCoverage}</p>
+      <p class="mt-2 text-xs leading-relaxed text-ink-muted">{a.stockNote}</p>
+    </div>
+  </div>
+</section>

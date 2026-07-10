@@ -1,0 +1,14 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Landing from "../components/Landing.astro";
+import Footer from "../components/Footer.astro";
+import StickyBar from "../components/StickyBar.astro";
+---
+
+<BaseLayout locale="pt">
+  <Header slot="header" locale="pt" />
+  <Landing locale="pt" />
+  <Footer slot="footer" locale="pt" />
+  <StickyBar slot="sticky" locale="pt" />
+</BaseLayout>

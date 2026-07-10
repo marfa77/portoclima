@@ -1,0 +1,24 @@
+---
+import type { Locale } from "../lib/i18n";
+import Hero from "./Hero.astro";
+import Manifest from "./Manifest.astro";
+import Advantages from "./Advantages.astro";
+import Installation from "./Installation.astro";
+import Comparison from "./Comparison.astro";
+import FAQ from "./FAQ.astro";
+import WaitlistForm from "./WaitlistForm.astro";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+---
+
+<Hero locale={locale} />
+<Manifest locale={locale} />
+<Advantages locale={locale} />
+<Installation locale={locale} />
+<Comparison locale={locale} />
+<FAQ locale={locale} />
+<WaitlistForm locale={locale} />

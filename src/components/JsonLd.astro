@@ -1,0 +1,54 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+import { siteConfig } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+---
+
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": `https://${siteConfig.domain}/#business`,
+      name: siteConfig.brand,
+      description: dict.meta.description,
+      url: `https://${siteConfig.domain}/`,
+      areaServed: [
+        { "@type": "City", name: "Porto", containedInPlace: { "@type": "Country", name: "Portugal" } },
+        {
+          "@type": "AdministrativeArea",
+          name: locale === "pt" ? "Área Metropolitana do Porto" : "Porto Metropolitan Area",
+          containedInPlace: { "@type": "Country", name: "Portugal" },
+        },
+      ],
+      priceRange: "€€",
+      openingHoursSpecification: {
+        "@type": "OpeningHoursSpecification",
+        description: locale === "pt"
+          ? "Mediante marcação — Porto e Área Metropolitana"
+          : "By appointment — Porto & Metropolitan Area",
+      },
+    },
+    {
+      "@type": "Organization",
+      "@id": `https://${siteConfig.domain}/#org`,
+      name: siteConfig.brand,
+      url: `https://${siteConfig.domain}/`,
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: dict.faq.items.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    },
+  ],
+})} />

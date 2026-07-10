@@ -1,0 +1,45 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const { headers, rows } = dict.comparison;
+---
+
+<section id="compare" class="bg-ink px-4 py-16 text-cream sm:px-6 sm:py-20">
+  <div class="mx-auto max-w-4xl">
+    <h2 class="font-display text-3xl font-semibold sm:text-4xl">{dict.comparison.title}</h2>
+    <p class="mt-4 text-cream/75">{dict.comparison.subtitle}</p>
+    <div class="mt-10 overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full min-w-[540px] text-left text-sm">
+        <thead>
+          <tr class="border-b border-white/10 bg-white/5">
+            {
+              headers.map((h, i) => (
+                <th class={`px-4 py-3 font-semibold ${i === 1 ? "text-terracotta" : ""}`}>{h}</th>
+              ))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {
+            rows.map((row) => (
+              <tr class="border-b border-white/5">
+                {row.map((cell, i) => (
+                  <td class={`px-4 py-3 ${i === 0 ? "font-medium text-cream/90" : "text-cream/70"}`}>
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
