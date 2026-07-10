@@ -66,7 +66,15 @@ const m = modelsData.manufacturer;
                 </li>
                 <li class="rounded-full bg-cream px-2 py-0.5">≤{model.maxAreaM2} m²</li>
               </ul>
-              <p class="mt-auto pt-4 font-semibold text-terracotta">~{model.priceRoundedEur}€</p>
+              <p class="mt-auto pt-4">
+                <span class="font-display text-2xl font-semibold text-ink">
+                  {model.packageTurnkeyEur.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}€
+                </span>
+                <span class="ml-1 text-xs font-medium text-terracotta">{a.table.turnkey}</span>
+              </p>
+              <p class="mt-1 text-xs text-ink-muted">
+                {a.table.from}: {model.priceRetailEur}€
+              </p>
             </div>
           </article>
         ))}
@@ -81,6 +89,7 @@ const m = modelsData.manufacturer;
               <th class="px-4 py-3 font-semibold">BTU</th>
               <th class="px-4 py-3 font-semibold">{a.table.features}</th>
               <th class="px-4 py-3 font-semibold">{a.table.from}</th>
+              <th class="px-4 py-3 font-semibold">{a.table.turnkey}</th>
             </tr>
           </thead>
           <tbody>
@@ -92,7 +101,10 @@ const m = modelsData.manufacturer;
                 <td class="px-4 py-4 text-ink-muted">{model.name}</td>
                 <td class="px-4 py-4 text-ink-muted">{model.btu.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}</td>
                 <td class="px-4 py-4 text-xs text-ink-muted">{a.table.featureList}</td>
-                <td class="px-4 py-4 font-semibold text-terracotta">~{model.priceRoundedEur}€</td>
+                <td class="px-4 py-4 text-ink-muted">{model.priceRetailEur}€</td>
+                <td class="px-4 py-4 font-semibold text-terracotta">
+                  {model.packageTurnkeyEur.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}€
+                </td>
               </tr>
             ))}
           </tbody>

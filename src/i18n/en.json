@@ -9,6 +9,7 @@
     "compare": "Compare",
     "faq": "FAQ",
     "waitlist": "Request",
+    "pricing": "Pricing",
     "langSwitch": "Português"
   },
   "hero": {
@@ -19,7 +20,7 @@
     "subtitle": "Heat-pump portables only. Three Cecotec ForceClima Soundless SKUs — cooling, dehumidification and heating — sold in PT with real cecotec.pt prices. One brand = simpler service, warranty and sourcing.",
     "ctaModels": "See the 3 models",
     "ctaWaitlist": "Leave a request",
-    "note": "Installs in Porto & AMP · No online payment · We contact you after your request"
+    "note": "From €899 turnkey (VAT incl.) · Porto & AMP · We contact you after your request"
   },
   "manifest": {
     "title": "Our niche — few SKUs, but the right ones",
@@ -36,7 +37,7 @@
       "Portable AC only — no split, no facade work",
       "3 Cecotec models — heat pump + dehumidify + WiFi on all",
       "Single manufacturer — unified stock, warranty and after-sales",
-      "Reference cecotec.pt retail prices — transparent in the table below",
+      "Fixed turnkey price — no install surprises",
       "Soundless series — bedroom and night-noise priority",
       "Install in Porto & Metropolitan Area — we know local condo rules"
     ],
@@ -47,10 +48,42 @@
       "model": "Model",
       "features": "Equipment",
       "featureList": "Heat pump · Dehumidify · WiFi",
-      "from": "From"
+      "from": "Machine (ref.)",
+      "turnkey": "Turnkey"
     },
     "honestCoverage": "Honest note — ForceClima 14800: Cecotec lists 28 m²; we recommend up to 35–40 m² in one enclosed room. For larger open spaces: split or a 2-unit package — we never promise 50 m² from one monobloc.",
     "stockNote": "Some SKUs may show «Esgotado» on cecotec.pt — normal for the line. We confirm supplier stock before each install."
+  },
+  "pricing": {
+    "eyebrow": "Transparent pricing",
+    "title": "Turnkey — fixed price per model",
+    "intro": "We don't sell a box from the shop. Each price includes the Cecotec unit, delivery, site survey, same-day install, materials, testing and 12 months install warranty.",
+    "vatNote": "VAT included · fixed prices for standard installs in Porto & AMP",
+    "turnkeyLabel": "full install · VAT included",
+    "machineRef": "Unit",
+    "machineRefNote": "cecotec.pt RRP",
+    "includes": [
+      "Unit + delivery to your address",
+      "Site survey (window, noise, humidity)",
+      "Install — insulated duct and finish",
+      "Commissioning and test same day",
+      "Cecotec warranty + 12 months on our install"
+    ],
+    "cta": "Request this package",
+    "dualPackageEur": 1999,
+    "table": {
+      "package": "Package",
+      "machine": "Unit (ref.)",
+      "service": "Install + service",
+      "turnkey": "Turnkey total",
+      "dualRow": "2×12800 — same address (open space)"
+    },
+    "footnotes": [
+      "Complex install (thick granite, narrow opening, parquet): +€80–150 — quoted after survey.",
+      "Electrical work, unauthorised drilling or travel outside AMP: quoted separately.",
+      "50% deposit to book · 50% after install and test.",
+      "First 20 requests: priority and these fixed prices before update."
+    ]
   },
   "installation": {
     "title": "How we install — without damaging the facade",

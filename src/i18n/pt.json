@@ -9,6 +9,7 @@
     "compare": "Comparar",
     "faq": "FAQ",
     "waitlist": "Pedido",
+    "pricing": "Preços",
     "langSwitch": "English"
   },
   "hero": {
@@ -19,7 +20,7 @@
     "subtitle": "Só móveis com bomba de calor. Três SKU Cecotec ForceClima Soundless — arrefecimento, desumidificação e aquecimento — vendidos em PT com preços reais em cecotec.pt. Um marca = serviço, garantia e stock mais simples.",
     "ctaModels": "Ver os 3 modelos",
     "ctaWaitlist": "Deixar pedido",
-    "note": "Instalações no Porto e AMP · Sem pagamento online · Contactamos após o pedido"
+    "note": "Desde 899€ chave-na-mão (IVA incl.) · Porto e AMP · Contactamos após o pedido"
   },
   "manifest": {
     "title": "A nossa nicha — poucos SKU, mas os certos",
@@ -36,7 +37,7 @@
       "Só ar condicionado móvel — sem split, sem obras na fachada",
       "3 modelos Cecotec — bomba de calor + desumidificação + WiFi em todos",
       "Um fabricante — stock, garantia e pós-venda unificados",
-      "Preços de referência cecotec.pt — transparentes na tabela abaixo",
+      "Preço fixo chave-na-mão — sem surpresas na instalação",
       "Série Soundless — prioridade a quartos e ruído nocturno",
       "Instalação no Porto e Área Metropolitana — conhecemos condomínios locais"
     ],
@@ -47,10 +48,42 @@
       "model": "Modelo",
       "features": "Equipamento",
       "featureList": "Bomba de calor · Desumidificação · WiFi",
-      "from": "Desde"
+      "from": "Máquina (ref.)",
+      "turnkey": "Chave-na-mão"
     },
     "honestCoverage": "Nota honesta — ForceClima 14800: a Cecotec indica 28 m²; recomendamos até 35–40 m² numa divisão fechada. Para salas abertas acima disso: split ou pacote de 2 unidades — nunca prometemos 50 m² com um monobloco.",
     "stockNote": "Alguns SKU podem aparecer «Esgotado» em cecotec.pt — normal na linha. Confirmamos disponibilidade com fornecedor antes de cada instalação."
+  },
+  "pricing": {
+    "eyebrow": "Preços transparentes",
+    "title": "Chave-na-mão — preço fixo por modelo",
+    "intro": "Não vendemos caixa da loja. Cada valor abaixo inclui equipamento Cecotec, entrega, visita técnica, montagem no mesmo dia, materiais, teste e garantia de instalação 12 meses.",
+    "vatNote": "IVA incluído · valores fixos para instalação standard no Porto e AMP",
+    "turnkeyLabel": "instalação completa · IVA incluído",
+    "machineRef": "Máquina",
+    "machineRefNote": "referência cecotec.pt",
+    "includes": [
+      "Equipamento + entrega até morada",
+      "Visita técnica (janela, ruído, humidade)",
+      "Montagem — conduta isolada e acabamento",
+      "Arranque e teste no mesmo dia",
+      "Garantia Cecotec + 12 meses na instalação"
+    ],
+    "cta": "Pedir este pacote",
+    "dualPackageEur": 1999,
+    "table": {
+      "package": "Pacote",
+      "machine": "Máquina (ref.)",
+      "service": "Instalação + serviço",
+      "turnkey": "Total chave-na-mão",
+      "dualRow": "2×12800 — mesma morada (open-space)"
+    },
+    "footnotes": [
+      "Instalação complexa (granito grosso, vão estreito, parquet): +80–150€ — indicado após visita.",
+      "Obras eléctricas, furos não autorizados ou deslocação fora da AMP: orçamento à parte.",
+      "Pré-pagamento 50% na reserva · 50% após instalação e teste.",
+      "Primeiros 20 pedidos: prioridade e estes preços fixos antes de atualização."
+    ]
   },
   "installation": {
     "title": "Como instalamos — sem danificar a fachada",
