@@ -1,10 +1,9 @@
 ---
-import { getGuides, guidePath } from "../../lib/guides";
+import { getGuides, guidePath, getGuideAlternate, getRelatedGuides } from "../../lib/guides";
 import GuideLayout from "../../layouts/GuideLayout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
 import { render } from "astro:content";
-import { getGuideAlternate } from "../../lib/guides";
 
 export async function getStaticPaths() {
   const guides = await getGuides("pt");
@@ -20,10 +19,11 @@ export async function getStaticPaths() {
 }
 
 const { entry, alternatePath } = Astro.props;
+const relatedGuides = await getRelatedGuides(entry, "pt");
 const { Content } = await render(entry);
 ---
 
-<GuideLayout locale="pt" entry={entry} slug={entry.id} alternatePath={alternatePath}>
+<GuideLayout locale="pt" entry={entry} slug={entry.id} alternatePath={alternatePath} relatedGuides={relatedGuides}>
   <Header slot="header" locale="pt" />
   <Content />
   <Footer slot="footer" locale="pt" />

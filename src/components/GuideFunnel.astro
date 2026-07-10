@@ -1,0 +1,63 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t, localePath } from "../lib/i18n";
+import { guidePathByKey } from "../lib/guides";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const dict = t(locale);
+const prefix = locale === "en" ? "/en" : "";
+const pillarPath = guidePathByKey(locale, "portable-ac-porto-2026");
+---
+
+<section class="mt-10 rounded-2xl border border-azulejo/30 bg-gradient-to-br from-cream to-white p-6 card-shadow">
+  <p class="text-xs font-semibold uppercase tracking-[0.2em] text-azulejo">{dict.guides.funnelEyebrow}</p>
+  <h2 class="font-display mt-2 text-xl font-semibold text-ink">{dict.guides.funnelTitle}</h2>
+  <ol class="mt-5 space-y-3 text-sm text-ink-muted">
+    <li class="flex gap-3">
+      <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-terracotta text-xs font-bold text-white">1</span>
+      <span>
+        {dict.guides.funnelStep1}
+        <a href={`${prefix}/#precos`} class="ml-1 font-medium text-azulejo hover:underline">
+          {dict.guides.funnelPricingLink}
+        </a>
+      </span>
+    </li>
+    <li class="flex gap-3">
+      <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-terracotta text-xs font-bold text-white">2</span>
+      <span>
+        {dict.guides.funnelStep2}
+        <a href={`${localePath(locale)}#waitlist`} class="ml-1 font-medium text-azulejo hover:underline">
+          {dict.guides.funnelRequestLink}
+        </a>
+      </span>
+    </li>
+    <li class="flex gap-3">
+      <span class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-terracotta text-xs font-bold text-white">3</span>
+      <span>
+        {dict.guides.funnelStep3}
+        <a href={pillarPath} class="ml-1 font-medium text-azulejo hover:underline">
+          {dict.guides.funnelPillarLink}
+        </a>
+      </span>
+    </li>
+  </ol>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a
+      href={`${prefix}/#precos`}
+      class="inline-flex rounded-full border border-azulejo/40 px-5 py-2.5 text-sm font-semibold text-azulejo hover:bg-azulejo/5"
+    >
+      {dict.guides.funnelPricingCta}
+    </a>
+    <a
+      href={`${localePath(locale)}#waitlist`}
+      class="inline-flex rounded-full bg-terracotta px-5 py-2.5 text-sm font-semibold text-white hover:bg-terracotta-dark"
+    >
+      {dict.guides.cta}
+    </a>
+  </div>
+  <p class="mt-4 text-xs text-ink-muted">{dict.guides.priceDisclaimer}</p>
+</section>

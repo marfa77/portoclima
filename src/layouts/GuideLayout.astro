@@ -4,6 +4,8 @@ import type { Locale } from "../lib/i18n";
 import { localePath, t } from "../lib/i18n";
 import { siteConfig } from "../data/site";
 import GuideJsonLd from "../components/GuideJsonLd.astro";
+import RelatedGuides from "../components/RelatedGuides.astro";
+import GuideFunnel from "../components/GuideFunnel.astro";
 import type { GuideEntry } from "../lib/guides";
 import { guideOgImage, guidesIndexPath } from "../lib/guides";
 
@@ -12,9 +14,10 @@ interface Props {
   entry: GuideEntry;
   slug: string;
   alternatePath?: string;
+  relatedGuides: GuideEntry[];
 }
 
-const { locale, entry, slug, alternatePath } = Astro.props;
+const { locale, entry, slug, alternatePath, relatedGuides } = Astro.props;
 const d = entry.data;
 const dict = t(locale);
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -70,6 +73,7 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
     <GuideJsonLd locale={locale} entry={entry} slug={slug} />
   </head>
   <body class="antialiased pb-20 md:pb-0">
+    <p class="sr-only" data-ai="description">{aiDescription}</p>
     <slot name="header" />
     <main>
       <article>
@@ -117,6 +121,8 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
           <div class="guide-prose">
             <slot />
           </div>
+
+          <GuideFunnel locale={locale} />
 
           <section class="mt-14 rounded-2xl border border-stone-200/80 bg-white p-6 card-shadow" id="faq">
             <h2 class="font-display text-2xl font-semibold text-ink">FAQ</h2>
@@ -172,6 +178,8 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
               {dict.guides.cta}
             </a>
           </section>
+
+          <RelatedGuides locale={locale} guides={relatedGuides} />
 
           <p class="mt-8 text-xs text-ink-muted">
             {locale === "pt"

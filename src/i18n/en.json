@@ -202,7 +202,19 @@
     "indexTitle": "Guides for Porto",
     "indexDescription": "Straight answers on portable AC, humid summers and rental rules in Porto and the metro area — fixed turnkey prices and official sources.",
     "readMore": "Read guide",
-    "cta": "Request turnkey install"
+    "cta": "Request turnkey install",
+    "relatedTitle": "Related guides",
+    "relatedIntro": "Keep reading — each guide answers one concrete question in Porto and the AMP.",
+    "funnelEyebrow": "Next step",
+    "funnelTitle": "From reading to install",
+    "funnelStep1": "Compare fixed packages:",
+    "funnelPricingLink": "turnkey pricing",
+    "funnelStep2": "Send an",
+    "funnelRequestLink": "online request",
+    "funnelStep3": "Go deeper in the",
+    "funnelPillarLink": "full Porto guide",
+    "funnelPricingCta": "See pricing",
+    "priceDisclaimer": "Fixed prices apply to standard AMP installs in 2026 — we confirm on survey before booking."
   },
   "footer": {
     "tagline": "Curated portable AC · Porto & Metropolitan Area",

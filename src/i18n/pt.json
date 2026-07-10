@@ -202,7 +202,19 @@
     "indexTitle": "Guias para o Porto",
     "indexDescription": "Respostas diretas sobre ar condicionado móvel, verão húmido e regras de arrendamento no Porto e na AMP — com preços fixos e fontes oficiais.",
     "readMore": "Ler guia",
-    "cta": "Pedir instalação chave-na-mão"
+    "cta": "Pedir instalação chave-na-mão",
+    "relatedTitle": "Guias relacionados",
+    "relatedIntro": "Continue por aqui — cada guia responde a uma dúvida concreta no Porto e na AMP.",
+    "funnelEyebrow": "Próximo passo",
+    "funnelTitle": "Da leitura à instalação",
+    "funnelStep1": "Compare pacotes fixos:",
+    "funnelPricingLink": "preços chave-na-mão",
+    "funnelStep2": "Envie o",
+    "funnelRequestLink": "pedido online",
+    "funnelStep3": "Aprofunde no",
+    "funnelPillarLink": "guia completo do Porto",
+    "funnelPricingCta": "Ver preços",
+    "priceDisclaimer": "Preços fixos válidos para instalação padrão na AMP em 2026 — confirmamos na vistoria antes de marcar."
   },
   "footer": {
     "tagline": "Ar condicionado móvel curado · Porto e Área Metropolitana",
