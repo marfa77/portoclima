@@ -171,3 +171,5 @@ If nights already feel sticky:
 Same-day install after survey — stock confirmed before deposit.
 
 Bring your lease PDF to the survey if the works clause is unclear — we highlight the sentence to discuss with the landlord.
+
+If you work from home, mention your desk location — we optimise airflow away from the monitor and router heat.

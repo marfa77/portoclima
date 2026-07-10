@@ -186,3 +186,5 @@ If split quote is already approved, good — right path for long-term ownership.
 Fixed **2026** prices — confirmed on survey before deposit.
 
 Still comparing? Read the [complete Porto guide](/en/guides/portable-ac-porto-2026/) for BTU tables and AMP district notes — then return here if split timing is the blocker.
+
+Questions about **condominium minutes**? Photograph the relevant article before survey — we do not interpret law, but we flag obvious outdoor-unit bans.

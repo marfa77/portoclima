@@ -209,3 +209,5 @@ If you want a **fixed price with no install surprises** in Porto or the AMP:
 First **20 requests** this season: priority and these fixed prices before update.
 
 We reply within **2 business days** with survey slot options — no payment until you confirm the date.
+
+Expats and remote workers: all communication can be in **English** — install briefing included on the day.

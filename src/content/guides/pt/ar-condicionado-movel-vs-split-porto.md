@@ -186,3 +186,5 @@ Se o orçamento split já está aprovado, parabéns — é o caminho certo para 
 Preços fixos **2026** — confirmados na vistoria antes do sinal.
 
 Ainda a comparar? Leia o [guia completo do Porto](/guias/ar-condicionado-movel-porto-2026/) para tabelas BTU e concelhos da AMP — volte aqui se o bloqueio for o tempo de obra do split.
+
+Dúvidas sobre **ata de condomínio**? Fotografe o artigo relevante antes da vistoria — não interpretamos lei, mas assinalamos vetos óbvios a unidades exteriores.
