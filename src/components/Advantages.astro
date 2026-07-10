@@ -11,6 +11,9 @@ const { locale } = Astro.props;
 const dict = t(locale);
 const a = dict.advantages;
 const m = modelsData.manufacturer;
+const prefix = locale === "en" ? "/en" : "";
+const fmt = (n: number) =>
+  n.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB", { maximumFractionDigits: 0 }) + "€";
 ---
 
 <section id="modelos" class="border-t border-stone-200/80 bg-white px-4 py-16 sm:px-6 sm:py-20">
@@ -19,11 +22,11 @@ const m = modelsData.manufacturer;
     <h2 class="font-display mt-3 text-3xl font-semibold text-ink sm:text-4xl">{a.title}</h2>
     <p class="mt-4 max-w-3xl text-lg leading-relaxed text-ink-muted">{a.intro}</p>
 
-    <ul class="mt-8 grid gap-3 sm:grid-cols-2">
-      {a.bullets.map((item) => (
-        <li class="flex gap-3 rounded-xl border border-stone-200/80 bg-cream/40 px-4 py-3 text-sm text-ink-muted">
-          <span class="mt-0.5 text-terracotta" aria-hidden="true">✓</span>
-          <span>{item}</span>
+    <ul class="mt-8 grid gap-3 sm:grid-cols-3">
+      {a.picks.map((item) => (
+        <li class="rounded-xl border border-stone-200/80 bg-cream/40 px-4 py-3 text-sm">
+          <p class="font-semibold text-ink">{item.room}</p>
+          <p class="mt-1 text-ink-muted">{item.model}</p>
         </li>
       ))}
     </ul>
@@ -66,15 +69,19 @@ const m = modelsData.manufacturer;
                 </li>
                 <li class="rounded-full bg-cream px-2 py-0.5">≤{model.maxAreaM2} m²</li>
               </ul>
-              <p class="mt-auto pt-4">
-                <span class="font-display text-2xl font-semibold text-ink">
-                  {model.packageTurnkeyEur.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}€
-                </span>
-                <span class="ml-1 text-xs font-medium text-terracotta">{a.table.turnkey}</span>
+              <p class="mt-4 text-sm text-ink-muted">
+                {a.priceFrom}{" "}
+                <a href={`${prefix}/#precos`} class="font-semibold text-terracotta hover:underline">
+                  {fmt(model.packageTurnkeyEur)}
+                </a>
+                <span class="text-xs"> · {a.priceNote}</span>
               </p>
-              <p class="mt-1 text-xs text-ink-muted">
-                {a.table.from}: {model.priceRetailEur}€
-              </p>
+              <a
+                href={`${prefix}/#waitlist`}
+                class="mt-4 inline-flex justify-center rounded-full border border-azulejo/30 px-4 py-2 text-sm font-semibold text-azulejo hover:bg-azulejo/5"
+              >
+                {a.cardCta}
+              </a>
             </div>
           </article>
         ))}
@@ -88,7 +95,6 @@ const m = modelsData.manufacturer;
               <th class="px-4 py-3 font-semibold">{a.table.model}</th>
               <th class="px-4 py-3 font-semibold">BTU</th>
               <th class="px-4 py-3 font-semibold">{a.table.features}</th>
-              <th class="px-4 py-3 font-semibold">{a.table.from}</th>
               <th class="px-4 py-3 font-semibold">{a.table.turnkey}</th>
             </tr>
           </thead>
@@ -101,9 +107,10 @@ const m = modelsData.manufacturer;
                 <td class="px-4 py-4 text-ink-muted">{model.name}</td>
                 <td class="px-4 py-4 text-ink-muted">{model.btu.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}</td>
                 <td class="px-4 py-4 text-xs text-ink-muted">{a.table.featureList}</td>
-                <td class="px-4 py-4 text-ink-muted">{model.priceRetailEur}€</td>
                 <td class="px-4 py-4 font-semibold text-terracotta">
-                  {model.packageTurnkeyEur.toLocaleString(locale === "pt" ? "pt-PT" : "en-GB")}€
+                  <a href={`${prefix}/#precos`} class="hover:underline">
+                    {fmt(model.packageTurnkeyEur)}
+                  </a>
                 </td>
               </tr>
             ))}

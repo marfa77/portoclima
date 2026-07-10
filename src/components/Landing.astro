@@ -1,13 +1,13 @@
 ---
 import type { Locale } from "../lib/i18n";
-import WhyBest from "./WhyBest.astro";
 import Hero from "./Hero.astro";
-import Manifest from "./Manifest.astro";
-import Advantages from "./Advantages.astro";
 import Pricing from "./Pricing.astro";
+import Advantages from "./Advantages.astro";
+import WhyBest from "./WhyBest.astro";
 import Installation from "./Installation.astro";
 import Comparison from "./Comparison.astro";
 import FAQ from "./FAQ.astro";
+import Manifest from "./Manifest.astro";
 import WaitlistForm from "./WaitlistForm.astro";
 
 interface Props {
@@ -18,11 +18,11 @@ const { locale } = Astro.props;
 ---
 
 <Hero locale={locale} />
-<WhyBest locale={locale} />
-<Manifest locale={locale} />
-<Advantages locale={locale} />
 <Pricing locale={locale} />
+<Advantages locale={locale} />
+<WhyBest locale={locale} />
 <Installation locale={locale} />
 <Comparison locale={locale} />
 <FAQ locale={locale} />
+<Manifest locale={locale} />
 <WaitlistForm locale={locale} />

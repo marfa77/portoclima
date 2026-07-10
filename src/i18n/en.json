@@ -4,6 +4,7 @@
     "description": "Turnkey portable AC in Porto: fixed from €899, warranted Cecotec heat pump — cool, dehumidify and heat year-round, no outdoor unit on your facade. Same-day install in the AMP."
   },
   "nav": {
+    "models": "Models",
     "niche": "Our niche",
     "install": "Installation",
     "compare": "Compare",
@@ -28,7 +29,7 @@
     ],
     "imageBadge": "Portable air conditioning",
     "imageBadgeSub": "Cecotec ForceClima · heat pump · WiFi",
-    "ctaModels": "See prices & models",
+    "ctaModels": "See fixed prices",
     "ctaWaitlist": "Request install",
     "note": "€899 / €1,049 / €1,199 turnkey · unit + fitting + window seal"
   },
@@ -90,52 +91,7 @@
         "text": "Value is in the custom window kit — without it, any portable loses 30–40% efficiency in Porto."
       }
     ],
-    "compare": {
-      "headers": {
-        "criteria": "Criterion",
-        "us": "Porto Clima",
-        "split": "Fixed split",
-        "store": "Retail box"
-      },
-      "rows": [
-        {
-          "criteria": "Predictable final price",
-          "us": "Fixed turnkey",
-          "split": "Works + unit + delays",
-          "store": "Box only — no fitting"
-        },
-        {
-          "criteria": "4 seasons (cool + heat + humidity)",
-          "us": "Yes — heat pump",
-          "split": "Yes",
-          "store": "Depends on model"
-        },
-        {
-          "criteria": "Outdoor unit on street",
-          "us": "No",
-          "split": "Yes — often banned",
-          "store": "No, but no sealing"
-        },
-        {
-          "criteria": "Condo / rental",
-          "us": "Removable kit",
-          "split": "Hard approval",
-          "store": "DIY — deposit risk"
-        },
-        {
-          "criteria": "Timeline in Porto",
-          "us": "1 day",
-          "split": "2–6 weeks",
-          "store": "Today, poorly fitted"
-        },
-        {
-          "criteria": "Install warranty",
-          "us": "12 months + Cecotec",
-          "split": "Separate HVAC",
-          "store": "None"
-        }
-      ]
-    },
+    "compareLink": "Detailed split comparison →",
     "quote": "One unit. Four seasons. One price. Zero facade block.",
     "quoteSub": "That is what you buy from us — not «another e-commerce SKU».",
     "ctaPricing": "See fixed prices",
@@ -149,25 +105,33 @@
     "disclaimer": "3 models because we tested the line — we don't resell everything on the marketplace."
   },
   "advantages": {
-    "eyebrow": "Why we're different",
-    "title": "Portable · few SKUs · top tier",
-    "intro": "We don't compete with FNAC or Worten on variety. We compete on curation: what works in Porto's historic homes and AMP, with discreet installs and honest numbers.",
-    "bullets": [
-      "Fixed turnkey price — €899 / €1,049 / €1,199 VAT included",
-      "Summer cool · autumn dry · winter warm — heat pump on every unit",
-      "No outdoor unit — nothing on balcony or facade",
-      "Cecotec factory warranty + 12 months on our install",
-      "Same-day install in the AMP — survey, sealing and test",
-      "Soundless series — sleep with the unit running"
+    "eyebrow": "Pick your model",
+    "title": "Three Cecotec units — by room size",
+    "intro": "You have seen turnkey pricing above. Now choose the right power for your bedroom, living room or flat.",
+    "picks": [
+      {
+        "room": "Bedroom · up to 20 m²",
+        "model": "ForceClima 9500 Soundless"
+      },
+      {
+        "room": "Living room · up to 30 m²",
+        "model": "ForceClima 12800 Soundless"
+      },
+      {
+        "room": "Large room · up to 40 m²",
+        "model": "ForceClima 14800 Soundless"
+      }
     ],
-    "lineupTitle": "Three sizes, one line",
-    "lineupSubtitle": "Reference RRP at",
+    "lineupTitle": "Specs and price per model",
+    "lineupSubtitle": "Unit RRP reference at",
+    "priceFrom": "Turnkey",
+    "priceNote": "VAT incl.",
+    "cardCta": "Request this model",
     "table": {
       "segment": "Segment",
       "model": "Model",
       "features": "Equipment",
       "featureList": "Heat pump · Dehumidify · WiFi",
-      "from": "Machine (ref.)",
       "turnkey": "Turnkey"
     },
     "honestCoverage": "Honest note — ForceClima 14800: Cecotec lists 28 m²; we recommend up to 35–40 m² in one enclosed room. For larger open spaces: split or a 2-unit package — we never promise 50 m² from one monobloc.",
@@ -202,7 +166,8 @@
       "Electrical work, unauthorised drilling or travel outside AMP: quoted separately.",
       "50% deposit to book · 50% after install and test.",
       "First 20 requests: priority and these fixed prices before update."
-    ]
+    ],
+    "modelsLink": "Compare models and specifications →"
   },
   "installation": {
     "title": "How we install — without damaging the facade",
@@ -268,7 +233,9 @@
       ["Install timeline", "1 day", "3–7 days + approvals"],
       ["Real noise", "48–50 dB (measured)", "20–25 dB"],
       ["When you move", "Take it with you", "Stays in the flat"]
-    ]
+    ],
+    "ctaPricing": "See turnkey prices",
+    "ctaRequest": "Request install"
   },
   "faq": {
     "title": "FAQ",
@@ -338,13 +305,14 @@
     "tagline": "Curated portable AC · Porto & Metropolitan Area",
     "contact": "Contact",
     "request": "Online request",
+    "models": "Cecotec models",
     "pricing": "Turnkey pricing",
     "guides": "Guides",
     "legal": "Company being registered — no ENI/NIF published yet.",
     "credit": "Site by webmorp.art"
   },
   "sticky": {
-    "text": "Request installation",
-    "cta": "Submit"
+    "text": "Portable AC · from €899",
+    "cta": "Request install"
   }
 }

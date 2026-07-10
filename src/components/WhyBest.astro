@@ -43,35 +43,12 @@ const prefix = locale === "en" ? "/en" : "";
       ))}
     </ul>
 
-    <div class="mt-12 overflow-x-auto rounded-2xl border border-stone-200/80">
-      <table class="w-full min-w-[640px] text-left text-sm">
-        <thead>
-          <tr class="border-b border-stone-200 bg-cream/60 text-xs uppercase tracking-wide text-ink-muted">
-            <th class="px-4 py-3 font-semibold">{w.compare.headers.criteria}</th>
-            <th class="px-4 py-3 font-semibold text-terracotta">{w.compare.headers.us}</th>
-            <th class="px-4 py-3 font-semibold">{w.compare.headers.split}</th>
-            <th class="px-4 py-3 font-semibold">{w.compare.headers.store}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {w.compare.rows.map((row) => (
-            <tr class="border-b border-stone-100 last:border-0">
-              <td class="px-4 py-3 font-medium text-ink">{row.criteria}</td>
-              <td class="px-4 py-3 font-medium text-terracotta">{row.us}</td>
-              <td class="px-4 py-3 text-ink-muted">{row.split}</td>
-              <td class="px-4 py-3 text-ink-muted">{row.store}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-
     <blockquote class="mt-10 border-l-4 border-terracotta bg-cream/50 py-4 pl-5 pr-4">
       <p class="font-display text-lg font-semibold text-ink">{w.quote}</p>
       <p class="mt-2 text-sm text-ink-muted">{w.quoteSub}</p>
     </blockquote>
 
-    <div class="mt-8 flex flex-wrap gap-3">
+    <div class="mt-8 flex flex-wrap items-center gap-3">
       <a
         href={`${prefix}/#precos`}
         class="inline-flex rounded-full bg-terracotta px-6 py-3 text-sm font-semibold text-white hover:bg-terracotta-dark"
@@ -83,6 +60,9 @@ const prefix = locale === "en" ? "/en" : "";
         class="inline-flex rounded-full border border-ink/15 px-6 py-3 text-sm font-semibold text-ink hover:border-azulejo hover:text-azulejo"
       >
         {w.ctaRequest}
+      </a>
+      <a href={`${prefix}/#compare`} class="text-sm font-medium text-azulejo hover:underline">
+        {w.compareLink}
       </a>
     </div>
   </div>

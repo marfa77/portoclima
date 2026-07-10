@@ -4,6 +4,7 @@
     "description": "Ar condicionado móvel chave-na-mão no Porto: preço fixo desde 899€, Cecotec com garantia, frio + desumidificação + calor, sem bloco na fachada. Instalação num dia na AMP."
   },
   "nav": {
+    "models": "Modelos",
     "niche": "A nossa nicha",
     "install": "Instalação",
     "compare": "Comparar",
@@ -28,7 +29,7 @@
     ],
     "imageBadge": "Ar condicionado móvel",
     "imageBadgeSub": "Cecotec ForceClima · bomba de calor · WiFi",
-    "ctaModels": "Ver preços e modelos",
+    "ctaModels": "Ver preços fixos",
     "ctaWaitlist": "Pedir instalação",
     "note": "899€ / 1 049€ / 1 199€ chave-na-mão · máquina + montagem + vedação"
   },
@@ -90,52 +91,7 @@
         "text": "O valor está no kit de janela à medida — sem isto, qualquer móvel perde 30–40% de eficiência no Porto."
       }
     ],
-    "compare": {
-      "headers": {
-        "criteria": "Critério",
-        "us": "Porto Clima",
-        "split": "Split fixo",
-        "store": "Caixa da loja"
-      },
-      "rows": [
-        {
-          "criteria": "Preço final previsível",
-          "us": "Fixo chave-na-mão",
-          "split": "Obra + máquina + atrasos",
-          "store": "Só a caixa — falta instalação"
-        },
-        {
-          "criteria": "4 estações (frio + calor + humidade)",
-          "us": "Sim — bomba de calor",
-          "split": "Sim",
-          "store": "Depende do modelo"
-        },
-        {
-          "criteria": "Unidade exterior na rua",
-          "us": "Não",
-          "split": "Sim — muitas vezes proibida",
-          "store": "Não, mas sem vedação"
-        },
-        {
-          "criteria": "Condomínio / arrendamento",
-          "us": "Kit removível",
-          "split": "Autorização difícil",
-          "store": "DIY — risco de depósito"
-        },
-        {
-          "criteria": "Prazo no Porto",
-          "us": "1 dia",
-          "split": "2–6 semanas",
-          "store": "Hoje, mas mal instalado"
-        },
-        {
-          "criteria": "Garantia de instalação",
-          "us": "12 meses + Cecotec",
-          "split": "FRIO separado",
-          "store": "Nenhuma"
-        }
-      ]
-    },
+    "compareLink": "Comparação detalhada com split →",
     "quote": "Um aparelho. Quatro estações. Um preço. Zero bloco na fachada.",
     "quoteSub": "É isto que compra connosco — não «mais um SKU» de e-commerce.",
     "ctaPricing": "Ver preços fixos",
@@ -149,25 +105,33 @@
     "disclaimer": "3 modelos porque testámos a linha — não revendemos tudo o que aparece no marketplace."
   },
   "advantages": {
-    "eyebrow": "Porque somos diferentes",
-    "title": "Móvel · poucos SKU · topo de gama",
-    "intro": "Não competimos com FNAC ou Worten em variedade. Competimos em curadoria: só o que funciona em casas históricas do Porto e AMP, com instalação discreta e números honestos.",
-    "bullets": [
-      "Preço chave-na-mão fixo — 899€ / 1 049€ / 1 199€, IVA incluído",
-      "Verão frio · outono seco · inverno quente — bomba de calor em todos",
-      "Sem unidade exterior — nada na varanda nem na fachada",
-      "Cecotec com garantia de fábrica + 12 meses na instalação",
-      "Instalação num dia na AMP — vistoria, vedação e teste",
-      "Série Soundless — dormir com a máquina ligada"
+    "eyebrow": "Escolha o modelo",
+    "title": "Três aparelhos Cecotec — por tamanho da divisão",
+    "intro": "Já viu o preço chave-na-mão acima. Agora escolha a potência certa para o seu quarto, sala ou T1.",
+    "picks": [
+      {
+        "room": "Quarto · até 20 m²",
+        "model": "ForceClima 9500 Soundless"
+      },
+      {
+        "room": "Sala · até 30 m²",
+        "model": "ForceClima 12800 Soundless"
+      },
+      {
+        "room": "Divisão grande · até 40 m²",
+        "model": "ForceClima 14800 Soundless"
+      }
     ],
-    "lineupTitle": "Três tamanhos, uma linha",
-    "lineupSubtitle": "Referência de preço PVP em",
+    "lineupTitle": "Especificações e preços por modelo",
+    "lineupSubtitle": "Referência PVP máquina em",
+    "priceFrom": "Chave-na-mão",
+    "priceNote": "IVA incl.",
+    "cardCta": "Pedir este modelo",
     "table": {
       "segment": "Segmento",
       "model": "Modelo",
       "features": "Equipamento",
       "featureList": "Bomba de calor · Desumidificação · WiFi",
-      "from": "Máquina (ref.)",
       "turnkey": "Chave-na-mão"
     },
     "honestCoverage": "Nota honesta — ForceClima 14800: a Cecotec indica 28 m²; recomendamos até 35–40 m² numa divisão fechada. Para salas abertas acima disso: split ou pacote de 2 unidades — nunca prometemos 50 m² com um monobloco.",
@@ -202,7 +166,8 @@
       "Obras eléctricas, furos não autorizados ou deslocação fora da AMP: orçamento à parte.",
       "Pré-pagamento 50% na reserva · 50% após instalação e teste.",
       "Primeiros 20 pedidos: prioridade e estes preços fixos antes de atualização."
-    ]
+    ],
+    "modelsLink": "Comparar modelos e especificações →"
   },
   "installation": {
     "title": "Como instalamos — sem danificar a fachada",
@@ -268,7 +233,9 @@
       ["Prazo instalação", "1 dia", "3–7 dias + trâmites"],
       ["Ruído real", "48–50 dB (medido)", "20–25 dB"],
       ["Mudança de casa", "Leva consigo", "Fica no imóvel"]
-    ]
+    ],
+    "ctaPricing": "Ver preços chave-na-mão",
+    "ctaRequest": "Pedir instalação"
   },
   "faq": {
     "title": "Perguntas frequentes",
@@ -338,13 +305,14 @@
     "tagline": "Ar condicionado móvel curado · Porto e Área Metropolitana",
     "contact": "Contacto",
     "request": "Pedido online",
+    "models": "Modelos Cecotec",
     "pricing": "Preços chave-na-mão",
     "guides": "Guias",
     "legal": "Empresa em constituição — sem NIF publicado até registo ENI.",
     "credit": "Site by webmorp.art"
   },
   "sticky": {
-    "text": "Pedido de instalação",
-    "cta": "Enviar pedido"
+    "text": "Ar condicionado móvel · desde 899€",
+    "cta": "Pedir instalação"
   }
 }

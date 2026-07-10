@@ -19,14 +19,14 @@ const prefix = locale === "en" ? "/en" : "";
         {dict.nav.tagline}
       </span>
     </a>
-    <nav class="hidden items-center gap-5 text-sm text-ink-muted md:flex">
-      <a href={`${prefix}/#porque`} class="hover:text-azulejo">{dict.nav.why}</a>
-      <a href={`${prefix}/#modelos`} class="hover:text-azulejo">{dict.nav.niche}</a>
+    <nav class="hidden items-center gap-5 text-sm text-ink-muted lg:flex">
       <a href={`${prefix}/#precos`} class="hover:text-azulejo">{dict.nav.pricing}</a>
-      <a href={locale === "pt" ? "/guias/" : "/en/guides/"} class="hover:text-azulejo">{dict.nav.guides}</a>
+      <a href={`${prefix}/#modelos`} class="hover:text-azulejo">{dict.nav.models}</a>
+      <a href={`${prefix}/#porque`} class="hover:text-azulejo">{dict.nav.why}</a>
       <a href={`${prefix}/#install`} class="hover:text-azulejo">{dict.nav.install}</a>
       <a href={`${prefix}/#compare`} class="hover:text-azulejo">{dict.nav.compare}</a>
       <a href={`${prefix}/#faq`} class="hover:text-azulejo">{dict.nav.faq}</a>
+      <a href={locale === "pt" ? "/guias/" : "/en/guides/"} class="hover:text-azulejo">{dict.nav.guides}</a>
       <a href={`${prefix}/#waitlist`} class="font-medium text-terracotta hover:text-terracotta-dark">{dict.nav.waitlist}</a>
     </nav>
     <a
