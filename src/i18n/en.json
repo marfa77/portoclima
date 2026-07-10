@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Porto Clima — Portable AC in Porto & Metropolitan Area",
-    "description": "Turnkey portable AC in Porto: fixed from €899, warranted Cecotec heat pump — cool, dehumidify and heat year-round, no outdoor unit on your facade. Same-day install in the AMP."
+    "title": "Porto Clima — Portable AC in Porto & region (100 km)",
+    "description": "Turnkey portable AC in Porto and within 100 km: fixed from €899, warranted Cecotec heat pump — cool, dehumidify and heat year-round, no outdoor unit on your facade. Same-day install."
   },
   "nav": {
     "models": "Models",
@@ -19,9 +19,9 @@
     "menuClose": "Close menu"
   },
   "hero": {
-    "eyebrow": "Portable AC · install included · Porto & Metro Area",
-    "serviceArea": "Porto and the Porto Metropolitan Area (AMP)",
-    "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
+    "eyebrow": "Portable AC · install included · Porto & 100 km region",
+    "serviceArea": "Porto at the centre — 100 km radius",
+    "serviceAreaDetail": "Porto, Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel, Marco de Canaveses and towns within 100 km of Porto",
     "title": "Portable air conditioning with turnkey install in Porto",
     "subtitle": "We sell and fit Cecotec ForceClima units — cooling, dehumidifying and heat pump in one. Fixed price, dual warranty, no outdoor block on your facade.",
     "pills": [
@@ -80,7 +80,7 @@
       {
         "icon": "1",
         "title": "Same-day install",
-        "text": "Survey + fitting + test in the AMP. No weeks waiting for HVAC, assembly votes or building works."
+        "text": "Survey + fitting + test within 100 km of Porto. No weeks waiting for HVAC, assembly votes or building works."
       },
       {
         "icon": "🔇",
@@ -143,7 +143,7 @@
     "eyebrow": "Transparent pricing",
     "title": "Turnkey — fixed price per model",
     "intro": "We don't sell a box from the shop. Each price includes the Cecotec unit, delivery, site survey, same-day install, materials, testing and 12 months install warranty.",
-    "vatNote": "VAT included · fixed prices for standard installs in Porto & AMP",
+    "vatNote": "VAT included · fixed prices for standard installs within 100 km of Porto",
     "turnkeyLabel": "full install · VAT included",
     "machineRef": "Unit",
     "machineRefNote": "cecotec.pt RRP",
@@ -165,7 +165,7 @@
     },
     "footnotes": [
       "Complex install (thick granite, narrow opening, parquet): +€80–150 — quoted after survey.",
-      "Electrical work, unauthorised drilling or travel outside AMP: quoted separately.",
+      "Electrical work, unauthorised drilling or travel beyond 100 km from Porto: quoted separately.",
       "50% deposit to book · 50% after install and test.",
       "First 20 requests: priority and these fixed prices before update."
     ],
@@ -196,8 +196,8 @@
     "videoCaption": "Manufacturer video (window kit included). Porto Clima install adds insulated duct, discreet finish and on-site noise measurement."
   },
   "districts": {
-    "title": "Built for Porto & the metro area",
-    "subtitle": "We know condo rules, azulejo facades and rental flats across the city and AMP municipalities — we don't install outside this area.",
+    "title": "Built for northern Portugal — Porto at the centre",
+    "subtitle": "We know condo rules, azulejo facades and rental flats in Porto, Greater Porto, Minho and the coast down to Aveiro — we install in any town within 100 km of Porto.",
     "items": [
       {
         "name": "Porto — Ribeira & Baixa",
@@ -218,6 +218,14 @@
       {
         "name": "Maia, Gondomar & Valongo",
         "text": "Houses and newer flats — technical install with discreet finish."
+      },
+      {
+        "name": "Braga & Guimarães",
+        "text": "Hot Minho summers — same portable logic, fixed price and same-day install."
+      },
+      {
+        "name": "Aveiro & central coast",
+        "text": "Atlantic humidity and rental flats — dehumidification and heat pump included."
       }
     ],
     "landlord": {
@@ -265,7 +273,7 @@
       },
       {
         "q": "Do you serve outside Porto?",
-        "a": "We operate in Porto and the Porto Metropolitan Area (AMP): Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde and Póvoa de Varzim. Outside the AMP — leave a request and we'll review case by case."
+        "a": "We install within 100 km of Porto: Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel and Marco de Canaveses, among others. Beyond 100 km — leave a request; we quote travel separately."
       },
       {
         "q": "What if landlord says no?",
@@ -279,7 +287,7 @@
     "name": "Name",
     "email": "Email",
     "phone": "Mobile (WhatsApp)",
-    "district": "Municipality / area (Porto or AMP)",
+    "district": "Municipality / town (within 100 km of Porto)",
     "message": "Notes (optional)",
     "submit": "Submit request",
     "success": "Thank you — we'll be in touch soon.",
@@ -291,11 +299,11 @@
   "guides": {
     "eyebrow": "Local guides",
     "indexTitle": "Guides for Porto",
-    "indexDescription": "Straight answers on portable AC, humid summers and rental rules in Porto and the metro area — fixed turnkey prices and official sources.",
+    "indexDescription": "Straight answers on portable AC, humid summers and rental rules in Porto and within 100 km — fixed turnkey prices and official sources.",
     "readMore": "Read guide",
     "cta": "Request turnkey install",
     "relatedTitle": "Related guides",
-    "relatedIntro": "Keep reading — each guide answers one concrete question in Porto and the AMP.",
+    "relatedIntro": "Keep reading — each guide answers one concrete question in Porto and within 100 km.",
     "funnelEyebrow": "Next step",
     "funnelTitle": "From reading to install",
     "funnelStep1": "Compare fixed packages:",
@@ -305,10 +313,10 @@
     "funnelStep3": "Go deeper in the",
     "funnelPillarLink": "full Porto guide",
     "funnelPricingCta": "See pricing",
-    "priceDisclaimer": "Fixed prices apply to standard AMP installs in 2026 — we confirm on survey before booking."
+    "priceDisclaimer": "Fixed prices apply to standard installs within 100 km of Porto in 2026 — we confirm on survey before booking."
   },
   "footer": {
-    "tagline": "Curated portable AC · Porto & Metropolitan Area",
+    "tagline": "Curated portable AC · Porto & 100 km region",
     "contact": "Contact",
     "request": "Online request",
     "models": "Cecotec models",
@@ -344,7 +352,7 @@
         "paragraphs": [
           "Controller: Porto Clima — company being registered in Portugal (NIF/ENI to be published after incorporation).",
           "Privacy contact: contacto@climaporto.pt or the form at climaporto.pt.",
-          "Service area: Porto and the Porto Metropolitan Area (AMP)."
+          "Service area: Porto at the centre and any town within 100 km."
         ]
       },
       {
@@ -355,7 +363,7 @@
           "Name",
           "Email address",
           "Mobile phone number",
-          "Municipality or area (Porto / AMP)",
+          "Municipality or town (within 100 km of Porto)",
           "Optional message",
           "Page language and UTM parameters (campaign source), when present"
         ]

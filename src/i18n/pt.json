@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Porto Clima — Ar condicionado móvel no Porto e Área Metropolitana",
-    "description": "Ar condicionado móvel chave-na-mão no Porto: preço fixo desde 899€, Cecotec com garantia, frio + desumidificação + calor, sem bloco na fachada. Instalação num dia na AMP."
+    "title": "Porto Clima — Ar condicionado móvel no Porto e região (100 km)",
+    "description": "Ar condicionado móvel chave-na-mão no Porto e num raio de 100 km: preço fixo desde 899€, Cecotec com garantia, frio + desumidificação + calor, sem bloco na fachada. Instalação num dia."
   },
   "nav": {
     "models": "Modelos",
@@ -19,9 +19,9 @@
     "menuClose": "Fechar menu"
   },
   "hero": {
-    "eyebrow": "Ar condicionado móvel · instalação incluída · Porto e AMP",
-    "serviceArea": "Porto e Área Metropolitana do Porto (AMP)",
-    "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
+    "eyebrow": "Ar condicionado móvel · instalação incluída · Porto e região 100 km",
+    "serviceArea": "Porto no centro — raio de 100 km",
+    "serviceAreaDetail": "Porto, Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel, Marco de Canaveses e concelhos até 100 km do Porto",
     "title": "Ar condicionado móvel com instalação chave-na-mão no Porto",
     "subtitle": "Vendemos e instalamos aparelhos Cecotec ForceClima — frio, desumidificação e bomba de calor num só equipamento. Preço fechado, garantia dupla, sem bloco na fachada.",
     "pills": [
@@ -80,7 +80,7 @@
       {
         "icon": "1",
         "title": "Instalação num dia",
-        "text": "Vistoria + montagem + teste na AMP. Não espera semanas de FRIO, assembleia nem obras."
+        "text": "Vistoria + montagem + teste num raio de 100 km do Porto. Não espera semanas de FRIO, assembleia nem obras."
       },
       {
         "icon": "🔇",
@@ -143,7 +143,7 @@
     "eyebrow": "Preços transparentes",
     "title": "Chave-na-mão — preço fixo por modelo",
     "intro": "Não vendemos caixa da loja. Cada valor abaixo inclui equipamento Cecotec, entrega, visita técnica, montagem no mesmo dia, materiais, teste e garantia de instalação 12 meses.",
-    "vatNote": "IVA incluído · valores fixos para instalação standard no Porto e AMP",
+    "vatNote": "IVA incluído · valores fixos para instalação standard num raio de 100 km do Porto",
     "turnkeyLabel": "instalação completa · IVA incluído",
     "machineRef": "Máquina",
     "machineRefNote": "referência cecotec.pt",
@@ -165,7 +165,7 @@
     },
     "footnotes": [
       "Instalação complexa (granito grosso, vão estreito, parquet): +80–150€ — indicado após visita.",
-      "Obras eléctricas, furos não autorizados ou deslocação fora da AMP: orçamento à parte.",
+      "Obras eléctricas, furos não autorizados ou deslocação além de 100 km do Porto: orçamento à parte.",
       "Pré-pagamento 50% na reserva · 50% após instalação e teste.",
       "Primeiros 20 pedidos: prioridade e estes preços fixos antes de atualização."
     ],
@@ -196,8 +196,8 @@
     "videoCaption": "Vídeo do fabricante (kit de janela incluído). Na instalação Porto Clima: conduta isolada, acabamento discreto e medição de ruído no local."
   },
   "districts": {
-    "title": "Feito para o Porto e a aglomeração",
-    "subtitle": "Conhecemos condomínios, fachadas de azulejo e apartamentos de aluguer na cidade e nos concelhos da AMP — não instalamos fora desta zona.",
+    "title": "Feito para o Norte — Porto no centro",
+    "subtitle": "Conhecemos condomínios, fachadas de azulejo e apartamentos de aluguer no Porto, Grande Porto, Minho e costa até Aveiro — instalamos em qualquer concelho até 100 km do Porto.",
     "items": [
       {
         "name": "Porto — Ribeira & Baixa",
@@ -218,6 +218,14 @@
       {
         "name": "Maia, Gondomar & Valongo",
         "text": "Moradias e apartamentos recentes — instalação técnica com acabamento discreto."
+      },
+      {
+        "name": "Braga & Guimarães",
+        "text": "Verões quentes no Minho — mesma lógica móvel, preço fixo e instalação num dia."
+      },
+      {
+        "name": "Aveiro & costa centro",
+        "text": "Humidade atlântica e apartamentos de arrendamento — desumidificação e bomba de calor incluídas."
       }
     ],
     "landlord": {
@@ -265,7 +273,7 @@
       },
       {
         "q": "Atendem fora do Porto?",
-        "a": "A nossa área de operação é o Porto e a Área Metropolitana do Porto (AMP): Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde e Póvoa de Varzim. Fora da AMP — deixe pedido; avaliamos caso a caso."
+        "a": "Instalamos num raio de 100 km a partir do Porto: Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel e Marco de Canaveses, entre outros. Além de 100 km — deixe pedido; orçamos deslocação à parte."
       },
       {
         "q": "E se o senhorio disser não?",
@@ -279,7 +287,7 @@
     "name": "Nome",
     "email": "Email",
     "phone": "Telemóvel (WhatsApp)",
-    "district": "Concelho / zona (Porto ou AMP)",
+    "district": "Concelho / localidade (até 100 km do Porto)",
     "message": "Notas (opcional)",
     "submit": "Enviar pedido",
     "success": "Obrigado — entraremos em contacto em breve.",
@@ -291,11 +299,11 @@
   "guides": {
     "eyebrow": "Guias locais",
     "indexTitle": "Guias para o Porto",
-    "indexDescription": "Respostas diretas sobre ar condicionado móvel, verão húmido e regras de arrendamento no Porto e na AMP — com preços fixos e fontes oficiais.",
+    "indexDescription": "Respostas diretas sobre ar condicionado móvel, verão húmido e regras de arrendamento no Porto e região num raio de 100 km — com preços fixos e fontes oficiais.",
     "readMore": "Ler guia",
     "cta": "Pedir instalação chave-na-mão",
     "relatedTitle": "Guias relacionados",
-    "relatedIntro": "Continue por aqui — cada guia responde a uma dúvida concreta no Porto e na AMP.",
+    "relatedIntro": "Continue por aqui — cada guia responde a uma dúvida concreta no Porto e num raio de 100 km.",
     "funnelEyebrow": "Próximo passo",
     "funnelTitle": "Da leitura à instalação",
     "funnelStep1": "Compare pacotes fixos:",
@@ -305,10 +313,10 @@
     "funnelStep3": "Aprofunde no",
     "funnelPillarLink": "guia completo do Porto",
     "funnelPricingCta": "Ver preços",
-    "priceDisclaimer": "Preços fixos válidos para instalação padrão na AMP em 2026 — confirmamos na vistoria antes de marcar."
+    "priceDisclaimer": "Preços fixos válidos para instalação padrão num raio de 100 km do Porto em 2026 — confirmamos na vistoria antes de marcar."
   },
   "footer": {
-    "tagline": "Ar condicionado móvel curado · Porto e Área Metropolitana",
+    "tagline": "Ar condicionado móvel curado · Porto e região 100 km",
     "contact": "Contacto",
     "request": "Pedido online",
     "models": "Modelos Cecotec",
@@ -344,7 +352,7 @@
         "paragraphs": [
           "Responsável: Porto Clima — empresa em constituição em Portugal (NIF/ENI a publicar após registo).",
           "Contacto para privacidade: contacto@climaporto.pt ou formulário em climaporto.pt.",
-          "Área de serviço: Porto e Área Metropolitana do Porto (AMP)."
+          "Área de serviço: Porto no centro e qualquer localidade num raio de 100 km."
         ]
       },
       {
@@ -355,7 +363,7 @@
           "Nome",
           "Endereço de email",
           "Número de telemóvel",
-          "Concelho ou zona (Porto / AMP)",
+          "Concelho ou localidade (até 100 km do Porto)",
           "Mensagem opcional",
           "Idioma da página e parâmetros UTM (origem da campanha), quando existirem"
         ]

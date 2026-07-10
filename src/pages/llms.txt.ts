@@ -1,5 +1,6 @@
 import { getGuides, guidePath, guidesIndexPath } from "../lib/guides";
 import { siteConfig } from "../data/site";
+import { serviceArea } from "../data/service-area";
 
 export const prerender = true;
 
@@ -11,10 +12,11 @@ export async function GET() {
   const lines = [
     `# ${siteConfig.brand}`,
     "",
-    `> Curated portable air conditioning installs in Porto and the Porto Metropolitan Area (Gaia, Matosinhos, Maia, Gondomar). Turnkey from 899€ VAT included.`,
+    `> Curated portable air conditioning installs in Porto and within 100 km (Greater Porto, Braga, Guimarães, Aveiro, Viana do Castelo). Turnkey from 899€ VAT included.`,
     "",
     "## Service area",
-    "- Porto city and AMP (Área Metropolitana do Porto)",
+    `- Porto at the centre — any town within ${serviceArea.radiusKm} km`,
+    `- Examples: ${serviceArea.detailEn}`,
     "- Fixed turnkey prices: 899€ / 1049€ / 1199€ by room size",
     "- Cecotec ForceClima Soundless Heating Connected line only",
     "",
@@ -47,7 +49,7 @@ export async function GET() {
     "",
     "## Contact",
     `- Website: ${site}`,
-    `- Service area: Porto & AMP, Portugal`,
+    `- Service area: ${serviceArea.labelEn}, Portugal`,
   ];
 
   return new Response(lines.join("\n"), {

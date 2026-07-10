@@ -2,6 +2,7 @@
 import type { GuideEntry } from "../lib/guides";
 import { guidePath } from "../lib/guides";
 import { siteConfig } from "../data/site";
+import { serviceArea } from "../data/service-area";
 import type { Locale } from "../lib/i18n";
 
 interface Props {
@@ -41,12 +42,17 @@ const graph = [
     contentLocation: {
       "@type": "City",
       name: "Porto",
-      containedInPlace: {
-        "@type": "AdministrativeArea",
-        name: locale === "pt" ? "Área Metropolitana do Porto" : "Porto Metropolitan Area",
-        containedInPlace: { "@type": "Country", name: "Portugal" },
+      containedInPlace: { "@type": "Country", name: "Portugal" },
+      geo: { "@type": "GeoCoordinates", latitude: serviceArea.center.lat, longitude: serviceArea.center.lng },
+    },
+    spatialCoverage: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: serviceArea.center.lat,
+        longitude: serviceArea.center.lng,
       },
-      geo: { "@type": "GeoCoordinates", latitude: 41.1579, longitude: -8.6291 },
+      geoRadius: String(serviceArea.radiusMeters),
     },
     speakable: {
       "@type": "SpeakableSpecification",

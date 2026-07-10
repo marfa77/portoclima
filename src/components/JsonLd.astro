@@ -2,6 +2,7 @@
 import type { Locale } from "../lib/i18n";
 import { t } from "../lib/i18n";
 import { siteConfig } from "../data/site";
+import { serviceArea } from "../data/service-area";
 
 interface Props {
   locale: Locale;
@@ -23,17 +24,25 @@ const dict = t(locale);
       areaServed: [
         { "@type": "City", name: "Porto", containedInPlace: { "@type": "Country", name: "Portugal" } },
         {
-          "@type": "AdministrativeArea",
-          name: locale === "pt" ? "Área Metropolitana do Porto" : "Porto Metropolitan Area",
-          containedInPlace: { "@type": "Country", name: "Portugal" },
+          "@type": "GeoCircle",
+          geoMidpoint: {
+            "@type": "GeoCoordinates",
+            latitude: serviceArea.center.lat,
+            longitude: serviceArea.center.lng,
+          },
+          geoRadius: String(serviceArea.radiusMeters),
+          description:
+            locale === "pt"
+              ? `Raio de ${serviceArea.radiusKm} km a partir do Porto`
+              : `${serviceArea.radiusKm} km radius from Porto`,
         },
       ],
       priceRange: "€€",
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
         description: locale === "pt"
-          ? "Mediante marcação — Porto e Área Metropolitana"
-          : "By appointment — Porto & Metropolitan Area",
+          ? `Mediante marcação — ${serviceArea.shortPt}`
+          : `By appointment — ${serviceArea.shortEn}`,
       },
     },
     {

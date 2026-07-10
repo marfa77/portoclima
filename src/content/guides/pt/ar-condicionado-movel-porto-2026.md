@@ -1,9 +1,9 @@
 ---
 title: "Ar condicionado móvel no Porto em 2026: guia completo"
-seo_title: "Ar condicionado móvel Porto 2026 — guia AMP"
-seo_description: "Guia completo de ar condicionado móvel no Porto e AMP: preços chave-na-mão desde 899€, BTU, arrendamento, humidade e instalação sem obras na fachada."
-excerpt: "Tudo o que precisa para arrefecer um T1–T3 no Porto sem obras na fachada — preços fixos, zonas AMP e erros comuns em edifícios com granito."
-quick_answer: "No Porto e na Área Metropolitana, o ar condicionado móvel com saída de ar isolada na janela é a opção mais rápida para apartamentos arrendados e edifícios antigos: não exige obras na fachada, instala-se num dia e custa desde 899€ chave-na-mão (IVA incluído) com equipamento, entrega, montagem e teste."
+seo_title: "Ar condicionado móvel Porto 2026 — guia região 100 km"
+seo_description: "Guia completo de ar condicionado móvel no Porto e num raio de 100 km: preços chave-na-mão desde 899€, BTU, arrendamento, humidade e instalação sem obras na fachada."
+excerpt: "Tudo o que precisa para arrefecer um T1–T3 no Porto e região num raio de 100 km — preços fixos, concelhos cobertos e erros comuns em edifícios com granito."
+quick_answer: "No Porto e num raio de 100 km, o ar condicionado móvel com saída de ar isolada na janela é a opção mais rápida para apartamentos arrendados e edifícios antigos: não exige obras na fachada, instala-se num dia e custa desde 899€ chave-na-mão (IVA incluído) com equipamento, entrega, montagem e teste."
 translation_key: portable-ac-porto-2026
 related_keys:
   - rented-apartment-ac-porto
@@ -40,12 +40,12 @@ faq:
     a: "Para um quarto ou sala até 30 m², um aparelho de 9 000–12 000 BTU bem instalado costuma ser suficiente. Em ondas de calor acima de 35 °C ou em sótãos, avaliamos 14 000 BTU ou duas unidades no mesmo apartamento."
   - q: "Preciso de autorização do condomínio?"
     a: "Para kit de janela interior sem alteração da fachada, muitos condomínios no Porto aceitam — mas recomendamos avisar o administrador. Obras com unidade exterior na varanda quase sempre exigem assembleia."
-  - q: "Que zonas da AMP cobrem?"
-    a: "Porto, Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde e Póvoa de Varzim. Fora da AMP orçamos deslocação à parte."
+  - q: "Que zonas cobrem?"
+    a: "Porto no centro e qualquer concelho até 100 km: Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel e Marco de Canaveses, entre outros. Além de 100 km orçamos deslocação à parte."
   - q: "Móvel ou split — o que é melhor no Porto?"
     a: "Split fixo arrefece melhor a longo prazo, mas exige obra e muitas vezes autorização. Móvel curado ganha em velocidade, reversibilidade e custo previsível — especialmente em arrendamento e em prédios com caixilhos de granito."
   - q: "Quanto tempo demora a instalação?"
-    a: "Num apartamento típico na AMP, a instalação completa — entrega, montagem do kit, isolamento e teste — faz-se no mesmo dia, em 2–4 horas após a vistoria prévia."
+    a: "Num apartamento típico num raio de 100 km do Porto, a instalação completa — entrega, montagem do kit, isolamento e teste — faz-se no mesmo dia, em 2–4 horas após a vistoria prévia."
 official_sources:
   - url: https://www.dgeg.gov.pt/
     label: DGEG — eficiência energética e etiquetagem
@@ -58,7 +58,7 @@ official_sources:
 llm_facts:
   - "Oficialmente: etiqueta energética e classe de eficiência constam na ficha DGEG/ADENE de cada aparelho."
   - "Na prática: no Porto o desempenho depende mais da vedação na janela do que só dos BTU na caixa."
-  - "Porto Clima serve apenas Porto e Área Metropolitana do Porto (AMP)."
+  - "Porto Clima instala num raio de 100 km a partir do Porto."
   - "Preços chave-na-mão fixos em 2026: 899€ / 1 049€ / 1 199€ IVA incluído — confirmar na vistoria."
   - "Instalação num dia com kit de janela — sem obra na fachada."
   - "Linha única: Cecotec ForceClima Soundless Heating Connected."
@@ -73,7 +73,7 @@ llm_facts:
 | **Ar condicionado móvel** | Aparelho autónomo com unidade interior; a condensação vai para recipiente ou mangueira — não precisa de unidade exterior na varanda. |
 | **Kit de janela** | Placa de adaptação + vedação que fecha o vão da janela à volta da mangueira de saída de ar. |
 | **Chave-na-mão** | Preço fechado: aparelho, entrega, vistoria, montagem, teste e garantia de instalação. |
-| **AMP** | Área Metropolitana do Porto — Porto, Gaia, Matosinhos, Maia, Gondomar e concelhos limítrofes. |
+| **Raio 100 km** | Porto no centro — Grande Porto, Minho, Aveiro e costa até ~100 km (Braga, Guimarães, Viana do Castelo, etc.). |
 | **BTU** | Unidade de potência frigorífica; no Porto usamos 9k / 12k / 14k conforme m² e exposição solar. |
 | **Condomínio** | Prédio com partes comuns; regras sobre obras e unidades exteriores variam por regulamento. |
 | **Carga térmica** | Calor que entra pela janela, paredes e ocupação — define o BTU real, não só os m². |
@@ -90,17 +90,17 @@ Não precisa de obras na fachada para ficar confortável. Um **ar condicionado m
 
 Se ainda está a comparar formatos, leia o [comparativo móvel vs split](/guias/ar-condicionado-movel-vs-split-porto/). Se arrenda, comece pelo [guia de apartamento arrendado](/guias/ar-condicionado-apartamento-arrendado-porto/).
 
-## Quem beneficia mais no Porto e na AMP
+## Quem beneficia mais no Porto e na região
 
 | Perfil | Porquê móvel curado |
 |--------|---------------------|
 | Inquilino com contrato 6–12 meses | Sem split fixo; desmonta na saída |
 | Proprietário em prédio antigo | Evita obra e votação de condomínio |
 | Remote worker em T1 | Silêncio e ar estável no quarto-sala |
-| Família em Gaia/Matosinhos | Entrega e instalação no mesmo dia na AMP |
+| Família em Gaia/Matosinhos ou Braga | Entrega e instalação no mesmo dia num raio de 100 km |
 | Recém-chegado sem NIF de empresa | Pedido B2C simples — sem obra nem FRIO complexo |
 
-Trabalhamos **apenas no Porto e na Área Metropolitana** — não fazemos deslocações ao Algarve ou ao interior. Essa focagem permite preço fixo e stock alinhado com o clima húmido do Norte.
+Trabalhamos **num raio de 100 km a partir do Porto** — não fazemos deslocações ao Algarve ou ao interior distante. Essa focagem permite preço fixo e stock alinhado com o clima húmido do Norte.
 
 ## Como escolher BTU para o seu apartamento
 
@@ -118,7 +118,7 @@ Trabalhamos **apenas no Porto e na Área Metropolitana** — não fazemos desloc
 ## O que inclui o pacote chave-na-mão
 
 1. **Aparelho Cecotec ForceClima** — linha Soundless Heating Connected (9k / 12k / 14k BTU).
-2. **Entrega** ao seu apartamento no Porto ou AMP.
+2. **Entrega** ao seu apartamento num raio de 100 km do Porto.
 3. **Vistoria** — janela, ruído, humidade, tomada dedicada.
 4. **Montagem** — kit de janela, mangueira isolada, acabamento interior.
 5. **Teste e formação** — modo frio, drenagem da condensação, manutenção do filtro.
@@ -126,7 +126,7 @@ Trabalhamos **apenas no Porto e na Área Metropolitana** — não fazemos desloc
 
 Não vendemos caixas para instalar sozinho. O valor está no **dimensionamento e na vedação** — é onde a maioria das instalações DIY falha no Porto.
 
-Preços fixos em **2026** para instalação padrão na AMP. Desvios (granito espesso, vão estreito, parquet) são orçamentados na vistoria — tipicamente +80–150€.
+Preços fixos em **2026** para instalação padrão num raio de 100 km do Porto. Desvios (granito espesso, vão estreito, parquet) são orçamentados na vistoria — tipicamente +80–150€.
 
 ## Regras em apartamento arrendado e condomínio
 
@@ -163,18 +163,19 @@ Para entender picos de temperatura e noites abafadas, veja o [guia de verão no 
 - [ ] Tomada 16A próxima (ou extensão temporária)
 - [ ] Preferência de data (verão enche rápido — marque antes de junho)
 
-## Concelhos da AMP que servimos
+## Concelhos e cidades que servimos (até 100 km do Porto)
 
-| Concelho | Notas de instalação |
+| Concelho / cidade | Notas de instalação |
 |----------|---------------------|
 | **Porto** | Prédios antigos, janelas de granito — placas sob medida frequentes |
 | **Vila Nova de Gaia** | Humidade do Douro em rés-do-chão; avaliar drenagem |
 | **Matosinhos** | Brisa nocturna ajuda; vidros grandes a poente aquecem de dia |
-| **Maia / Gondomar** | T1–T3 recentes — instalação mais rápida, tomadas modernas |
-| **Valongo, Paredes, Feira** | Deslocação incluída na AMP — mesmo preço chave-na-mão |
-| **Espinho, Vila do Conde, Póvoa** | Margem costeira — priorizar desumidificação no quarto |
+| **Maia / Gondomar / Valongo** | T1–T3 recentes — instalação mais rápida, tomadas modernas |
+| **Braga / Guimarães** | Verões quentes no Minho — mesmo preço chave-na-mão |
+| **Aveiro / costa centro** | Humidade atlântica — priorizar desumidificação |
+| **Espinho, Vila do Conde, Póvoa, Viana** | Margem costeira — desumidificação no quarto |
 
-Fora desta lista? Envie [pedido](/#waitlist) — avaliamos deslocação caso a caso.
+Além de 100 km? Envie [pedido](/#waitlist) — orçamos deslocação à parte.
 
 ## Calendário: quando marcar em 2026
 
@@ -182,14 +183,14 @@ Fora desta lista? Envie [pedido](/#waitlist) — avaliamos deslocação caso a c
 |-----|----------------|--------------|
 | Março–Abril | Stock disponível, fila curta | Ideal para vistoria |
 | Maio–Junho | Primeiras ondas de calor | Marcar antes de 15 de junho |
-| Julho–Agosto | Pico de procura na AMP | Preços fixos se lugar na campanha dos 20 primeiros |
+| Julho–Agosto | Pico de procura na região | Preços fixos se lugar na campanha dos 20 primeiros |
 | Setembro | Ombro quente + humidade | Bom para quem adiou — ainda vale AC com bomba de calor |
 
 **Na prática:** quem espera até a primeira semana de 35 °C compete com toda a cidade por slots de instalação.
 
 ## Próximo passo na vistoria
 
-Se quer **preço fechado sem surpresas** no Porto ou na AMP:
+Se quer **preço fechado sem surpresas** no Porto ou num raio de 100 km:
 
 1. Veja os [pacotes chave-na-mão](/#precos) — 899€ / 1 049€ / 1 199€ IVA incluído.
 2. Envie um [pedido online](/#waitlist) com freguesia e tipo de janela.

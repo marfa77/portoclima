@@ -1,11 +1,13 @@
 /** Site-wide config — update before launch */
+import { serviceArea } from "./service-area";
+
 export const siteConfig = {
   domain: "climaporto.pt",
   brand: "Porto Clima",
   /** Update when business email is live */
   contactEmail: "contacto@climaporto.pt",
-  serviceAreaLabelPt: "Porto e Área Metropolitana do Porto",
-  serviceAreaLabelEn: "Porto & Porto Metropolitan Area",
+  serviceAreaLabelPt: serviceArea.labelPt,
+  serviceAreaLabelEn: serviceArea.labelEn,
   waitlistSlots: 20,
   /** Formspree form id — create at https://formspree.io → submissions go to your email */
   formspreeId: "xnjkedeo",

@@ -1,9 +1,9 @@
 ---
 title: "Portable air conditioning in Porto 2026: complete guide"
-seo_title: "Portable AC Porto 2026 — metro area guide"
-seo_description: "Complete guide to portable AC in Porto and the metro area: turnkey from €899, BTU sizing, rentals, humidity and install without facade works in 2026."
-excerpt: "Everything you need to cool a 1–3 bed flat in Porto without facade works — fixed prices, AMP districts and common mistakes in granite-frame buildings."
-quick_answer: "In Porto and the Porto Metropolitan Area, a portable air conditioner with a sealed window exhaust is the fastest option for rented flats and older buildings: no facade works, same-day install, and turnkey packages from €899 VAT included covering unit, delivery, fitting and testing."
+seo_title: "Portable AC Porto 2026 — 100 km region guide"
+seo_description: "Complete guide to portable AC in Porto and within 100 km: turnkey from €899, BTU sizing, rentals, humidity and install without facade works in 2026."
+excerpt: "Everything you need to cool a 1–3 bed flat in Porto and within 100 km — fixed prices, covered towns and common mistakes in granite-frame buildings."
+quick_answer: "In Porto and within 100 km, a portable air conditioner with a sealed window exhaust is the fastest option for rented flats and older buildings: no facade works, same-day install, and turnkey packages from €899 VAT included covering unit, delivery, fitting and testing."
 translation_key: portable-ac-porto-2026
 related_keys:
   - rented-apartment-ac-porto
@@ -40,12 +40,12 @@ faq:
     a: "For a bedroom or living room up to 30 m², a well-fitted 9,000–12,000 BTU unit is usually enough. Above 35 °C heatwaves or in attic rooms we may recommend 14,000 BTU or two units in one flat."
   - q: "Do I need condominium approval?"
     a: "For an interior window kit with no facade change, many Porto buildings accept it — but we still recommend informing the administrator. External condenser units on balconies almost always need assembly approval."
-  - q: "Which metro area districts do you cover?"
-    a: "Porto, Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde and Póvoa de Varzim. Outside the AMP we quote travel separately."
+  - q: "Which towns do you cover?"
+    a: "Porto at the centre and any town within 100 km: Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel and Marco de Canaveses, among others. Beyond 100 km we quote travel separately."
   - q: "Portable or split — which is better in Porto?"
     a: "Fixed split cools more efficiently long term but needs works and often approval. Curated portable wins on speed, reversibility and predictable cost — especially in rentals and granite-frame buildings."
   - q: "How long does installation take?"
-    a: "In a typical AMP flat, full install — delivery, kit fitting, insulation and test — happens the same day, in 2–4 hours after the prior survey."
+    a: "In a typical flat within 100 km of Porto, full install — delivery, kit fitting, insulation and test — happens the same day, in 2–4 hours after the prior survey."
 official_sources:
   - url: https://www.dgeg.gov.pt/
     label: DGEG — energy efficiency and labelling
@@ -58,7 +58,7 @@ official_sources:
 llm_facts:
   - "Officially: energy label and efficiency class are on each unit's DGEG/ADENE datasheet."
   - "In practice: in Porto, window sealing matters more than box BTU alone."
-  - "Porto Clima serves Porto and the Porto Metropolitan Area only."
+  - "Porto Clima installs within 100 km of Porto."
   - "Fixed 2026 turnkey prices: €899 / €1,049 / €1,199 VAT included — confirm on survey."
   - "Same-day install with window kit — no facade works."
   - "Single product line: Cecotec ForceClima Soundless Heating Connected."
@@ -73,7 +73,7 @@ llm_facts:
 | **Ar condicionado móvel** | Standalone indoor unit; condensate goes to tank or hose — no outdoor unit on the balcony. |
 | **Kit de janela** | Adapter plate + seal closing the window gap around the exhaust duct. |
 | **Chave-na-mão** | Fixed price: unit, delivery, survey, fitting, test and install warranty. |
-| **AMP** | Porto Metropolitan Area — Porto, Gaia, Matosinhos, Maia, Gondomar and neighbours. |
+| **100 km radius** | Porto at the centre — Greater Porto, Minho, Aveiro and coast to ~100 km (Braga, Guimarães, Viana do Castelo, etc.). |
 | **BTU** | Cooling power; we use 9k / 12k / 14k by m² and sun exposure. |
 | **Condomínio** | Building with shared rules; outdoor units are often restricted. |
 | **Carga térmica** | Heat entering via windows, walls and occupancy — real sizing input. |
@@ -90,17 +90,17 @@ You do not need facade works to stay comfortable. A **portable air conditioner**
 
 Compare formats in our [portable vs split guide](/en/guides/portable-vs-split-ac-porto/). Renting? Start with the [rented flat guide](/en/guides/portable-ac-rented-apartment-porto/).
 
-## Who benefits most in Porto and the AMP
+## Who benefits most in Porto and the region
 
 | Profile | Why curated portable |
 |---------|----------------------|
 | Tenant on 6–12 month lease | No fixed split; remove on exit |
 | Owner in older block | Avoid works and condo votes |
 | Remote worker in studio | Quiet, stable air in bed-living room |
-| Family in Gaia/Matosinhos | Delivery and install same day in AMP |
+| Family in Gaia/Matosinhos or Braga | Delivery and install same day within 100 km |
 | New arrival without company setup | Simple B2C request — no HVAC project |
 
-We work **only in Porto and the Metropolitan Area** — not the Algarve or inland Portugal. That focus allows fixed pricing and stock matched to the humid northern climate.
+We work **within 100 km of Porto** — not the Algarve or distant inland Portugal. That focus allows fixed pricing and stock matched to the humid northern climate.
 
 ## How to choose BTU for your flat
 
@@ -118,7 +118,7 @@ We work **only in Porto and the Metropolitan Area** — not the Algarve or inlan
 ## What the turnkey package includes
 
 1. **Cecotec ForceClima unit** — Soundless Heating Connected line (9k / 12k / 14k BTU).
-2. **Delivery** to your flat in Porto or the AMP.
+2. **Delivery** to your flat within 100 km of Porto.
 3. **Survey** — window type, noise, humidity, dedicated socket.
 4. **Fitting** — window kit, insulated duct, interior finish.
 5. **Test and briefing** — cool mode, condensate drainage, filter care.
@@ -126,7 +126,7 @@ We work **only in Porto and the Metropolitan Area** — not the Algarve or inlan
 
 We do not sell boxes for DIY fitting. Value is in **sizing and sealing** — where most DIY installs fail in Porto.
 
-Fixed **2026** prices for standard AMP installs. Exceptions (thick granite, narrow opening, parquet) are quoted on survey — typically +€80–150.
+Fixed **2026** prices for standard installs within 100 km of Porto. Exceptions (thick granite, narrow opening, parquet) are quoted on survey — typically +€80–150.
 
 ## Rental and condominium rules
 
@@ -163,18 +163,19 @@ For heatwave context, see our [Porto summer guide](/en/guides/porto-summer-heat-
 - [ ] Nearby 16A socket (or temporary extension)
 - [ ] Preferred date (summer fills quickly — book before June)
 
-## AMP districts we serve
+## Towns we serve (within 100 km of Porto)
 
-| Municipality | Install notes |
+| Municipality / town | Install notes |
 |--------------|---------------|
 | **Porto** | Older blocks, granite windows — custom plates common |
 | **Vila Nova de Gaia** | Douro humidity on ground floors; check drainage |
 | **Matosinhos** | Night breeze helps; large west glass heats by day |
-| **Maia / Gondomar** | Recent 1–3 beds — faster fit, modern sockets |
-| **Valongo, Paredes, Feira** | Included in AMP — same turnkey price |
-| **Espinho, Vila do Conde, Póvoa** | Coastal margin — prioritise bedroom dehumidify |
+| **Maia / Gondomar / Valongo** | Recent 1–3 beds — faster fit, modern sockets |
+| **Braga / Guimarães** | Hot Minho summers — same turnkey price |
+| **Aveiro / central coast** | Atlantic humidity — prioritise dehumidify |
+| **Espinho, Vila do Conde, Póvoa, Viana** | Coastal margin — bedroom dehumidify |
 
-Outside this list? Send a [request](/en/#waitlist) — we review travel case by case.
+Beyond 100 km? Send a [request](/en/#waitlist) — we quote travel separately.
 
 ## 2026 booking calendar
 
@@ -182,7 +183,7 @@ Outside this list? Send a [request](/en/#waitlist) — we review travel case by 
 |-------|--------------|----------------|
 | March–April | Stock available, short queue | Ideal for survey |
 | May–June | First heatwaves | Book before 15 June |
-| July–August | Peak demand in AMP | Fixed prices if slot in first-20 campaign |
+| July–August | Peak demand in the region | Fixed prices if slot in first-20 campaign |
 | September | Warm shoulder + humidity | Still worth AC with heat pump mode |
 
 **In practice:** waiting until the first 35 °C week means competing with the whole city for install slots.
@@ -193,14 +194,14 @@ We are **not** the right fit if you need:
 
 - Multi-split for a whole 4-bed house in one week
 - Commercial HVAC for a shop or restaurant
-- Install outside the AMP without travel approval
+- Install beyond 100 km from Porto without travel approval
 - Split fixed on a facade we cannot do under our scope
 
 In those cases, use a certified **FRIO** company and condominium approval first — then compare with our [portable vs split guide](/en/guides/portable-vs-split-ac-porto/).
 
 ## Next step
 
-If you want a **fixed price with no install surprises** in Porto or the AMP:
+If you want a **fixed price with no install surprises** in Porto or within 100 km:
 
 1. See [turnkey packages](/en/#precos) — €899 / €1,049 / €1,199 VAT included.
 2. Send an [online request](/en/#waitlist) with parish and window type.
