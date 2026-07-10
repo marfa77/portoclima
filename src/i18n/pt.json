@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Porto Clima — Ar condicionado móvel no Porto e Área Metropolitana",
-    "description": "Instalação curada no Porto e AMP (Gaia, Matosinhos, Maia, Gondomar…). 3 modelos Cecotec testados in loco, sem alterar fachada. Peça orçamento online."
+    "description": "Ar condicionado móvel chave-na-mão no Porto: preço fixo desde 899€, Cecotec com garantia, frio + desumidificação + calor, sem bloco na fachada. Instalação num dia na AMP."
   },
   "nav": {
     "niche": "A nossa nicha",
@@ -10,6 +10,7 @@
     "faq": "FAQ",
     "waitlist": "Pedido",
     "pricing": "Preços",
+    "why": "Porquê nós",
     "guides": "Guias",
     "langSwitch": "English"
   },
@@ -17,11 +18,120 @@
     "eyebrow": "Porto e Área Metropolitana · edifícios históricos · sem obras na fachada",
     "serviceArea": "Trabalhamos apenas no Porto e na Área Metropolitana do Porto (AMP)",
     "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
-    "title": "Ar condicionado móvel curado — 3 modelos, um fabricante",
-    "subtitle": "Só móveis com bomba de calor. Três SKU Cecotec ForceClima Soundless — arrefecimento, desumidificação e aquecimento — vendidos em PT com preços reais em cecotec.pt. Um marca = serviço, garantia e stock mais simples.",
-    "ctaModels": "Ver os 3 modelos",
-    "ctaWaitlist": "Deixar pedido",
-    "note": "Desde 899€ chave-na-mão (IVA incl.) · Porto e AMP · Contactamos após o pedido"
+    "title": "Uma máquina. Quatro estações. Preço fechado. Sem bloco na rua.",
+    "subtitle": "Verão arrefece, outono desumidifica, inverno aquece — bomba de calor Cecotec com garantia, instalada e vedada por nós. Preço chave-na-mão transparente desde 899€. Zero unidade exterior na fachada.",
+    "ctaModels": "Ver preços e modelos",
+    "ctaWaitlist": "Pedir instalação",
+    "note": "899€ / 1 049€ / 1 199€ chave-na-mão · IVA incl. · 1 dia · Porto e AMP"
+  },
+  "whyBest": {
+    "eyebrow": "A melhor opção no Porto",
+    "title": "Porque o nosso pacote ganha ao split, à loja e ao «compro e instalo sozinho»",
+    "subtitle": "Não vendemos a caixa mais barata. Vendemos conforto real o ano todo — com preço fechado, máquina fiável, garantia dupla e instalação que não depende de obras, condomínio ou bloco pendurado na varanda.",
+    "seasons": [
+      {
+        "icon": "☀️",
+        "title": "Verão",
+        "text": "Arrefecimento real em ondas de 35 °C — quarto a 22–24 °C com janela vedada, sem ruído da rua."
+      },
+      {
+        "icon": "🍂",
+        "title": "Outono",
+        "text": "Desumidificação quando o Atlântico enche o T1 de humidade — menos bolor, menos «ar pesado»."
+      },
+      {
+        "icon": "❄️",
+        "title": "Inverno",
+        "text": "Bomba de calor — aquecimento sem radiadores a seco nem obra. Essencial no Porto sem central térmica."
+      },
+      {
+        "icon": "🌤️",
+        "title": "Primavera",
+        "text": "Uma máquina guardada — não precisa de desmontar split nem negociar com condomínio outra vez."
+      }
+    ],
+    "pillars": [
+      {
+        "icon": "€",
+        "title": "Preço transparente chave-na-mão",
+        "text": "899€, 1 049€ ou 1 199€ — máquina, entrega, vistoria, montagem e teste. Sem surpresas de obra nem orçamento que muda a meio."
+      },
+      {
+        "icon": "✓",
+        "title": "Máquinas fiáveis com garantia",
+        "text": "Só Cecotec ForceClima Soundless — garantia de fábrica + 12 meses na nossa instalação. Uma marca, assistência clara."
+      },
+      {
+        "icon": "🏠",
+        "title": "Sem bloco na fachada",
+        "text": "Nada pendurado na varanda nem na rua. Ideal para Ribeira, arrendamento e condomínios que vetam split exterior."
+      },
+      {
+        "icon": "1",
+        "title": "Instalação num dia",
+        "text": "Vistoria + montagem + teste na AMP. Não espera semanas de FRIO, assembleia nem obras."
+      },
+      {
+        "icon": "🔇",
+        "title": "Série Soundless",
+        "text": "Prioridade ao sono — medimos ruído no local, não só o dB do folheto."
+      },
+      {
+        "icon": "◎",
+        "title": "Vedação profissional",
+        "text": "O valor está no kit de janela à medida — sem isto, qualquer móvel perde 30–40% de eficiência no Porto."
+      }
+    ],
+    "compare": {
+      "headers": {
+        "criteria": "Critério",
+        "us": "Porto Clima",
+        "split": "Split fixo",
+        "store": "Caixa da loja"
+      },
+      "rows": [
+        {
+          "criteria": "Preço final previsível",
+          "us": "Fixo chave-na-mão",
+          "split": "Obra + máquina + atrasos",
+          "store": "Só a caixa — falta instalação"
+        },
+        {
+          "criteria": "4 estações (frio + calor + humidade)",
+          "us": "Sim — bomba de calor",
+          "split": "Sim",
+          "store": "Depende do modelo"
+        },
+        {
+          "criteria": "Unidade exterior na rua",
+          "us": "Não",
+          "split": "Sim — muitas vezes proibida",
+          "store": "Não, mas sem vedação"
+        },
+        {
+          "criteria": "Condomínio / arrendamento",
+          "us": "Kit removível",
+          "split": "Autorização difícil",
+          "store": "DIY — risco de depósito"
+        },
+        {
+          "criteria": "Prazo no Porto",
+          "us": "1 dia",
+          "split": "2–6 semanas",
+          "store": "Hoje, mas mal instalado"
+        },
+        {
+          "criteria": "Garantia de instalação",
+          "us": "12 meses + Cecotec",
+          "split": "FRIO separado",
+          "store": "Nenhuma"
+        }
+      ]
+    },
+    "quote": "Um aparelho. Quatro estações. Um preço. Zero bloco na fachada.",
+    "quoteSub": "É isto que compra connosco — não «mais um SKU» de e-commerce.",
+    "ctaPricing": "Ver preços fixos",
+    "ctaRequest": "Pedir vistoria"
   },
   "manifest": {
     "title": "A nossa nicha — poucos SKU, mas os certos",
@@ -35,12 +145,12 @@
     "title": "Móvel · poucos SKU · topo de gama",
     "intro": "Não competimos com FNAC ou Worten em variedade. Competimos em curadoria: só o que funciona em casas históricas do Porto e AMP, com instalação discreta e números honestos.",
     "bullets": [
-      "Só ar condicionado móvel — sem split, sem obras na fachada",
-      "3 modelos Cecotec — bomba de calor + desumidificação + WiFi em todos",
-      "Um fabricante — stock, garantia e pós-venda unificados",
-      "Preço fixo chave-na-mão — sem surpresas na instalação",
-      "Série Soundless — prioridade a quartos e ruído nocturno",
-      "Instalação no Porto e Área Metropolitana — conhecemos condomínios locais"
+      "Preço chave-na-mão fixo — 899€ / 1 049€ / 1 199€, IVA incluído",
+      "Verão frio · outono seco · inverno quente — bomba de calor em todos",
+      "Sem unidade exterior — nada na varanda nem na fachada",
+      "Cecotec com garantia de fábrica + 12 meses na instalação",
+      "Instalação num dia na AMP — vistoria, vedação e teste",
+      "Série Soundless — dormir com a máquina ligada"
     ],
     "lineupTitle": "Três tamanhos, uma linha",
     "lineupSubtitle": "Referência de preço PVP em",

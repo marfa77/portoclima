@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Porto Clima — Portable AC in Porto & Metropolitan Area",
-    "description": "Curated installs in Porto and the AMP (Gaia, Matosinhos, Maia, Gondomar…). 3 Cecotec field-tested models, no facade changes. Request a quote online."
+    "description": "Turnkey portable AC in Porto: fixed from €899, warranted Cecotec heat pump — cool, dehumidify and heat year-round, no outdoor unit on your facade. Same-day install in the AMP."
   },
   "nav": {
     "niche": "Our niche",
@@ -10,6 +10,7 @@
     "faq": "FAQ",
     "waitlist": "Request",
     "pricing": "Pricing",
+    "why": "Why us",
     "guides": "Guides",
     "langSwitch": "Português"
   },
@@ -17,11 +18,120 @@
     "eyebrow": "Porto & Metro Area · historic buildings · no facade work",
     "serviceArea": "We serve Porto and the Porto Metropolitan Area (AMP) only",
     "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
-    "title": "Curated portable AC — 3 models, one manufacturer",
-    "subtitle": "Heat-pump portables only. Three Cecotec ForceClima Soundless SKUs — cooling, dehumidification and heating — sold in PT with real cecotec.pt prices. One brand = simpler service, warranty and sourcing.",
-    "ctaModels": "See the 3 models",
-    "ctaWaitlist": "Leave a request",
-    "note": "From €899 turnkey (VAT incl.) · Porto & AMP · We contact you after your request"
+    "title": "One unit. Four seasons. Fixed price. No outdoor block.",
+    "subtitle": "Summer cooling, autumn dehumidifying, winter heating — Cecotec heat pump with warranty, fitted and sealed by us. Transparent turnkey from €899. Zero outdoor unit on your facade.",
+    "ctaModels": "See prices & models",
+    "ctaWaitlist": "Request install",
+    "note": "€899 / €1,049 / €1,199 turnkey · VAT incl. · 1 day · Porto & AMP"
+  },
+  "whyBest": {
+    "eyebrow": "The best option in Porto",
+    "title": "Why our package beats split, retail and DIY",
+    "subtitle": "We do not sell the cheapest box. We sell year-round comfort — fixed price, reliable machines, dual warranty and install that does not depend on works, condo votes or a block on your balcony.",
+    "seasons": [
+      {
+        "icon": "☀️",
+        "title": "Summer",
+        "text": "Real cooling in 35 °C heatwaves — bedroom at 22–24 °C with a sealed window, no street noise."
+      },
+      {
+        "icon": "🍂",
+        "title": "Autumn",
+        "text": "Dehumidify when Atlantic humidity fills the flat — less mould, less «heavy air»."
+      },
+      {
+        "icon": "❄️",
+        "title": "Winter",
+        "text": "Heat pump heating without dry radiators or building works. Essential in Porto without central heating."
+      },
+      {
+        "icon": "🌤️",
+        "title": "Spring",
+        "text": "One machine stays ready — no split dismantling or another condo negotiation."
+      }
+    ],
+    "pillars": [
+      {
+        "icon": "€",
+        "title": "Transparent turnkey price",
+        "text": "€899, €1,049 or €1,199 — unit, delivery, survey, fitting and test. No works surprises or shifting quotes."
+      },
+      {
+        "icon": "✓",
+        "title": "Reliable machines with warranty",
+        "text": "Cecotec ForceClima Soundless only — factory warranty + 12 months on our install. One brand, clear support."
+      },
+      {
+        "icon": "🏠",
+        "title": "No block on the facade",
+        "text": "Nothing hung on the balcony or street. Ideal for Ribeira, rentals and condos that ban outdoor splits."
+      },
+      {
+        "icon": "1",
+        "title": "Same-day install",
+        "text": "Survey + fitting + test in the AMP. No weeks waiting for HVAC, assembly votes or building works."
+      },
+      {
+        "icon": "🔇",
+        "title": "Soundless line",
+        "text": "Sleep-first — we measure noise on site, not just brochure dB."
+      },
+      {
+        "icon": "◎",
+        "title": "Professional sealing",
+        "text": "Value is in the custom window kit — without it, any portable loses 30–40% efficiency in Porto."
+      }
+    ],
+    "compare": {
+      "headers": {
+        "criteria": "Criterion",
+        "us": "Porto Clima",
+        "split": "Fixed split",
+        "store": "Retail box"
+      },
+      "rows": [
+        {
+          "criteria": "Predictable final price",
+          "us": "Fixed turnkey",
+          "split": "Works + unit + delays",
+          "store": "Box only — no fitting"
+        },
+        {
+          "criteria": "4 seasons (cool + heat + humidity)",
+          "us": "Yes — heat pump",
+          "split": "Yes",
+          "store": "Depends on model"
+        },
+        {
+          "criteria": "Outdoor unit on street",
+          "us": "No",
+          "split": "Yes — often banned",
+          "store": "No, but no sealing"
+        },
+        {
+          "criteria": "Condo / rental",
+          "us": "Removable kit",
+          "split": "Hard approval",
+          "store": "DIY — deposit risk"
+        },
+        {
+          "criteria": "Timeline in Porto",
+          "us": "1 day",
+          "split": "2–6 weeks",
+          "store": "Today, poorly fitted"
+        },
+        {
+          "criteria": "Install warranty",
+          "us": "12 months + Cecotec",
+          "split": "Separate HVAC",
+          "store": "None"
+        }
+      ]
+    },
+    "quote": "One unit. Four seasons. One price. Zero facade block.",
+    "quoteSub": "That is what you buy from us — not «another e-commerce SKU».",
+    "ctaPricing": "See fixed prices",
+    "ctaRequest": "Request survey"
   },
   "manifest": {
     "title": "Our niche — few SKUs, but the right ones",
@@ -35,12 +145,12 @@
     "title": "Portable · few SKUs · top tier",
     "intro": "We don't compete with FNAC or Worten on variety. We compete on curation: what works in Porto's historic homes and AMP, with discreet installs and honest numbers.",
     "bullets": [
-      "Portable AC only — no split, no facade work",
-      "3 Cecotec models — heat pump + dehumidify + WiFi on all",
-      "Single manufacturer — unified stock, warranty and after-sales",
-      "Fixed turnkey price — no install surprises",
-      "Soundless series — bedroom and night-noise priority",
-      "Install in Porto & Metropolitan Area — we know local condo rules"
+      "Fixed turnkey price — €899 / €1,049 / €1,199 VAT included",
+      "Summer cool · autumn dry · winter warm — heat pump on every unit",
+      "No outdoor unit — nothing on balcony or facade",
+      "Cecotec factory warranty + 12 months on our install",
+      "Same-day install in the AMP — survey, sealing and test",
+      "Soundless series — sleep with the unit running"
     ],
     "lineupTitle": "Three sizes, one line",
     "lineupSubtitle": "Reference RRP at",

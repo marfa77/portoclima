@@ -17,6 +17,7 @@ const prefix = locale === "en" ? "/en" : "";
       <img src="/logo.svg" alt="Porto Clima" width="168" height="32" class="h-8 w-auto sm:h-9" />
     </a>
     <nav class="hidden items-center gap-5 text-sm text-ink-muted md:flex">
+      <a href={`${prefix}/#porque`} class="hover:text-azulejo">{dict.nav.why}</a>
       <a href={`${prefix}/#modelos`} class="hover:text-azulejo">{dict.nav.niche}</a>
       <a href={`${prefix}/#precos`} class="hover:text-azulejo">{dict.nav.pricing}</a>
       <a href={locale === "pt" ? "/guias/" : "/en/guides/"} class="hover:text-azulejo">{dict.nav.guides}</a>
