@@ -283,7 +283,10 @@
     "message": "Notes (optional)",
     "submit": "Submit request",
     "success": "Thank you — we'll be in touch soon.",
-    "privacy": "No spam. Data goes to our inbox — we'll contact you about your install."
+    "consentBefore": "I have read and accept the",
+    "consentLink": "Privacy Policy",
+    "consentAfter": "and authorise processing of my data to respond to my install request.",
+    "privacy": "No spam. You can request deletion anytime — see Privacy."
   },
   "guides": {
     "eyebrow": "Local guides",
@@ -311,6 +314,7 @@
     "models": "Cecotec models",
     "pricing": "Turnkey pricing",
     "guides": "Guides",
+    "privacy": "Privacy",
     "legal": "Company being registered — no ENI/NIF published yet.",
     "credit": "Site by webmorp.art"
   },
@@ -319,5 +323,117 @@
     "priceCta": "Pricing",
     "cta": "Request install",
     "ariaLabel": "Quick actions"
+  },
+  "cookies": {
+    "message": "We use cookieless marketing analytics (Plausible) and local storage only for UTM campaign tags. We do not sell your data.",
+    "link": "Privacy Policy",
+    "dismiss": "Got it",
+    "ariaLabel": "Privacy and cookies information"
+  },
+  "privacy": {
+    "eyebrow": "GDPR",
+    "metaTitle": "Privacy Policy — Porto Clima",
+    "metaDescription": "How Porto Clima handles your personal data: request form, Plausible analytics, GDPR rights and contact.",
+    "title": "Privacy Policy",
+    "updated": "Last updated: 10 July 2026",
+    "intro": "Porto Clima (climaporto.pt) complies with the EU General Data Protection Regulation (GDPR). This policy explains what data we collect, why, and your rights.",
+    "sections": [
+      {
+        "id": "responsavel",
+        "title": "1. Data controller",
+        "paragraphs": [
+          "Controller: Porto Clima — company being registered in Portugal (NIF/ENI to be published after incorporation).",
+          "Privacy contact: contacto@climaporto.pt or the form at climaporto.pt.",
+          "Service area: Porto and the Porto Metropolitan Area (AMP)."
+        ]
+      },
+      {
+        "id": "dados",
+        "title": "2. Data we collect",
+        "paragraphs": ["Through the install request form we may collect:"],
+        "list": [
+          "Name",
+          "Email address",
+          "Mobile phone number",
+          "Municipality or area (Porto / AMP)",
+          "Optional message",
+          "Page language and UTM parameters (campaign source), when present"
+        ]
+      },
+      {
+        "id": "finalidade",
+        "title": "3. Purpose and legal basis",
+        "paragraphs": [
+          "We process data to reply to your request, suggest price and model, schedule a survey and install, and improve our service.",
+          "Legal basis: your consent (Art. 6(1)(a) GDPR) when submitting the form; and legitimate interest in responding to commercial enquiries (Art. 6(1)(f))."
+        ]
+      },
+      {
+        "id": "subcontratantes",
+        "title": "4. Processors",
+        "paragraphs": ["We may use providers that process data on our behalf:"],
+        "list": [
+          "Formspree — form delivery to our inbox",
+          "Plausible Analytics — visit statistics without marketing cookies (standard setup)",
+          "GitHub Pages — static site hosting",
+          "YouTube (nocookie embed) — manufacturer video only if you load the player"
+        ],
+        "links": [
+          { "label": "Formspree — Privacy", "url": "https://formspree.io/legal/privacy-policy/" },
+          { "label": "Plausible — Data policy", "url": "https://plausible.io/data-policy" }
+        ]
+      },
+      {
+        "id": "conservacao",
+        "title": "5. Retention",
+        "paragraphs": [
+          "Install requests: up to 24 months after last contact, unless law requires longer retention.",
+          "Aggregated analytics: per Plausible policy (no individual marketing profiles).",
+          "You may request earlier deletion — see section 6."
+        ]
+      },
+      {
+        "id": "direitos",
+        "title": "6. Your rights",
+        "paragraphs": ["Under GDPR you may request:"],
+        "list": [
+          "Access to your data",
+          "Correction of inaccurate data",
+          "Erasure («right to be forgotten»)",
+          "Restriction or objection to processing",
+          "Portability, where applicable",
+          "Withdraw consent at any time (without affecting prior lawful processing)"
+        ],
+        "links": [
+          { "label": "CNPD — Portuguese Data Protection Authority", "url": "https://www.cnpd.pt" }
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "7. Cookies and similar technologies",
+        "paragraphs": [
+          "We do not use advertising or social media cookies.",
+          "Plausible (analytics): script without marketing cookies in the current site configuration.",
+          "sessionStorage: we store UTM parameters in your browser only to link a request to a campaign — not shared with advertisers.",
+          "If we add non-essential cookies in future, we will update this policy and ask for consent where required by law."
+        ]
+      },
+      {
+        "id": "seguranca",
+        "title": "8. Security",
+        "paragraphs": [
+          "The site is served over HTTPS. The form sends data to Formspree over an encrypted connection.",
+          "We do not request payment or card data on this website during the current demand-validation phase."
+        ]
+      },
+      {
+        "id": "alteracoes",
+        "title": "9. Changes",
+        "paragraphs": [
+          "We may update this policy — the date above shows the current version.",
+          "After company registration we will publish NIF, address and other mandatory legal details in the site footer."
+        ]
+      }
+    ]
   }
 }

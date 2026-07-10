@@ -3,6 +3,7 @@ import type { Locale } from "../lib/i18n";
 import { t, localePath } from "../lib/i18n";
 import { siteConfig } from "../data/site";
 import { guidesIndexPath } from "../lib/guides";
+import { privacyPath } from "../lib/legal";
 
 interface Props {
   locale: Locale;
@@ -43,6 +44,11 @@ const showWhatsApp = "whatsappEnabled" in siteConfig && siteConfig.whatsappEnabl
         <li>
           <a href={guidesIndexPath(locale)} class="text-azulejo hover:underline">
             {dict.footer.guides}
+          </a>
+        </li>
+        <li>
+          <a href={privacyPath(locale)} class="text-azulejo hover:underline">
+            {dict.footer.privacy}
           </a>
         </li>
         {showWhatsApp && (

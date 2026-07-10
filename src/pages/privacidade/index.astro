@@ -1,0 +1,20 @@
+---
+import LegalLayout from "../../layouts/LegalLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import StickyBar from "../../components/StickyBar.astro";
+import CookieNotice from "../../components/CookieNotice.astro";
+import PrivacyContent from "../../components/PrivacyContent.astro";
+import { t } from "../../lib/i18n";
+
+const locale = "pt";
+const p = t(locale).privacy;
+---
+
+<LegalLayout locale={locale} title={p.metaTitle} description={p.metaDescription}>
+  <Header slot="header" locale={locale} />
+  <PrivacyContent locale={locale} />
+  <Footer slot="footer" locale={locale} />
+  <StickyBar slot="sticky" locale={locale} />
+  <CookieNotice slot="cookie-notice" locale={locale} />
+</LegalLayout>

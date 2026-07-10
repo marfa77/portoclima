@@ -4,6 +4,7 @@ import type { Locale } from "../lib/i18n";
 import { localePath, alternateLocale, t } from "../lib/i18n";
 import { siteConfig } from "../data/site";
 import JsonLd from "../components/JsonLd.astro";
+import CookieNotice from "../components/CookieNotice.astro";
 
 interface Props {
   locale: Locale;
@@ -83,6 +84,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     </main>
     <slot name="footer" />
     <slot name="sticky" />
+    <CookieNotice locale={locale} />
 
     <script is:inline>
       (function () {

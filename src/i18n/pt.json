@@ -283,7 +283,10 @@
     "message": "Notas (opcional)",
     "submit": "Enviar pedido",
     "success": "Obrigado — entraremos em contacto em breve.",
-    "privacy": "Sem spam. Os dados vão para o nosso email — contactamos sobre a sua instalação."
+    "consentBefore": "Li e aceito a",
+    "consentLink": "Política de Privacidade",
+    "consentAfter": "e autorizo o tratamento dos meus dados para responder ao pedido de instalação.",
+    "privacy": "Sem spam. Pode pedir eliminação dos dados a qualquer momento — ver Privacidade."
   },
   "guides": {
     "eyebrow": "Guias locais",
@@ -311,6 +314,7 @@
     "models": "Modelos Cecotec",
     "pricing": "Preços chave-na-mão",
     "guides": "Guias",
+    "privacy": "Privacidade",
     "legal": "Empresa em constituição — sem NIF publicado até registo ENI.",
     "credit": "Site by webmorp.art"
   },
@@ -319,5 +323,117 @@
     "priceCta": "Preços",
     "cta": "Pedir instalação",
     "ariaLabel": "Ações rápidas"
+  },
+  "cookies": {
+    "message": "Usamos analytics sem cookies de marketing (Plausible) e armazenamento local apenas para campanhas UTM. Não vendemos os seus dados.",
+    "link": "Política de Privacidade",
+    "dismiss": "Entendi",
+    "ariaLabel": "Informação sobre privacidade e cookies"
+  },
+  "privacy": {
+    "eyebrow": "RGPD",
+    "metaTitle": "Política de Privacidade — Porto Clima",
+    "metaDescription": "Como o Porto Clima trata os seus dados pessoais: formulário de pedido, analytics Plausible, direitos RGPD e contacto.",
+    "title": "Política de Privacidade",
+    "updated": "Última atualização: 10 de julho de 2026",
+    "intro": "O Porto Clima (climaporto.pt) respeita o Regulamento Geral de Proteção de Dados (RGPD). Esta política explica que dados recolhemos, porquê e quais os seus direitos.",
+    "sections": [
+      {
+        "id": "responsavel",
+        "title": "1. Responsável pelo tratamento",
+        "paragraphs": [
+          "Responsável: Porto Clima — empresa em constituição em Portugal (NIF/ENI a publicar após registo).",
+          "Contacto para privacidade: contacto@climaporto.pt ou formulário em climaporto.pt.",
+          "Área de serviço: Porto e Área Metropolitana do Porto (AMP)."
+        ]
+      },
+      {
+        "id": "dados",
+        "title": "2. Dados que recolhemos",
+        "paragraphs": ["Através do formulário de pedido de instalação podemos recolher:"],
+        "list": [
+          "Nome",
+          "Endereço de email",
+          "Número de telemóvel",
+          "Concelho ou zona (Porto / AMP)",
+          "Mensagem opcional",
+          "Idioma da página e parâmetros UTM (origem da campanha), quando existirem"
+        ]
+      },
+      {
+        "id": "finalidade",
+        "title": "3. Finalidade e base legal",
+        "paragraphs": [
+          "Tratamos os dados para responder ao seu pedido, indicar preço e modelo, marcar vistoria e instalação, e melhorar o nosso serviço.",
+          "Base legal: o seu consentimento (art. 6.º, n.º 1, al. a) RGPD) ao enviar o formulário; e interesse legítimo em responder a pedidos comerciais (art. 6.º, n.º 1, al. f))."
+        ]
+      },
+      {
+        "id": "subcontratantes",
+        "title": "4. Subcontratantes",
+        "paragraphs": ["Podemos usar prestadores que tratam dados em nosso nome:"],
+        "list": [
+          "Formspree — receção e encaminhamento do formulário para o nosso email",
+          "Plausible Analytics — estatísticas de visitas sem cookies de marketing (configuração standard)",
+          "GitHub Pages — alojamento do site estático",
+          "YouTube (embed nocookie) — vídeo do fabricante apenas se carregar o player"
+        ],
+        "links": [
+          { "label": "Formspree — Privacy", "url": "https://formspree.io/legal/privacy-policy/" },
+          { "label": "Plausible — Data policy", "url": "https://plausible.io/data-policy" }
+        ]
+      },
+      {
+        "id": "conservacao",
+        "title": "5. Prazo de conservação",
+        "paragraphs": [
+          "Pedidos de instalação: até 24 meses após o último contacto, salvo obrigação legal de conservar mais tempo.",
+          "Dados de analytics agregados: conforme política do Plausible (sem perfis individuais de marketing).",
+          "Pode pedir eliminação antecipada — ver secção 6."
+        ]
+      },
+      {
+        "id": "direitos",
+        "title": "6. Os seus direitos",
+        "paragraphs": ["Nos termos do RGPD, pode solicitar:"],
+        "list": [
+          "Acesso aos seus dados",
+          "Retificação de dados incorretos",
+          "Eliminação («direito a ser esquecido»)",
+          "Limitação ou oposição ao tratamento",
+          "Portabilidade, quando aplicável",
+          "Retirar o consentimento a qualquer momento (sem afetar tratamentos já realizados)"
+        ],
+        "links": [
+          { "label": "CNPD — Comissão Nacional de Proteção de Dados", "url": "https://www.cnpd.pt" }
+        ]
+      },
+      {
+        "id": "cookies",
+        "title": "7. Cookies e tecnologias similares",
+        "paragraphs": [
+          "Não usamos cookies de publicidade ou redes sociais.",
+          "Plausible (analytics): script sem cookies de marketing na configuração atual do site.",
+          "sessionStorage: guardamos parâmetros UTM no seu browser apenas para associar um pedido à campanha — não é partilhado com terceiros para publicidade.",
+          "Se no futuro adicionarmos cookies não essenciais, atualizaremos esta política e pediremos consentimento quando exigido por lei."
+        ]
+      },
+      {
+        "id": "seguranca",
+        "title": "8. Segurança",
+        "paragraphs": [
+          "O site é servido por HTTPS. O formulário envia dados para Formspree por ligação encriptada.",
+          "Não pedimos pagamento nem dados de cartão neste website na fase atual de validação de procura."
+        ]
+      },
+      {
+        "id": "alteracoes",
+        "title": "9. Alterações",
+        "paragraphs": [
+          "Podemos atualizar esta política — a data no topo indica a versão em vigor.",
+          "Após registo da empresa, publicaremos NIF, morada e demais dados legais obrigatórios no rodapé do site."
+        ]
+      }
+    ]
   }
 }

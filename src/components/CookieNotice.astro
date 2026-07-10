@@ -1,0 +1,52 @@
+---
+import type { Locale } from "../lib/i18n";
+import { t } from "../lib/i18n";
+import { privacyCookiesAnchor } from "../lib/legal";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale).cookies;
+const cookiesUrl = privacyCookiesAnchor(locale);
+---
+
+<div
+  id="cookie-notice"
+  class="cookie-notice fixed left-0 right-0 z-[45] hidden border-t border-stone-200 bg-white/95 px-4 py-3 shadow-lg backdrop-blur"
+  role="dialog"
+  aria-label={c.ariaLabel}
+  aria-live="polite"
+>
+  <div class="mx-auto flex max-w-5xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    <p class="text-sm leading-relaxed text-ink-muted">
+      {c.message}{" "}
+      <a href={cookiesUrl} class="font-medium text-azulejo underline hover:no-underline">
+        {c.link}
+      </a>
+    </p>
+    <button
+      type="button"
+      id="cookie-notice-dismiss"
+      class="tap-target shrink-0 rounded-full bg-azulejo px-5 py-2.5 text-sm font-semibold text-white active:opacity-90"
+    >
+      {c.dismiss}
+    </button>
+  </div>
+</div>
+
+<script>
+  const KEY = "climaporto-cookie-notice";
+  const banner = document.getElementById("cookie-notice");
+  const dismiss = document.getElementById("cookie-notice-dismiss");
+
+  if (banner && !localStorage.getItem(KEY)) {
+    banner.classList.remove("hidden");
+  }
+
+  dismiss?.addEventListener("click", () => {
+    localStorage.setItem(KEY, "1");
+    banner?.classList.add("hidden");
+  });
+</script>

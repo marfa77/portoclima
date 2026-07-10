@@ -2,6 +2,8 @@
 export const siteConfig = {
   domain: "climaporto.pt",
   brand: "Porto Clima",
+  /** Update when business email is live */
+  contactEmail: "contacto@climaporto.pt",
   serviceAreaLabelPt: "Porto e Área Metropolitana do Porto",
   serviceAreaLabelEn: "Porto & Porto Metropolitan Area",
   waitlistSlots: 20,

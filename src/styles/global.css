@@ -155,3 +155,19 @@ body {
   color: var(--color-ink);
   font-weight: 600;
 }
+
+.legal-prose a {
+  color: var(--color-azulejo);
+  text-decoration: underline;
+}
+
+.cookie-notice {
+  bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px));
+}
+
+@media (min-width: 768px) {
+  .cookie-notice {
+    bottom: 0;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+  }
+}

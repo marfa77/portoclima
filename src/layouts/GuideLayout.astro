@@ -6,6 +6,7 @@ import { siteConfig } from "../data/site";
 import GuideJsonLd from "../components/GuideJsonLd.astro";
 import RelatedGuides from "../components/RelatedGuides.astro";
 import GuideFunnel from "../components/GuideFunnel.astro";
+import CookieNotice from "../components/CookieNotice.astro";
 import type { GuideEntry } from "../lib/guides";
 import { guideOgImage, guidesIndexPath } from "../lib/guides";
 
@@ -192,5 +193,6 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
     </main>
     <slot name="footer" />
     <slot name="sticky" />
+    <CookieNotice locale={locale} />
   </body>
 </html>

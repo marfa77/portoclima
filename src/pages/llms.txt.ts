@@ -24,6 +24,8 @@ export async function GET() {
     `- [Guides PT](${site}${guidesIndexPath("pt")})`,
     `- [Guides EN](${site}${guidesIndexPath("en")})`,
     `- [Request install](${site}/#waitlist)`,
+    `- [Privacy PT](${site}/privacidade/)`,
+    `- [Privacy EN](${site}/en/privacy/)`,
     "",
     "## Guides (PT)",
     ...ptGuides.map(
