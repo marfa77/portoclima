@@ -12,17 +12,25 @@
     "pricing": "Pricing",
     "why": "Why us",
     "guides": "Guides",
-    "langSwitch": "Português"
+    "langSwitch": "Português",
+    "tagline": "Portable AC"
   },
   "hero": {
-    "eyebrow": "Porto & Metro Area · historic buildings · no facade work",
-    "serviceArea": "We serve Porto and the Porto Metropolitan Area (AMP) only",
+    "eyebrow": "Portable AC · install included · Porto & Metro Area",
+    "serviceArea": "Porto and the Porto Metropolitan Area (AMP)",
     "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
-    "title": "One unit. Four seasons. Fixed price. No outdoor block.",
-    "subtitle": "Summer cooling, autumn dehumidifying, winter heating — Cecotec heat pump with warranty, fitted and sealed by us. Transparent turnkey from €899. Zero outdoor unit on your facade.",
+    "title": "Portable air conditioning with turnkey install in Porto",
+    "subtitle": "We sell and fit Cecotec ForceClima units — cooling, dehumidifying and heat pump in one. Fixed price, dual warranty, no outdoor block on your facade.",
+    "pills": [
+      "Portable air conditioner",
+      "Install in one day",
+      "From €899 VAT incl."
+    ],
+    "imageBadge": "Portable air conditioning",
+    "imageBadgeSub": "Cecotec ForceClima · heat pump · WiFi",
     "ctaModels": "See prices & models",
     "ctaWaitlist": "Request install",
-    "note": "€899 / €1,049 / €1,199 turnkey · VAT incl. · 1 day · Porto & AMP"
+    "note": "€899 / €1,049 / €1,199 turnkey · unit + fitting + window seal"
   },
   "whyBest": {
     "eyebrow": "The best option in Porto",

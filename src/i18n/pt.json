@@ -12,17 +12,25 @@
     "pricing": "Preços",
     "why": "Porquê nós",
     "guides": "Guias",
-    "langSwitch": "English"
+    "langSwitch": "English",
+    "tagline": "Ar condicionado móvel"
   },
   "hero": {
-    "eyebrow": "Porto e Área Metropolitana · edifícios históricos · sem obras na fachada",
-    "serviceArea": "Trabalhamos apenas no Porto e na Área Metropolitana do Porto (AMP)",
+    "eyebrow": "Ar condicionado móvel · instalação incluída · Porto e AMP",
+    "serviceArea": "Porto e Área Metropolitana do Porto (AMP)",
     "serviceAreaDetail": "Porto, Vila Nova de Gaia, Matosinhos, Maia, Gondomar, Valongo, Paredes, Santa Maria da Feira, Espinho, Vila do Conde, Póvoa de Varzim",
-    "title": "Uma máquina. Quatro estações. Preço fechado. Sem bloco na rua.",
-    "subtitle": "Verão arrefece, outono desumidifica, inverno aquece — bomba de calor Cecotec com garantia, instalada e vedada por nós. Preço chave-na-mão transparente desde 899€. Zero unidade exterior na fachada.",
+    "title": "Ar condicionado móvel com instalação chave-na-mão no Porto",
+    "subtitle": "Vendemos e instalamos aparelhos Cecotec ForceClima — frio, desumidificação e bomba de calor num só equipamento. Preço fechado, garantia dupla, sem bloco na fachada.",
+    "pills": [
+      "Ar condicionado portátil",
+      "Instalação num dia",
+      "Desde 899€ IVA incl."
+    ],
+    "imageBadge": "Ar condicionado móvel",
+    "imageBadgeSub": "Cecotec ForceClima · bomba de calor · WiFi",
     "ctaModels": "Ver preços e modelos",
     "ctaWaitlist": "Pedir instalação",
-    "note": "899€ / 1 049€ / 1 199€ chave-na-mão · IVA incl. · 1 dia · Porto e AMP"
+    "note": "899€ / 1 049€ / 1 199€ chave-na-mão · máquina + montagem + vedação"
   },
   "whyBest": {
     "eyebrow": "A melhor opção no Porto",
