@@ -12,8 +12,9 @@ interface Props {
 const { locale } = Astro.props;
 const dict = t(locale);
 const prefix = locale === "en" ? "/en" : "";
+const showWhatsApp = siteConfig.whatsappEnabled;
 const wa = `https://wa.me/${siteConfig.whatsapp}`;
-const showWhatsApp = "whatsappEnabled" in siteConfig && siteConfig.whatsappEnabled;
+const mailto = `mailto:${siteConfig.contactEmail}`;
 ---
 
 <footer class="border-t border-stone-200 bg-white px-4 py-12 sm:px-6">
@@ -26,6 +27,11 @@ const showWhatsApp = "whatsappEnabled" in siteConfig && siteConfig.whatsappEnabl
     <div class="text-sm">
       <p class="font-medium text-ink">{dict.footer.contact}</p>
       <ul class="mt-2 space-y-2">
+        <li>
+          <a href={mailto} class="text-azulejo hover:underline">
+            {dict.footer.email}
+          </a>
+        </li>
         <li>
           <a href={`${localePath(locale)}#waitlist`} class="text-azulejo hover:underline">
             {dict.footer.request}

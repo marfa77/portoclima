@@ -180,6 +180,12 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
             >
               {dict.guides.cta}
             </a>
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              class="mt-3 inline-flex text-sm font-medium text-azulejo underline hover:no-underline"
+            >
+              {siteConfig.contactEmail}
+            </a>
           </section>
 
           <RelatedGuides locale={locale} guides={relatedGuides} />

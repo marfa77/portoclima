@@ -19,20 +19,16 @@
     "menuClose": "Close menu"
   },
   "hero": {
+    "brand": "Porto Clima",
     "eyebrow": "Portable AC · install included · Porto & 100 km region",
     "serviceArea": "Porto at the centre — 100 km radius",
     "serviceAreaDetail": "Porto, Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel, Marco de Canaveses and towns within 100 km of Porto",
     "title": "Portable air conditioning with turnkey install in Porto",
     "subtitle": "We sell and fit Cecotec ForceClima units — cooling, dehumidifying and heat pump in one. Fixed price, dual warranty, no outdoor block on your facade.",
-    "pills": [
-      "Portable air conditioner",
-      "Install in one day",
-      "From €899 VAT incl."
-    ],
-    "imageBadge": "Portable air conditioning",
-    "imageBadgeSub": "Cecotec ForceClima · heat pump · WiFi",
+    "highlights": "From €899 VAT incl. · same-day install · no-drill window kit (default)",
     "ctaModels": "See fixed prices",
     "ctaWaitlist": "Request install",
+    "ctaEmail": "Email contacto@climaporto.pt",
     "note": "€899 / €1,049 / €1,199 turnkey · unit + fitting + window seal"
   },
   "whyBest": {
@@ -167,8 +163,9 @@
       "Complex install (thick granite, narrow opening, parquet): +€80–150 — quoted after survey.",
       "Electrical work, unauthorised drilling or travel beyond 100 km from Porto: quoted separately.",
       "50% deposit to book · 50% after install and test.",
-      "First 20 requests: priority and these fixed prices before update."
+      "Fixed 2026 season prices — confirmed on survey before booking."
     ],
+    "valueNote": "A shop unit (~€400–600) does not include survey, professional sealing or 12 months install warranty — without that, a portable loses 30–40% efficiency in a Porto flat.",
     "modelsLink": "Compare models and specifications →"
   },
   "installation": {
@@ -180,12 +177,12 @@
         "text": "We measure noise, window, airflow and humidity — no phone sales."
       },
       {
-        "title": "Discreet penetration (if allowed)",
-        "text": "Indoor grille + insulated duct — no block on azulejo or granite facade."
+        "title": "Removable window kit (default)",
+        "text": "Thermal sealing at the window — no drilling, no facade works. This is how we install in most homes."
       },
       {
-        "title": "Finish",
-        "text": "Decorative flange aligned with frame — before/after photo for condo board."
+        "title": "Professional finish",
+        "text": "Insulated duct, flange aligned with the frame and leak test — before/after photo if the condo board asks."
       },
       {
         "title": "Handover & measurement",
@@ -230,7 +227,7 @@
     ],
     "landlord": {
       "title": "Renting? We help with your landlord",
-      "text": "We provide an authorization request template for discreet drilling — a real barrier we remove for you."
+      "text": "The default method is a removable window kit — no drilling. If your landlord or condo authorises it, we can assess discreet drilling with insulated duct; we provide an authorization request template."
     }
   },
   "comparison": {
@@ -252,6 +249,18 @@
     "title": "FAQ",
     "items": [
       {
+        "q": "How much does turnkey install cost?",
+        "a": "From €899 VAT included (bedroom up to 20 m²), €1,049 (living room up to 30 m²) or €1,199 (large room). 2×12800 at the same address: €1,999. Includes Cecotec unit, delivery, survey, fitting, test and 12 months install warranty — confirmed on survey."
+      },
+      {
+        "q": "Can I install in a rented flat without a facade block?",
+        "a": "Yes — that is our focus. We fit with a removable window kit (no drilling, default) or, if your landlord authorises in writing, discreet drilling with insulated duct. Nothing hung on the balcony or outdoor unit on the facade."
+      },
+      {
+        "q": "What is your service area?",
+        "a": "We install within 100 km of Porto: Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel and Marco de Canaveses, among others. Beyond 100 km — leave a request; we quote travel separately."
+      },
+      {
         "q": "Why only three Cecotec models?",
         "a": "Cecotec's ForceClima Soundless line covers bedroom, living room and large room — all with heat pump and dehumidification. One manufacturer simplifies warranty, parts and PT pricing on cecotec.pt."
       },
@@ -261,36 +270,35 @@
       },
       {
         "q": "When can you install?",
-        "a": "We contact you by email after your request to schedule a survey and install date. First 20 requests: priority and fixed price before update."
+        "a": "After your request, we email within 2 business days to schedule a survey and install — usually on weekdays. Fixed 2026 season prices, confirmed on survey."
       },
       {
-        "q": "Do I need a company NIF now?",
-        "a": "Not yet — we're validating demand. Contact and room size only. No payment."
+        "q": "Is the company registered yet?",
+        "a": "We are being incorporated — no NIF published until ENI registration. We still accept install requests: we reply by email within 2 business days with model, fixed price and survey date. Deposit (50%) only after booking confirmation — no payment on the form."
       },
       {
         "q": "Does it heat in winter?",
         "a": "Yes — all short-list models have heat pumps. Essential in Porto's shoulder season without central heating."
       },
       {
-        "q": "Do you serve outside Porto?",
-        "a": "We install within 100 km of Porto: Greater Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel and Marco de Canaveses, among others. Beyond 100 km — leave a request; we quote travel separately."
-      },
-      {
         "q": "What if landlord says no?",
-        "a": "For rentals we offer fully mobile window mode plus template letter to request discreet drill approval."
+        "a": "The removable window kit (default) does not drill frames or the facade — the safest route in rentals. If you need discreet drilling, we provide a template letter to request written approval."
       }
     ]
   },
   "waitlist": {
     "title": "Request installation",
-    "subtitle": "Leave your details — we'll reply with price, recommended model and timing. First 20 requests: priority and fixed price.",
+    "subtitle": "Leave your details — we reply within 2 business days with price, recommended model and survey date.",
+    "contactDirect": "Prefer email?",
     "name": "Name",
     "email": "Email",
-    "phone": "Mobile (WhatsApp)",
+    "phone": "Mobile",
+    "phoneWhatsApp": "Mobile (WhatsApp)",
     "district": "Municipality / town (within 100 km of Porto)",
     "message": "Notes (optional)",
     "submit": "Submit request",
-    "success": "Thank you — we'll be in touch soon.",
+    "success": "Thank you — we'll reply by email within 2 business days.",
+    "successEmail": "Urgent? Email contacto@climaporto.pt",
     "consentBefore": "I have read and accept the",
     "consentLink": "Privacy Policy",
     "consentAfter": "and authorise processing of my data to respond to my install request.",
@@ -310,9 +318,11 @@
     "funnelPricingLink": "turnkey pricing",
     "funnelStep2": "Send an",
     "funnelRequestLink": "online request",
-    "funnelStep3": "Go deeper in the",
-    "funnelPillarLink": "full Porto guide",
+    "funnelStep3": "Send your",
+    "funnelRequestFinal": "install request",
+    "funnelStep3Email": "or email",
     "funnelPricingCta": "See pricing",
+    "funnelRequestCta": "Request install",
     "priceDisclaimer": "Fixed prices apply to standard installs within 100 km of Porto in 2026 — we confirm on survey before booking."
   },
   "footer": {
@@ -323,13 +333,15 @@
     "pricing": "Turnkey pricing",
     "guides": "Guides",
     "privacy": "Privacy",
-    "legal": "Company being registered — no ENI/NIF published yet.",
+    "email": "contacto@climaporto.pt",
+    "legal": "Company being registered — we'll publish NIF after ENI filing. We accept requests and reply within 2 business days.",
     "credit": "Site by webmorp.art"
   },
   "sticky": {
     "text": "Portable AC · from €899",
     "priceCta": "Pricing",
     "cta": "Request install",
+    "ctaEmail": "Email",
     "ariaLabel": "Quick actions"
   },
   "cookies": {
@@ -431,7 +443,7 @@
         "title": "8. Security",
         "paragraphs": [
           "The site is served over HTTPS. The form sends data to Formspree over an encrypted connection.",
-          "We do not request payment or card data on this website during the current demand-validation phase."
+          "We do not request payment or card data on this website — the deposit is agreed by email after booking confirmation."
         ]
       },
       {

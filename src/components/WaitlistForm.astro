@@ -12,12 +12,20 @@ const { locale } = Astro.props;
 const dict = t(locale);
 const w = dict.waitlist;
 const formAction = `https://formspree.io/f/${siteConfig.formspreeId}`;
+const phoneLabel = siteConfig.whatsappEnabled ? w.phoneWhatsApp : w.phone;
+const mailto = `mailto:${siteConfig.contactEmail}`;
 ---
 
 <section id="waitlist" class="border-t border-stone-200/80 bg-cream-dark px-4 py-16 sm:px-6 sm:py-20">
   <div class="mx-auto max-w-xl">
     <h2 class="font-display text-3xl font-semibold text-ink sm:text-4xl">{w.title}</h2>
     <p class="mt-3 text-ink-muted">{w.subtitle}</p>
+    <p class="mt-2 text-sm text-ink-muted">
+      {w.contactDirect}{" "}
+      <a href={mailto} class="font-medium text-azulejo underline hover:no-underline">
+        {siteConfig.contactEmail}
+      </a>
+    </p>
 
     <form
       id="waitlist-form"
@@ -54,7 +62,7 @@ const formAction = `https://formspree.io/f/${siteConfig.formspreeId}`;
         />
       </div>
       <div>
-        <label for="phone" class="mb-1 block text-sm font-medium text-ink">{w.phone}</label>
+        <label for="phone" class="mb-1 block text-sm font-medium text-ink">{phoneLabel}</label>
         <input
           required
           type="tel"
@@ -113,7 +121,10 @@ const formAction = `https://formspree.io/f/${siteConfig.formspreeId}`;
       </button>
 
       <p id="form-error" class="hidden text-center text-sm text-terracotta" role="alert"></p>
-      <p id="form-success" class="hidden text-center text-sm text-azulejo">{w.success}</p>
+      <p id="form-success" class="hidden text-center text-sm text-azulejo">
+        {w.success}{" "}
+        <a href={mailto} class="font-medium underline hover:no-underline">{w.successEmail}</a>
+      </p>
       <p class="text-center text-xs text-ink-muted">{w.privacy}</p>
     </form>
   </div>

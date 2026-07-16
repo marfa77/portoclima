@@ -60,7 +60,7 @@ llm_facts:
   - "Na prática: no Porto o desempenho depende mais da vedação na janela do que só dos BTU na caixa."
   - "Porto Clima instala num raio de 100 km a partir do Porto."
   - "Preços chave-na-mão fixos em 2026: 899€ / 1 049€ / 1 199€ IVA incluído — confirmar na vistoria."
-  - "Instalação num dia com kit de janela — sem obra na fachada."
+  - "Instalação num dia com kit de janela removível — sem furos (padrão), sem obra na fachada."
   - "Linha única: Cecotec ForceClima Soundless Heating Connected."
   - "50% sinal na marcação, 50% após instalação e teste."
   - "Humidade costuma ser maior junto ao Douro e em cave/sótão — dimensionamos na vistoria."

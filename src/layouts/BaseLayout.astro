@@ -18,6 +18,10 @@ const alt = alternateLocale(locale);
 const pageTitle = title ?? dict.meta.title;
 const pageDesc = description ?? dict.meta.description;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const aiDescription =
+  locale === "pt"
+    ? "Porto Clima — ar condicionado móvel Cecotec com instalação chave-na-mão no Porto e num raio de 100 km. Preços fixos desde 899€ IVA incluído. Kit de janela sem furos (padrão)."
+    : "Porto Clima — Cecotec portable AC with turnkey install in Porto and within 100 km. Fixed from €899 VAT included. No-drill window kit (default).";
 ---
 
 <!doctype html>
@@ -28,11 +32,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta name="theme-color" content="#f7f2ea" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDesc} />
+    <meta name="ai:description" content={aiDescription} />
+    <meta name="ai:category" content="porto-clima-service" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="pt-PT" href={new URL("/", Astro.site)} />
     <link rel="alternate" hreflang="en" href={new URL("/en/", Astro.site)} />
     <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+    <link rel="alternate" type="text/plain" href={new URL("/llms.txt", Astro.site)} />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />

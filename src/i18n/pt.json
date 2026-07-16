@@ -19,20 +19,16 @@
     "menuClose": "Fechar menu"
   },
   "hero": {
+    "brand": "Porto Clima",
     "eyebrow": "Ar condicionado móvel · instalação incluída · Porto e região 100 km",
     "serviceArea": "Porto no centro — raio de 100 km",
     "serviceAreaDetail": "Porto, Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel, Marco de Canaveses e concelhos até 100 km do Porto",
     "title": "Ar condicionado móvel com instalação chave-na-mão no Porto",
     "subtitle": "Vendemos e instalamos aparelhos Cecotec ForceClima — frio, desumidificação e bomba de calor num só equipamento. Preço fechado, garantia dupla, sem bloco na fachada.",
-    "pills": [
-      "Ar condicionado portátil",
-      "Instalação num dia",
-      "Desde 899€ IVA incl."
-    ],
-    "imageBadge": "Ar condicionado móvel",
-    "imageBadgeSub": "Cecotec ForceClima · bomba de calor · WiFi",
+    "highlights": "Desde 899€ IVA incl. · instalação num dia · kit de janela sem furos (padrão)",
     "ctaModels": "Ver preços fixos",
     "ctaWaitlist": "Pedir instalação",
+    "ctaEmail": "Email contacto@climaporto.pt",
     "note": "899€ / 1 049€ / 1 199€ chave-na-mão · máquina + montagem + vedação"
   },
   "whyBest": {
@@ -167,8 +163,9 @@
       "Instalação complexa (granito grosso, vão estreito, parquet): +80–150€ — indicado após visita.",
       "Obras eléctricas, furos não autorizados ou deslocação além de 100 km do Porto: orçamento à parte.",
       "Pré-pagamento 50% na reserva · 50% após instalação e teste.",
-      "Primeiros 20 pedidos: prioridade e estes preços fixos antes de atualização."
+      "Preços fixos da temporada 2026 — confirmados na vistoria antes de marcar."
     ],
+    "valueNote": "A máquina na loja (~400–600€) não inclui vistoria, vedação profissional nem 12 meses de garantia na instalação — sem isto, um portátil perde 30–40% de eficiência num T1 no Porto.",
     "modelsLink": "Comparar modelos e especificações →"
   },
   "installation": {
@@ -180,16 +177,16 @@
         "text": "Medimos ruído, janela, fluxo de ar e humidade — não vendemos por telefone."
       },
       {
-        "title": "Furo discreto (se permitido)",
-        "text": "Grelha interior + conduta isolada — sem bloco na fachada de azulejo ou granito."
+        "title": "Kit de janela removível (padrão)",
+        "text": "Vedação térmica na janela — sem furos, sem obra na fachada. É o método que usamos na maioria das instalações."
       },
       {
-        "title": "Acabamento",
-        "text": "Flange decorativo alinhado com caixilharia — foto antes/depois para condomínio."
+        "title": "Acabamento profissional",
+        "text": "Conduta isolada, flange alinhado com caixilharia e teste de estanquidade — foto antes/depois se o condomínio pedir."
       },
       {
         "title": "Entrega e medição",
-        "text": "Video curto com decibelímetro em modo nocturno — prova real, não folheto."
+        "text": "Vídeo curto com decibelímetro em modo nocturno — prova real, não folheto."
       }
     ],
     "videoTitle": "ForceClima 9500 Soundless Heating Connected — vídeo oficial Cecotec",
@@ -230,7 +227,7 @@
     ],
     "landlord": {
       "title": "Arrendamento? Ajudamos com o senhorio",
-      "text": "Fornecemos modelo de pedido de autorização para furo discreto — barreira real que removemos por si."
+      "text": "O método padrão é kit de janela removível — sem furos. Se o senhorio ou condomínio autorizar, avaliamos furo discreto com conduta isolada; fornecemos modelo de pedido de autorização."
     }
   },
   "comparison": {
@@ -252,6 +249,18 @@
     "title": "Perguntas frequentes",
     "items": [
       {
+        "q": "Quanto custa a instalação chave-na-mão?",
+        "a": "Desde 899€ IVA incluído (quarto até 20 m²), 1 049€ (sala até 30 m²) ou 1 199€ (divisão grande). Pacote de 2×12800 na mesma morada: 1 999€. Inclui máquina Cecotec, entrega, vistoria, montagem, teste e 12 meses de garantia na instalação — confirmamos na vistoria."
+      },
+      {
+        "q": "Posso instalar num apartamento arrendado sem bloco na fachada?",
+        "a": "Sim — é o nosso foco. Instalamos com kit de janela removível (sem furos, padrão) ou, se o senhorio autorizar por escrito, furo discreto com conduta isolada. Nada pendurado na varanda nem unidade exterior na fachada."
+      },
+      {
+        "q": "Qual é a área de serviço?",
+        "a": "Instalamos num raio de 100 km a partir do Porto: Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel e Marco de Canaveses, entre outros. Além de 100 km — deixe pedido; orçamos deslocação à parte."
+      },
+      {
         "q": "Porque só três modelos Cecotec?",
         "a": "Linha completa ForceClima Soundless da Cecotec cobre quarto, sala e divisão grande — todos com bomba de calor e desumidificação. Um fabricante simplifica garantia, peças e preços PT em cecotec.pt."
       },
@@ -261,36 +270,35 @@
       },
       {
         "q": "Quando posso instalar?",
-        "a": "Entramos em contacto por email após o pedido para marcar avaliação e data. Primeiros 20 pedidos: prioridade e preço fixo antes de atualização."
+        "a": "Após o pedido, contactamos por email em até 24 horas úteis para marcar vistoria e instalação — em regra em dias úteis. Preços fixos da temporada 2026, confirmados na vistoria."
       },
       {
-        "q": "Preciso de ENI ou fatura com NIF agora?",
-        "a": "Ainda não — estamos a validar procura. Só pedimos contacto e área da divisão. Sem pagamento."
+        "q": "A empresa já está registada?",
+        "a": "Estamos em constituição — sem NIF publicado até ao registo ENI. Mesmo assim aceitamos pedidos de instalação: respondemos por email em até 24 horas úteis com modelo, preço fixo e data de vistoria. Sinal (50%) só após confirmação da marcação — não pedimos pagamento no formulário."
       },
       {
         "q": "Funciona para aquecer no inverno?",
         "a": "Sim — todos os modelos da short-list têm bomba de calor. Essencial na meia-estação portuense sem aquecimento central."
       },
       {
-        "q": "Atendem fora do Porto?",
-        "a": "Instalamos num raio de 100 km a partir do Porto: Grande Porto (Gaia, Matosinhos, Maia, Gondomar, Valongo, Vila do Conde, Póvoa), Braga, Guimarães, Famalicão, Barcelos, Aveiro, Viana do Castelo, Espinho, Feira, Penafiel e Marco de Canaveses, entre outros. Além de 100 km — deixe pedido; orçamos deslocação à parte."
-      },
-      {
         "q": "E se o senhorio disser não?",
-        "a": "Para arrendamento oferecemos modo totalmente móvel (conduta na janela) e carta modelo para pedir autorização de furo discreto."
+        "a": "O kit de janela removível (padrão) não perfura caixilharia nem fachada — é a via mais segura em arrendamento. Se precisar de furo discreto, fornecemos carta modelo para pedir autorização por escrito."
       }
     ]
   },
   "waitlist": {
     "title": "Pedido de instalação",
-    "subtitle": "Deixe contacto — respondemos com preço, modelo recomendado e data. Primeiros 20 pedidos: prioridade e preço fixo.",
+    "subtitle": "Deixe contacto — respondemos em até 24 horas úteis com preço, modelo recomendado e data de vistoria.",
+    "contactDirect": "Preferir email directo?",
     "name": "Nome",
     "email": "Email",
-    "phone": "Telemóvel (WhatsApp)",
+    "phone": "Telemóvel",
+    "phoneWhatsApp": "Telemóvel (WhatsApp)",
     "district": "Concelho / localidade (até 100 km do Porto)",
     "message": "Notas (opcional)",
     "submit": "Enviar pedido",
-    "success": "Obrigado — entraremos em contacto em breve.",
+    "success": "Obrigado — respondemos em até 24 horas úteis por email.",
+    "successEmail": "Urgente? Escreva para contacto@climaporto.pt",
     "consentBefore": "Li e aceito a",
     "consentLink": "Política de Privacidade",
     "consentAfter": "e autorizo o tratamento dos meus dados para responder ao pedido de instalação.",
@@ -310,9 +318,11 @@
     "funnelPricingLink": "preços chave-na-mão",
     "funnelStep2": "Envie o",
     "funnelRequestLink": "pedido online",
-    "funnelStep3": "Aprofunde no",
-    "funnelPillarLink": "guia completo do Porto",
+    "funnelStep3": "Envie o",
+    "funnelRequestFinal": "pedido de instalação",
+    "funnelStep3Email": "ou escreva para",
     "funnelPricingCta": "Ver preços",
+    "funnelRequestCta": "Pedir instalação",
     "priceDisclaimer": "Preços fixos válidos para instalação padrão num raio de 100 km do Porto em 2026 — confirmamos na vistoria antes de marcar."
   },
   "footer": {
@@ -323,13 +333,15 @@
     "pricing": "Preços chave-na-mão",
     "guides": "Guias",
     "privacy": "Privacidade",
-    "legal": "Empresa em constituição — sem NIF publicado até registo ENI.",
+    "email": "contacto@climaporto.pt",
+    "legal": "Empresa em constituição — publicaremos NIF após registo ENI. Aceitamos pedidos e respondemos em até 24h úteis.",
     "credit": "Site by webmorp.art"
   },
   "sticky": {
     "text": "Ar condicionado móvel · desde 899€",
     "priceCta": "Preços",
     "cta": "Pedir instalação",
+    "ctaEmail": "Email",
     "ariaLabel": "Ações rápidas"
   },
   "cookies": {
@@ -431,7 +443,7 @@
         "title": "8. Segurança",
         "paragraphs": [
           "O site é servido por HTTPS. O formulário envia dados para Formspree por ligação encriptada.",
-          "Não pedimos pagamento nem dados de cartão neste website na fase atual de validação de procura."
+          "Não pedimos pagamento nem dados de cartão neste website — o sinal é acordado por email após confirmação da marcação."
         ]
       },
       {

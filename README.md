@@ -1,23 +1,24 @@
-# Porto Clima — landing + quiz (Porto mobile AC)
+# Porto Clima — landing (Porto mobile AC)
 
-Teste de procura antes da operação (fevereiro 2026). Static Astro → GitHub Pages → domínio `.pt`.
+Turnkey portable AC installs in Porto and within 100 km. Static Astro → GitHub Pages → climaporto.pt.
 
 ## Stack
 
 - Astro 7 + Tailwind 4
 - i18n: `/` PT · `/en/` EN (`src/i18n/*.json`)
-- Quiz rule-based: `src/lib/quiz.ts` + `src/data/models.json`
-- Formspree waitlist + WhatsApp CTA
+- Model data: `src/data/models.json`
+- Formspree install request form + email CTA (`contacto@climaporto.pt`)
+- WhatsApp CTA gated behind `whatsappEnabled` in `src/data/site.ts` (off until real number)
 - Plausible (config in `src/data/site.ts`)
 
-## Antes do launch
+## Before launch
 
-Editar `src/data/site.ts`:
+Edit `src/data/site.ts`:
 
-- `formspreeId` — criar form em [formspree.io](https://formspree.io)
-- `whatsapp` — número PT
-- `plausibleDomain` — ou desactivar
-- `domain` / `public/CNAME` — domínio final
+- `formspreeId` — create form at [formspree.io](https://formspree.io)
+- `whatsapp` + `whatsappEnabled: true` — when a real PT mobile number is ready
+- `plausibleDomain` — or disable
+- `domain` / `public/CNAME` — final domain
 
 ## Dev
 
@@ -25,6 +26,8 @@ Editar `src/data/site.ts`:
 npm install
 npm run dev
 ```
+
+Or background mode per project docs: `astro dev --background`
 
 ## Build
 
@@ -38,12 +41,10 @@ npm run preview
 GitHub Pages → Settings → Source: **GitHub Actions**  
 Workflow: `.github/workflows/deploy.yml`
 
-Ver `../shared/docs/deploy-github-pages.md`
-
 ## UTM
 
-`?utm_source=threads&utm_medium=social` — gravado em sessionStorage e enviado no form.
+`?utm_source=threads&utm_medium=social` — stored in sessionStorage and sent with the form.
 
-## Métricas
+## Analytics
 
-Plausible events: `Quiz Complete`, `Waitlist Submit`
+Plausible events: `Request Submit`

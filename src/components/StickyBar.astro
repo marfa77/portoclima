@@ -1,6 +1,7 @@
 ---
 import type { Locale } from "../lib/i18n";
 import { t } from "../lib/i18n";
+import { siteConfig } from "../data/site";
 
 interface Props {
   locale: Locale;
@@ -9,6 +10,8 @@ interface Props {
 const { locale } = Astro.props;
 const dict = t(locale);
 const prefix = locale === "en" ? "/en" : "";
+const showWhatsApp = siteConfig.whatsappEnabled;
+const mailto = `mailto:${siteConfig.contactEmail}`;
 ---
 
 <div
@@ -24,11 +27,22 @@ const prefix = locale === "en" ? "/en" : "";
       <span class="text-[10px] font-semibold uppercase tracking-wide text-azulejo">{dict.sticky.priceCta}</span>
       <span class="text-sm font-bold text-ink">899€+</span>
     </a>
-    <a
-      href={`${prefix}/#waitlist`}
-      class="tap-target flex flex-[1.4] items-center justify-center rounded-full bg-terracotta px-5 py-3.5 text-base font-semibold text-white shadow-lg shadow-terracotta/20"
-    >
-      {dict.sticky.cta}
-    </a>
+    {
+      showWhatsApp ? (
+        <a
+          href={`${prefix}/#waitlist`}
+          class="tap-target flex flex-[1.4] items-center justify-center rounded-full bg-terracotta px-5 py-3.5 text-base font-semibold text-white shadow-lg shadow-terracotta/20"
+        >
+          {dict.sticky.cta}
+        </a>
+      ) : (
+        <a
+          href={mailto}
+          class="tap-target flex flex-[1.4] items-center justify-center rounded-full bg-terracotta px-5 py-3.5 text-base font-semibold text-white shadow-lg shadow-terracotta/20"
+        >
+          {dict.sticky.ctaEmail}
+        </a>
+      )
+    }
   </div>
 </div>

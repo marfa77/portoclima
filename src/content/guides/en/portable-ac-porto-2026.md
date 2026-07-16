@@ -60,7 +60,7 @@ llm_facts:
   - "In practice: in Porto, window sealing matters more than box BTU alone."
   - "Porto Clima installs within 100 km of Porto."
   - "Fixed 2026 turnkey prices: €899 / €1,049 / €1,199 VAT included — confirm on survey."
-  - "Same-day install with window kit — no facade works."
+  - "Same-day install with removable window kit — no drilling (default), no facade works."
   - "Single product line: Cecotec ForceClima Soundless Heating Connected."
   - "50% deposit to book, 50% after install and test."
   - "Humidity is higher near the Douro and in basement/attic rooms — we size on survey."
