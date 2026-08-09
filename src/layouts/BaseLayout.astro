@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import type { Locale } from "../lib/i18n";
-import { localePath, alternateLocale, t } from "../lib/i18n";
+import { t } from "../lib/i18n";
 import { siteConfig } from "../data/site";
 import JsonLd from "../components/JsonLd.astro";
 import CookieNotice from "../components/CookieNotice.astro";
@@ -10,14 +10,31 @@ interface Props {
   locale: Locale;
   title?: string;
   description?: string;
+  /** Path for pt-PT hreflang (default: home) */
+  alternatePt?: string;
+  /** Path for en hreflang (default: /en/) */
+  alternateEn?: string;
+  /** When false, skip LocalBusiness JSON-LD (use on index/list pages with their own schema) */
+  includeJsonLd?: boolean;
+  /** Preload homepage hero — only for landing pages */
+  preloadHero?: boolean;
 }
 
-const { locale, title, description } = Astro.props;
+const {
+  locale,
+  title,
+  description,
+  alternatePt = "/",
+  alternateEn = "/en/",
+  includeJsonLd = true,
+  preloadHero = true,
+} = Astro.props;
 const dict = t(locale);
-const alt = alternateLocale(locale);
 const pageTitle = title ?? dict.meta.title;
 const pageDesc = description ?? dict.meta.description;
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const hreflangPt = new URL(alternatePt, Astro.site);
+const hreflangEn = new URL(alternateEn, Astro.site);
 const aiDescription =
   locale === "pt"
     ? "Porto Clima — ar condicionado móvel Cecotec com instalação chave-na-mão no Porto e num raio de 100 km. Preços fixos desde 899€ IVA incluído. Kit de janela sem furos (padrão)."
@@ -36,9 +53,9 @@ const aiDescription =
     <meta name="ai:category" content="porto-clima-service" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="pt-PT" href={new URL("/", Astro.site)} />
-    <link rel="alternate" hreflang="en" href={new URL("/en/", Astro.site)} />
-    <link rel="alternate" hreflang="x-default" href={new URL("/", Astro.site)} />
+    <link rel="alternate" hreflang="pt-PT" href={hreflangPt} />
+    <link rel="alternate" hreflang="en" href={hreflangEn} />
+    <link rel="alternate" hreflang="x-default" href={hreflangPt} />
     <link rel="alternate" type="text/plain" href={new URL("/llms.txt", Astro.site)} />
 
     <meta property="og:type" content="website" />
@@ -59,7 +76,9 @@ const aiDescription =
       rel="stylesheet"
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="/images/hero.webp" type="image/webp" />
+    {preloadHero && (
+      <link rel="preload" as="image" href="/images/hero.webp" type="image/webp" />
+    )}
 
     {siteConfig.plausibleDomain && (
       <script
@@ -82,7 +101,7 @@ const aiDescription =
       </>
     )}
 
-    <JsonLd locale={locale} />
+    {includeJsonLd && <JsonLd locale={locale} />}
   </head>
   <body class="antialiased body-mobile-pad">
     <slot name="header" />

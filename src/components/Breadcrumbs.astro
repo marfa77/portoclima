@@ -1,0 +1,58 @@
+---
+interface Crumb {
+  name: string;
+  href?: string;
+}
+
+interface Props {
+  items: Crumb[];
+  /** Emit BreadcrumbList JSON-LD (default true) */
+  jsonLd?: boolean;
+  class?: string;
+}
+
+const { items, jsonLd = true, class: className } = Astro.props;
+const site = Astro.site;
+
+const listElements = items.map((item, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: item.name,
+  ...(item.href
+    ? { item: item.href.startsWith("http") ? item.href : new URL(item.href, site).href }
+    : {}),
+}));
+---
+
+<nav class:list={["text-xs text-ink-muted", className]} aria-label="Breadcrumb">
+  <ol class="flex flex-wrap items-center gap-x-1">
+    {items.map((item, i) => (
+      <li class="inline-flex items-center gap-x-1">
+        {i > 0 && <span aria-hidden="true">·</span>}
+        {item.href && i < items.length - 1 ? (
+          <a href={item.href} class="hover:text-azulejo">
+            {item.name}
+          </a>
+        ) : (
+          <span
+            class={i === items.length - 1 ? "text-ink" : undefined}
+            aria-current={i === items.length - 1 ? "page" : undefined}
+          >
+            {item.name}
+          </span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
+
+{jsonLd && (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: listElements,
+    })}
+  />
+)}

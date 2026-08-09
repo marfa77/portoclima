@@ -16,4 +16,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+Sitemap: https://climaporto.pt/sitemap.xml
 Sitemap: https://climaporto.pt/sitemap-index.xml

@@ -8,6 +8,7 @@ import GuideJsonLd from "../components/GuideJsonLd.astro";
 import RelatedGuides from "../components/RelatedGuides.astro";
 import GuideFunnel from "../components/GuideFunnel.astro";
 import CookieNotice from "../components/CookieNotice.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
 import type { GuideEntry } from "../lib/guides";
 import { guideOgImage, guidesIndexPath } from "../lib/guides";
 
@@ -83,11 +84,14 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
         <header class="relative overflow-hidden border-b border-stone-200/80 bg-cream-dark">
           <div class="mx-auto grid max-w-5xl lg:grid-cols-2 lg:gap-8">
             <div class="order-2 px-4 py-8 sm:px-6 sm:py-16 lg:order-none lg:py-20">
-              <nav class="text-xs text-ink-muted" aria-label="Breadcrumb">
-                <a href={localePath(locale)} class="hover:text-azulejo">Porto Clima</a>
-                <span aria-hidden="true"> · </span>
-                <a href={guidesIndexPath(locale)} class="hover:text-azulejo">{dict.guides.indexTitle}</a>
-              </nav>
+              <Breadcrumbs
+                jsonLd={false}
+                items={[
+                  { name: "Porto Clima", href: localePath(locale) },
+                  { name: dict.guides.indexTitle, href: guidesIndexPath(locale) },
+                  { name: d.title },
+                ]}
+              />
               <p class="mt-4 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta">
                 {locale === "pt" ? serviceArea.shortPt : serviceArea.shortEn}
               </p>
