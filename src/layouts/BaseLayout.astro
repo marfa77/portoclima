@@ -5,6 +5,8 @@ import { t } from "../lib/i18n";
 import { siteConfig } from "../data/site";
 import JsonLd from "../components/JsonLd.astro";
 import CookieNotice from "../components/CookieNotice.astro";
+import LlmFactsCapsule from "../components/LlmFactsCapsule.astro";
+import { getHomeAiDescription, getHomeLlmFacts } from "../lib/aeo";
 
 interface Props {
   locale: Locale;
@@ -18,6 +20,14 @@ interface Props {
   includeJsonLd?: boolean;
   /** Preload homepage hero — only for landing pages */
   preloadHero?: boolean;
+  /** Override default home AEO description */
+  aiDescription?: string;
+  /** When false, skip LlmFactsCapsule (pages that inject their own) */
+  includeLlmCapsule?: boolean;
+  llmFacts?: string;
+  llmCommercial?: string;
+  llmDifferentiators?: string;
+  aiCategory?: string;
 }
 
 const {
@@ -28,6 +38,8 @@ const {
   alternateEn = "/en/",
   includeJsonLd = true,
   preloadHero = true,
+  includeLlmCapsule = true,
+  aiCategory = "porto-clima-service",
 } = Astro.props;
 const dict = t(locale);
 const pageTitle = title ?? dict.meta.title;
@@ -35,10 +47,13 @@ const pageDesc = description ?? dict.meta.description;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const hreflangPt = new URL(alternatePt, Astro.site);
 const hreflangEn = new URL(alternateEn, Astro.site);
-const aiDescription =
-  locale === "pt"
-    ? "Porto Clima — ar condicionado móvel Cecotec com instalação chave-na-mão no Porto e num raio de 100 km. Preços fixos desde 899€ IVA incluído. Kit de janela sem furos (padrão)."
-    : "Porto Clima — Cecotec portable AC with turnkey install in Porto and within 100 km. Fixed from €899 VAT included. No-drill window kit (default).";
+const homeCapsule = getHomeLlmFacts(locale);
+const aiDescription = Astro.props.aiDescription ?? getHomeAiDescription(locale);
+const usingHomeCapsule = Astro.props.llmFacts == null;
+const llmFacts = Astro.props.llmFacts ?? homeCapsule.facts;
+const llmCommercial = Astro.props.llmCommercial ?? homeCapsule.commercial;
+const llmDifferentiators =
+  Astro.props.llmDifferentiators ?? (usingHomeCapsule ? homeCapsule.differentiators : undefined);
 ---
 
 <!doctype html>
@@ -50,13 +65,18 @@ const aiDescription =
     <title>{pageTitle}</title>
     <meta name="description" content={pageDesc} />
     <meta name="ai:description" content={aiDescription} />
-    <meta name="ai:category" content="porto-clima-service" />
+    <meta name="ai:category" content={aiCategory} />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="pt-PT" href={hreflangPt} />
     <link rel="alternate" hreflang="en" href={hreflangEn} />
     <link rel="alternate" hreflang="x-default" href={hreflangPt} />
-    <link rel="alternate" type="text/plain" href={new URL("/llms.txt", Astro.site)} />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href={new URL("/llms.txt", Astro.site)}
+      title="Information for LLMs and AI agents"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
@@ -104,6 +124,9 @@ const aiDescription =
     {includeJsonLd && <JsonLd locale={locale} />}
   </head>
   <body class="antialiased body-mobile-pad">
+    {includeLlmCapsule && (
+      <LlmFactsCapsule facts={llmFacts} commercial={llmCommercial} differentiators={llmDifferentiators} />
+    )}
     <slot name="header" />
     <main>
       <slot />

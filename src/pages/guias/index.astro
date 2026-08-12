@@ -6,12 +6,14 @@ import Footer from "../../components/Footer.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { t, localePath } from "../../lib/i18n";
 import { guidePath, guidesIndexPath } from "../../lib/guides";
+import { getGuidesIndexAiDescription, getGuidesIndexLlmFacts } from "../../lib/aeo";
 
 const locale = "pt";
 const dict = t(locale);
 const guides = await getGuides(locale);
 const title = `${dict.guides.indexTitle} — Porto Clima`;
 const description = dict.guides.indexDescription;
+const aeo = getGuidesIndexLlmFacts(locale);
 ---
 
 <BaseLayout
@@ -22,6 +24,10 @@ const description = dict.guides.indexDescription;
   alternateEn="/en/guides/"
   includeJsonLd={false}
   preloadHero={false}
+  aiDescription={getGuidesIndexAiDescription(locale)}
+  aiCategory="porto-climate-guides"
+  llmFacts={aeo.facts}
+  llmCommercial={aeo.commercial}
 >
   <Header slot="header" locale={locale} />
   <section class="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">

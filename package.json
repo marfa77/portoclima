@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && node scripts/alias-sitemap.mjs",
+    "check:aeo": "node scripts/check-aeo-llm-layer.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "fetch:images": "node scripts/fetch-stock-images.mjs",

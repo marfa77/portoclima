@@ -1,9 +1,10 @@
 ---
 import "../styles/global.css";
 import type { Locale } from "../lib/i18n";
-import { alternateLocale } from "../lib/i18n";
 import { privacyPath } from "../lib/legal";
 import { siteConfig } from "../data/site";
+import LlmFactsCapsule from "../components/LlmFactsCapsule.astro";
+import { getPrivacyAiDescription, getPrivacyLlmFacts } from "../lib/aeo";
 
 interface Props {
   locale: Locale;
@@ -12,12 +13,13 @@ interface Props {
 }
 
 const { locale, title, description } = Astro.props;
-const alt = alternateLocale(locale);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ptHref = new URL(privacyPath("pt"), Astro.site).href;
 const enHref = new URL(privacyPath("en"), Astro.site).href;
 const hreflangPt = locale === "pt" ? canonical.href : ptHref;
 const hreflangEn = locale === "en" ? canonical.href : enHref;
+const aiDescription = getPrivacyAiDescription(locale);
+const capsule = getPrivacyLlmFacts(locale);
 ---
 
 <!doctype html>
@@ -28,11 +30,19 @@ const hreflangEn = locale === "en" ? canonical.href : enHref;
     <meta name="theme-color" content="#f7f2ea" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="ai:description" content={aiDescription} />
+    <meta name="ai:category" content="porto-clima-privacy" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="pt-PT" href={hreflangPt} />
     <link rel="alternate" hreflang="en" href={hreflangEn} />
     <link rel="alternate" hreflang="x-default" href={ptHref} />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href={new URL("/llms.txt", Astro.site)}
+      title="Information for LLMs and AI agents"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -53,6 +63,7 @@ const hreflangEn = locale === "en" ? canonical.href : enHref;
     )}
   </head>
   <body class="antialiased body-mobile-pad">
+    <LlmFactsCapsule facts={capsule.facts} commercial={capsule.commercial} />
     <slot name="header" />
     <main>
       <slot />

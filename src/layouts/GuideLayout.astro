@@ -9,8 +9,10 @@ import RelatedGuides from "../components/RelatedGuides.astro";
 import GuideFunnel from "../components/GuideFunnel.astro";
 import CookieNotice from "../components/CookieNotice.astro";
 import Breadcrumbs from "../components/Breadcrumbs.astro";
+import LlmFactsCapsule from "../components/LlmFactsCapsule.astro";
 import type { GuideEntry } from "../lib/guides";
 import { guideOgImage, guidesIndexPath } from "../lib/guides";
+import { getGuideAiDescription, getGuideLlmFacts } from "../lib/aeo";
 
 interface Props {
   locale: Locale;
@@ -25,7 +27,8 @@ const d = entry.data;
 const dict = t(locale);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(guideOgImage(d.hero_image), Astro.site);
-const aiDescription = `${d.quick_answer} ${d.excerpt}`.slice(0, 500);
+const aiDescription = getGuideAiDescription(locale, entry, slug);
+const capsule = getGuideLlmFacts(locale, entry, slug);
 const ptHref = locale === "pt" ? canonical.href : alternatePath ? new URL(alternatePath, Astro.site).href : new URL("/", Astro.site).href;
 const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(alternatePath, Astro.site).href : new URL("/en/", Astro.site).href;
 ---
@@ -44,7 +47,12 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
     <link rel="alternate" hreflang="pt-PT" href={ptHref} />
     <link rel="alternate" hreflang="en" href={enHref} />
     <link rel="alternate" hreflang="x-default" href={ptHref} />
-    <link rel="alternate" type="text/plain" href={new URL("/llms.txt", Astro.site)} />
+    <link
+      rel="alternate"
+      type="text/plain"
+      href={new URL("/llms.txt", Astro.site)}
+      title="Information for LLMs and AI agents"
+    />
 
     <meta name="ai:description" content={aiDescription} />
     <meta name="ai:category" content="porto-climate-guide" />
@@ -77,6 +85,11 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
     <GuideJsonLd locale={locale} entry={entry} slug={slug} />
   </head>
   <body class="antialiased body-mobile-pad">
+    <LlmFactsCapsule
+      facts={capsule.facts}
+      commercial={capsule.commercial}
+      differentiators={capsule.differentiators}
+    />
     <p class="sr-only" data-ai="description">{aiDescription}</p>
     <slot name="header" />
     <main>
@@ -154,14 +167,6 @@ const enHref = locale === "en" ? canonical.href : alternatePath ? new URL(altern
                     {src.label}
                   </a>
                 </li>
-              ))}
-            </ul>
-          </section>
-
-          <section class="sr-only" data-llm="facts" aria-hidden="true">
-            <ul>
-              {d.llm_facts.map((fact) => (
-                <li>{fact}</li>
               ))}
             </ul>
           </section>

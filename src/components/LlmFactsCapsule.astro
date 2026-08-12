@@ -1,0 +1,19 @@
+---
+/**
+ * PixID-style machine-extractable capsules for AI browse / citation.
+ * Visually hidden — human copy stays in visible FAQ / BLUF.
+ */
+interface Props {
+  facts: string;
+  commercial: string;
+  differentiators?: string;
+}
+
+const { facts, commercial, differentiators } = Astro.props;
+---
+
+<div class="sr-only" data-llm="facts" aria-hidden="true">{facts}</div>
+<div class="sr-only" data-llm="commercial" aria-hidden="true">{commercial}</div>
+{differentiators && (
+  <div class="sr-only" data-llm="differentiators" aria-hidden="true">{differentiators}</div>
+)}

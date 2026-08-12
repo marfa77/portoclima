@@ -33,6 +33,19 @@ body {
   padding-bottom: calc(5.5rem + env(safe-area-inset-bottom));
 }
 
+/* Fallback if utility purged — PixID AEO capsules must stay machine-readable but hidden */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
 @media (min-width: 768px) {
   .body-mobile-pad {
     padding-bottom: 0;

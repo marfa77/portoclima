@@ -1,0 +1,193 @@
+# LLM/AEO layer check — 2026-08-12
+
+Passed: 187/187
+
+- ✅ **dist:pages** — 14 HTML pages
+- ✅ **en/guides/index.html:ai-description** — meta ai:description
+- ✅ **en/guides/index.html:llms-link** — llms.txt alternate
+- ✅ **en/guides/index.html:llms-title** — llms.txt title attr
+- ✅ **en/guides/index.html:data-llm-facts** — facts capsule
+- ✅ **en/guides/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/guides/index.html:ai-not-empty** — len=187
+- ✅ **en/guides/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/guides/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/index.html:capsule-0-min** — len=234
+- ✅ **en/guides/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/index.html:capsule-1-min** — len=178
+- ✅ **en/guides/portable-ac-porto-2026/index.html:ai-description** — meta ai:description
+- ✅ **en/guides/portable-ac-porto-2026/index.html:llms-link** — llms.txt alternate
+- ✅ **en/guides/portable-ac-porto-2026/index.html:llms-title** — llms.txt title attr
+- ✅ **en/guides/portable-ac-porto-2026/index.html:data-llm-facts** — facts capsule
+- ✅ **en/guides/portable-ac-porto-2026/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/guides/portable-ac-porto-2026/index.html:ai-not-empty** — len=255
+- ✅ **en/guides/portable-ac-porto-2026/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/guides/portable-ac-porto-2026/index.html:ai-en-guide** — EN uses Guide: label
+- ✅ **en/guides/portable-ac-porto-2026/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-ac-porto-2026/index.html:capsule-0-min** — len=1002
+- ✅ **en/guides/portable-ac-porto-2026/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-ac-porto-2026/index.html:capsule-1-min** — len=220
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:ai-description** — meta ai:description
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:llms-link** — llms.txt alternate
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:llms-title** — llms.txt title attr
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:data-llm-facts** — facts capsule
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:ai-not-empty** — len=279
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:ai-en-guide** — EN uses Guide: label
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:capsule-0-min** — len=1076
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-ac-rented-apartment-porto/index.html:capsule-1-min** — len=220
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:ai-description** — meta ai:description
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:llms-link** — llms.txt alternate
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:llms-title** — llms.txt title attr
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:data-llm-facts** — facts capsule
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:ai-not-empty** — len=269
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:ai-en-guide** — EN uses Guide: label
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:capsule-0-min** — len=936
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/portable-vs-split-ac-porto/index.html:capsule-1-min** — len=220
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:ai-description** — meta ai:description
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:llms-link** — llms.txt alternate
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:llms-title** — llms.txt title attr
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:data-llm-facts** — facts capsule
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:ai-not-empty** — len=268
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:ai-en-guide** — EN uses Guide: label
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:capsule-0-min** — len=961
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/guides/porto-summer-heat-humidity-comfort/index.html:capsule-1-min** — len=220
+- ✅ **en/index.html:ai-description** — meta ai:description
+- ✅ **en/index.html:llms-link** — llms.txt alternate
+- ✅ **en/index.html:llms-title** — llms.txt title attr
+- ✅ **en/index.html:data-llm-facts** — facts capsule
+- ✅ **en/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/index.html:ai-not-empty** — len=271
+- ✅ **en/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/index.html:capsule-0-min** — len=942
+- ✅ **en/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/index.html:capsule-1-min** — len=371
+- ✅ **en/privacy/index.html:ai-description** — meta ai:description
+- ✅ **en/privacy/index.html:llms-link** — llms.txt alternate
+- ✅ **en/privacy/index.html:llms-title** — llms.txt title attr
+- ✅ **en/privacy/index.html:data-llm-facts** — facts capsule
+- ✅ **en/privacy/index.html:data-llm-commercial** — commercial capsule
+- ✅ **en/privacy/index.html:ai-not-empty** — len=147
+- ✅ **en/privacy/index.html:ai-no-trunc-url** — urls complete
+- ✅ **en/privacy/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **en/privacy/index.html:capsule-0-min** — len=216
+- ✅ **en/privacy/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **en/privacy/index.html:capsule-1-min** — len=142
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:ai-description** — meta ai:description
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:llms-link** — llms.txt alternate
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:llms-title** — llms.txt title attr
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:data-llm-facts** — facts capsule
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:data-llm-commercial** — commercial capsule
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:ai-not-empty** — len=277
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:ai-no-trunc-url** — urls complete
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:ai-pt-locale** — no EN bleed on PT guide
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:ai-pt-guia** — PT uses Guia: label
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:capsule-0-min** — len=1187
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-apartamento-arrendado-porto/index.html:capsule-1-min** — len=219
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:ai-description** — meta ai:description
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:llms-link** — llms.txt alternate
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:llms-title** — llms.txt title attr
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:data-llm-facts** — facts capsule
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:data-llm-commercial** — commercial capsule
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:ai-not-empty** — len=272
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:ai-no-trunc-url** — urls complete
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:ai-pt-locale** — no EN bleed on PT guide
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:ai-pt-guia** — PT uses Guia: label
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:capsule-0-min** — len=1104
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-movel-porto-2026/index.html:capsule-1-min** — len=219
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:ai-description** — meta ai:description
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:llms-link** — llms.txt alternate
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:llms-title** — llms.txt title attr
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:data-llm-facts** — facts capsule
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:data-llm-commercial** — commercial capsule
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:ai-not-empty** — len=268
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:ai-no-trunc-url** — urls complete
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:ai-pt-locale** — no EN bleed on PT guide
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:ai-pt-guia** — PT uses Guia: label
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:capsule-0-min** — len=1046
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **guias/ar-condicionado-movel-vs-split-porto/index.html:capsule-1-min** — len=219
+- ✅ **guias/index.html:ai-description** — meta ai:description
+- ✅ **guias/index.html:llms-link** — llms.txt alternate
+- ✅ **guias/index.html:llms-title** — llms.txt title attr
+- ✅ **guias/index.html:data-llm-facts** — facts capsule
+- ✅ **guias/index.html:data-llm-commercial** — commercial capsule
+- ✅ **guias/index.html:ai-not-empty** — len=200
+- ✅ **guias/index.html:ai-no-trunc-url** — urls complete
+- ✅ **guias/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **guias/index.html:capsule-0-min** — len=232
+- ✅ **guias/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **guias/index.html:capsule-1-min** — len=169
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:ai-description** — meta ai:description
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:llms-link** — llms.txt alternate
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:llms-title** — llms.txt title attr
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:data-llm-facts** — facts capsule
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:data-llm-commercial** — commercial capsule
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:ai-not-empty** — len=258
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:ai-no-trunc-url** — urls complete
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:ai-pt-locale** — no EN bleed on PT guide
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:ai-pt-guia** — PT uses Guia: label
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:capsule-0-min** — len=1018
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **guias/verao-porto-temperatura-humidade/index.html:capsule-1-min** — len=219
+- ✅ **index.html:ai-description** — meta ai:description
+- ✅ **index.html:llms-link** — llms.txt alternate
+- ✅ **index.html:llms-title** — llms.txt title attr
+- ✅ **index.html:data-llm-facts** — facts capsule
+- ✅ **index.html:data-llm-commercial** — commercial capsule
+- ✅ **index.html:ai-not-empty** — len=288
+- ✅ **index.html:ai-no-trunc-url** — urls complete
+- ✅ **index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **index.html:capsule-0-min** — len=949
+- ✅ **index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **index.html:capsule-1-min** — len=356
+- ✅ **privacidade/index.html:ai-description** — meta ai:description
+- ✅ **privacidade/index.html:llms-link** — llms.txt alternate
+- ✅ **privacidade/index.html:llms-title** — llms.txt title attr
+- ✅ **privacidade/index.html:data-llm-facts** — facts capsule
+- ✅ **privacidade/index.html:data-llm-commercial** — commercial capsule
+- ✅ **privacidade/index.html:ai-not-empty** — len=156
+- ✅ **privacidade/index.html:ai-no-trunc-url** — urls complete
+- ✅ **privacidade/index.html:capsule-0-no-url-period** — no period glued to UTM URL
+- ✅ **privacidade/index.html:capsule-0-min** — len=224
+- ✅ **privacidade/index.html:capsule-1-no-url-period** — no period glued to UTM URL
+- ✅ **privacidade/index.html:capsule-1-min** — len=152
+- ✅ **index.html:differentiators** — home differentiators
+- ✅ **en/index.html:differentiators** — home differentiators
+- ✅ **llms.txt:exists** — dist/llms.txt
+- ✅ **llms.txt:answer-card** — Answer Card + UTM
+- ✅ **llms.txt:high-intent** — High-Intent section
+- ✅ **llms.txt:waitlist** — request CTA
+- ✅ **llms.txt:price** — price signal
+- ✅ **llms.txt:hi-count** — 10 high-intent entries
+- ✅ **llms.txt:hi:ar condicionado móvel Porto preço** — domain + utm
+- ✅ **llms.txt:hi:portable air conditioning Porto cost 202** — domain + utm
+- ✅ **llms.txt:hi:ar condicionado apartamento arrendado Po** — domain + utm
+- ✅ **llms.txt:hi:portable AC rented apartment Porto no dr** — domain + utm
+- ✅ **llms.txt:hi:ar condicionado móvel vs split Porto** — domain + utm
+- ✅ **llms.txt:hi:portable vs split AC Porto** — domain + utm
+- ✅ **llms.txt:hi:ar condicionado Braga Guimarães Aveiro i** — domain + utm
+- ✅ **llms.txt:hi:portable AC install Braga Guimaraes Avei** — domain + utm
+- ✅ **llms.txt:hi:verão Porto calor humidade ar condiciona** — domain + utm
+- ✅ **llms.txt:hi:Porto summer heat humidity portable AC** — domain + utm
+- ✅ **sitemap.xml** — sitemap alias
+- ✅ **robots:sitemap** — robots lists sitemap.xml
+
+All required AEO wiring present.
